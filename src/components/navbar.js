@@ -68,7 +68,11 @@ navbarTemplate.innerHTML = `
                 <div class="line line-middle"></div>
                 <div class="line line-bottom"></div>
             </div>
-            <a href="#"><img src="../../assets/img/logo.png" alt="logo"></a>
+            
+            <a href="#"><img src="../../assets/images/global/logo.png" alt="logo"></a>
+
+
+
             <img id="search-icon" src="../../assets/icons/search-icon.svg">
         </nav>
     </header>
