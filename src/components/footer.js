@@ -5,7 +5,7 @@ footerTemplate.innerHTML = `
         footer{
             width:100%;
             height:61px;
-            background-color:${getComputedStyle(document.querySelector(':root')).getPropertyValue('--secondary-color')};
+            background-color:var(--secondary-color);
             display: flex;
             align-items: center;
             justify-content: center;
