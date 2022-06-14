@@ -93,38 +93,7 @@ navbarTemplate.innerHTML = `
             width: 70px;
         }
          
-         /* SEARCH BAR */
-         /* #search-input {
-            background-color: transparent;
-            background-image: url('./search-icon.svg');
-            background-position: 5px center;
-            background-repeat: no-repeat;
-            background-size: 24px 24px;
-            border: none;
-            cursor: pointer;
-            height: 37px;
-            margin: 3px 0;
-            padding: 0 0 0 34px;
-            position: absolute;
-            right: 4px;
-            top: 11px;
-            -webkit-transition: width 400ms ease, 400ms ease;
-            transition: width 400ms ease, 400ms ease;
-            width: 0;
-         } */
-         
-         /* #search-input:focus {
-            background-color: #fff;
-            border: 1px solid black;
-            cursor: text;
-            height: 6%;
-            width: 99%;
-         } */
-         
-         /* .search-btn {
-            display: none;
-         } */
-         
+        
          .btn-transparent {
             background-color: transparent;
             border: none;
@@ -148,13 +117,13 @@ navbarTemplate.innerHTML = `
             align-items: center;
             justify-content: flex-start;
             border-top: 2px solid var(--secondary-color);
-            gap: 20px;
+            gap: 50px;
             transform: translateX(100%);
             transition : transform 300ms ease; 
         }
          
         .btn {
-            width: 70%;
+            width: 50%;
             text-align: center;
             padding: 20px 0;
             border-radius: 10px;
@@ -167,7 +136,25 @@ navbarTemplate.innerHTML = `
             justify-content:center;
             text-align:center;
             gap:10px;
+            position:relative;
         }
+       
+        #login::after,
+        #signup::after{    
+            position:absolute;
+            top:-21px;
+            left:10px;
+            color:#fafafa;
+            font-size:16px;
+            font-weight:200;
+        }
+
+        #login::after{
+            content:'Already have an account?';
+        }
+        #signup::after{
+            content:'Welcome new Users!'
+        }   
 
         .btn i {
             margin: 0;
@@ -189,6 +176,10 @@ navbarTemplate.innerHTML = `
         }
          
         @media screen and (min-width : 992px){
+            #login::after,
+            #signup::after{
+                display:none;
+            }
             header{
                 margin-bottom:70px;
             }
@@ -257,7 +248,7 @@ navbarTemplate.innerHTML = `
                 left:0;
                 width:100%;
                 height:100%;
-                border-radius:inherit;
+                border-radius:10px;
                 background-color:rgba(0,0,0,0.2);
                 transform: scaleX(0);
                 transition : transform 200ms ease-in;
@@ -335,8 +326,8 @@ navbarTemplate.innerHTML = `
                 <button id="open-searchbar" class="btn-transparent btn-icon"> <i class="icon icon-search icon-white"></i></button>
             </div>
             <div id="user-options">
-                <a href="#" class="btn btn-primary">Login <i class="icon icon-login icon-blue"></i></a>
-                <a href="#" class="btn btn-secondary">Signup <i class="icon icon-signup icon-white"></i></a>
+                <a id="login" href="#" class="btn btn-primary">Login <i class="icon icon-login icon-blue"></i></a>
+                <a id="signup" href="#" class="btn btn-secondary">Signup <i class="icon icon-signup icon-white"></i></a>
             </div>
         </nav>
     </header>
