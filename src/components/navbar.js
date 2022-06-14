@@ -11,7 +11,7 @@ navbarTemplate.innerHTML = `
         button {
             cursor: pointer;
         }
-         a{
+        a{
             text-decoration : none;
             color: #000;
         }
@@ -243,10 +243,29 @@ navbarTemplate.innerHTML = `
                 flex-direction : row;
             }
 
-            #user-options .btn {
+            .btn {
                 width : 130px;
                 padding : 10px 20px;
                 display:flex;
+                position:relative;
+            }
+
+            .btn::before{
+                position:absolute;
+                content:'';
+                top:0;
+                left:0;
+                width:100%;
+                height:100%;
+                border-radius:inherit;
+                background-color:rgba(0,0,0,0.2);
+                transform: scaleX(0);
+                transition : transform 200ms ease-in;
+                transform-origin : right;
+            }
+            .btn:hover::before{
+                transform : scaleX(100%);
+                transform-origin : left;
             }
         }
 
