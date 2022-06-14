@@ -1,35 +1,43 @@
-*{
+:root {
+    --aside-colors: #FAFAFA;
+}
+
+* {
     box-sizing: inherit;
 }
 
-body{
+.home-content {
     display: flex;
 }
 
-main{
+main {
     flex: 1 1 70%;
     margin: 10px 5px;
     padding: 10px 15px;
     position: relative;
 }
 
-#left-sidebar{
-    flex: 1 1 10%;
+.sidebars {
     display: flex;
+    background-color: var(--aside-colors);
     flex-flow: column nowrap;
-    background-color: #FAFAFA;
+}
+
+#left-sidebar {
+    flex: 1 1 10%;
     justify-content: space-between;
     padding: 40px;
 }
 
 #right-sidebar {
     flex: 1 1 20%;
-    background-color: #FAFAFA;
-    display: flex;
-    flex-flow: column nowrap;
 }
 
-.news{
+#left-sidebar a {
+    margin: 20px;
+}
+
+.news {
     margin: 10px 5px;
     position: relative;
     justify-content: center;
@@ -38,7 +46,7 @@ main{
     padding-top: 20px;
 }
 
-.news img{
+.news img {
     width: 19%;
     height: 100%;
     float: left;
