@@ -6,15 +6,297 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Article</title>
+
     <link rel="stylesheet" href="../../assets/styles/global.css">
+    <link rel="stylesheet" href="../../assets/styles/article-page.css">
+    <script src="https://kit.fontawesome.com/c621a2360d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <nav><a href="../home/home.html">Home</a></nav>
-    </header>
-    <h1>Article page</h1>
-    <script src="./article.js"></script>
+    <div class="main-div">
+
+        <header>
+            <!--ONLY FOR READABILITY, ORIGINAL HEADER WILL BE ADDED-->
+            <nav>
+                <img src="../../assets/test-imgs-article/logo.png" alt="logo" width="100" height="90">
+                <a href="../home/home.html">Home</a>
+                <input type="search" name="searchBar" id="">
+                <button>Login</button>
+                <button>Register</button>
+            </nav>
+        </header>
+
+        <div id="sub-header">
+            <div id="article-img-div">
+                <img src="../../assets/test-imgs-article/articleImg.png" alt="" id="article-img">
+                <!--IMAGE ADDED FOR EXAMPLE, SRC SHOULD BE EMPTY STRING AND IMAGE FROM THE ORIGINAL ARTICLE SHOULD BE ADDED THRОUGH JAVASCRIPT-->
+            </div>
+
+            <div id="src-logo">
+                <img src="../../assets/test-imgs-article/srcLogo.png" alt="" id="src-logo-img" width="250" height="250">
+            </div>
+
+            <div id="article-title-div">
+                <h1 id="article-title" class="centered-text">Article Title Example</h1>
+                <!--THIS SHOULD ALSO BE EMPTY AND THE TITLE SHOULD BE TAKEN FROM THE ORIGINAL SOURCE-->
+                <div id="article-info-mobile" class="centered-text">
+                    <small id="article-date-mobile"> PUBLISHED 23.04.2022</small>
+                    <small id="article-src-mobile">SOURCE <a href="https://time.mk/"
+                            target="_blank">www.time.mk</a></small>
+                </div>
+            </div>
+        </div>
+
+        <main>
+
+            <aside>
+                <div id="article-info">
+                    <p id="article-date"> PUBLISHED</p>
+                    <!--THIS SHOULD ALSO BE EMPTY AND TAKEN FROM THE ORIGINAL SOURCE-->
+                    <p>23.04.2022</p>
+                    <p id="article-src">SOURCE</p>
+                    <!--THIS SHOULD ALSO BE EMPTY AND TAKEN FROM THE ORIGINAL SOURCE-->
+                    <p><a href="https://time.mk/" target="_blank">www.time.mk</a></p>
+                </div>
+
+                <div id="left-ad" class="ads">
+                    <img src="../../assets/test-imgs-article/leftAd.png" alt="" id="left-ad-img">
+                </div>
+
+                <div id="blank-space">
+                    <div id="blank-space-filled">
+                        <ol>
+                            <li><a href="">This blank space</a></li>
+                            <li><a href="">In the aside</a></li>
+                            <li><a href="">Appearead </a></li>
+                            <li><a href="">As a result</a></li>
+                            <li><a href="">Off adding the comments form</a></li>
+                            <li><a href="">So we just put it like this</a></li>
+                            <li><a href="">And together with the team</a></li>
+                            <li><a href="">We will decide</a></li>
+                            <li><a href="">Wheter here will remain blank</a></li>
+                            <li><a href="">Or we will put an ad</a></li>
+                            <li><a href="">Or maybe some list like this</a></li>
+                            <li><a href="">Which will contain</a></li>
+                            <li><a href="">Links of related articles</a></li>
+                            <li><a href="">Or maybe most popular</a></li>
+                            <li><a href="">And of course</a></li>
+                            <li><a href="">The appearance and positioning</a></li>
+                            <li><a href="">Will certainly be improved</a></li>
+                            <li><a href="">Thanks for reading :) </a></li>
+                        </ol>
+                    </div>
+                </div>
+            </aside>
+
+
+            <section>
+                <div id="article-txt">
+                    <!--THIS SHOULD ALSO BE EMPTY AND TAKEN FROM THE ORIGINAL SOURCE,
+                ALSO ADDITIONAL INFO WILL BE NEEDED ABOUT THE STRUCTURE OF THE TEXT
+                AND WHETHER IT WILL COME WITH IT'S OWN <p></p> TAGS, SO WE'LL LEAVE IT LIKE THIS FOR NOW-->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada, neque ac suscipit
+                        cursus,
+                        turpis augue molestie nibh, vitae rutrum metus felis id leo. Quisque volutpat tellus vitae
+                        vulputate
+                        maximus. Donec nec ligula vel enim dapibus porta. In interdum tristique erat sit amet fermentum.
+                        Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse tincidunt est dolor,
+                        eu
+                        fermentum nunc lacinia nec. Integer pellentesque eros et purus interdum fermentum ut eget urna.
+                    </p>
+
+                    <p>Morbi dapibus laoreet placerat. Fusce a est ac lacus hendrerit maximus. In id viverra urna, non
+                        sagittis
+                        justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                        egestas.
+                        Vestibulum efficitur, nisi eget mattis sodales, elit eros iaculis ligula, eu posuere nisi lectus
+                        id sem.
+                        Aenean efficitur felis at congue vehicula. </p>
+
+                    <p>Aliquam tincidunt hendrerit laoreet. Donec volutpat est vitae magna interdum blandit. Aenean
+                        tincidunt
+                        quam non molestie porta. Integer odio justo, ultricies et lectus sed, aliquam accumsan lorem.
+                        Integer
+                        egestas lacus dapibus sodales convallis. Vivamus vulputate metus eu turpis vulputate laoreet.
+                        Vivamus
+                        accumsan sit amet ligula ut commodo. Vestibulum vitae nulla et massa finibus bibendum. Nulla ut
+                        ligula
+                        eget massa convallis hendrerit.</p>
+
+                    <p>Donec ex erat, pellentesque at orci at, tempus congue mi. Nunc malesuada justo erat, nec ornare
+                        mauris
+                        lacinia vel. Sed ut porta eros. Fusce dictum lacinia lacus eu cursus. Sed sagittis congue diam
+                        vitae
+                        mollis. Praesent semper lacinia imperdiet. Aenean euismod dapibus molestie. Phasellus dictum,
+                        eros id
+                        tincidunt eleifend, nisi orci vulputate nunc, non placerat velit lorem maximus nulla. Praesent
+                        sagittis
+                        urna tellus, vestibulum ultrices felis suscipit ac. </p>
+
+                    <p>Curabitur eleifend aliquet leo at euismod. Vivamus pretium bibendum velit ac luctus. Interdum et
+                        malesuada fames ac ante ipsum primis in faucibus.Aenean maximus lectus et risus ultrices
+                        pretium. Proin finibus nulla hendrerit diam molestie eleifend. Orci varius natoque penatibus et
+                        magnis
+                        dis parturient montes, nascetur ridiculus mus. Nunc vestibulum finibus metus, sed auctor dolor
+                        sodales
+                        non. Donec sit amet interdum arcu.</p>
+
+                    <p>Sed varius ac arcu sed feugiat. Morbi consequat dui quis pharetra tincidunt. Fusce est urna,
+                        lacinia nec
+                        aliquam in, interdum a lectus. Ut dapibus elit nec nunc rutrum, non sollicitudin elit lacinia.
+                        Maecenas
+                        a lectus ultrices, accumsan velit vitae, blandit felis. Quisque porta vulputate metus ac
+                        vehicula.
+                        Maecenas pellentesque rutrum metus, sed vulputate tellus varius et. Maecenas porta nisl at purus
+                        lobortis convallis.</p>
+
+                    <p>In non augue ex. Cras efficitur at orci eget vulputate. Phasellus in turpis ut tellus facilisis
+                        consectetur. Integer tellus lectus, hendrerit porta lectus sed, vehicula suscipit est. Sed
+                        feugiat massa
+                        at euismod tempor. Integer ac ligula vitae augue ultrices semper. Praesent at consequat felis.
+                        Duis
+                        sagittis nunc nec nisl aliquet condimentum. Ut ac dignissim tortor, sed mattis augue.
+                    </p>
+                    <p>Mauris gravida eget neque id dignissim. Nulla facilisi. Mauris est felis, eleifend a blandit non,
+                        mollis
+                        vitae ex. In hendrerit semper pulvinar. Nullam eget mauris sit amet magna accumsan maximus.
+                        Donec sit
+                        amet tortor sagittis, lacinia ante ut, molestie lorem. In semper at lorem a congue.
+                    </p>
+                </div>
+
+                <div id="bottom-ad">
+                    <img src="../../assets/test-imgs-article/bottomAd.png" alt="" id="bottom-ad-img">
+                </div>
+
+                <div id="feedback">
+                    <hr>
+
+                    <h4>How do you feel about this article?</h4>
+                    <!--If needed, text can be additionally added-->
+
+                    <div id="thumbs-div">
+                        <div>
+                            <i class="fa-solid fa-thumbs-up" title="Like"></i>
+                            <p id="up" class="thumbs"></p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-thumbs-down" title="Dislike"></i>
+                            <p id="down" class="thumbs"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="add-comments">
+                    <hr>
+
+                    <!--SINCE COMMENTS SECTION WASN'T INCLUDED IN THE FIGMA FILE, WE DESIGNED THREE DIFFERENT FORM PATTERNS FOR THIS SECTION 
+            FOR THE TEAM TO DECIDE WHICH IS BEST, ADDITIONALLY WITH THE ADDING OF THIS SECTION MORE BLANK SPACE IS CREATED IN THE ASIDE 
+            IN THE LEFT BOTTOM CORNER, WHICH CAN BE LEFT AS SUCH, OR CAN BE USED FOR ANOTHER ADD, OR FOR LINKS THAT LEAD TO RELATED ARTICLES, 
+            OR SOMETHING ELSE, WHICH ALSO SHOULD BE DISSCUSSED AND DECIDED WITH THE TEAM. 
+            FOR NOW THIS IS ONLY STATIC FRONT-END AND IT'S JUST FOR APPEARANCE WITH MINIMAL JAVASCRIPT, WHEN BACKEND WILL BE IMPLEMENTED 
+            THE INPUT FIELDS CAN BE CHANGED WITH USERNAME OF REGISTERED USER AND DIFFERENT LOGIC CAN BE APPLIED. -->
+
+                    <!-- <form action="" method="dialog">
+                 <h3>Have something to say about this article? Share it with us</h3><br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" class="form-contents"> 
+                <label for="name">Last Name:</label>
+                <input type="text" id="last-name" class="form-contents">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" class="form-contents"> <br> <br>
+                <p>Leave a comment:</p>
+                <textarea name="comment" id="comment" cols="150" rows="7" maxlength="1025" class="form-contents"></textarea> <br>
+                <button id="submit-btn">Submit</button>
+            </form> -->
+
+                    <!-- <form action="" method="dialog">
+                <h3>Have something to say about this article? Share it with us</h3><br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" class="form-contents"> 
+                <label for="name">Last Name:</label>
+                <input type="text" id="last-name" class="form-contents"> 
+                <br> <br>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" class="form-contents"> <br>
+                <small><em>Your email adress won't be publsihed</em></small>
+                <br> <br>
+                <p>Leave a comment:</p>
+                <textarea name="comment" id="comment" cols="70" rows="7" maxlength="700" class="form-contents"></textarea> <br>
+                <button id="submit-btn">Submit</button>
+            </form> -->
+
+                    <form action="" method="dialog">
+                        <div id="inputs">
+                            <h3>Have some thoughts about this article? Share them with us below!</h3> <br>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" class="form-contents">
+                            <label for="name">Last Name:</label>
+                            <input type="text" id="last-name" class="form-contents">
+                            <br> <br>
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" class="form-contents"> <br>
+                            <small><em>Your email adress won't be publsihed</em></small>
+                            <br> <br>
+                            <p>Leave a comment:</p>
+                            <textarea name="comment" id="comment" cols="70" rows="7" maxlength="700"
+                                class="form-contents"></textarea> <br>
+                            <button id="submit-btn" class="form-contents">Submit</button>
+                        </div>
+                        <div id="widget">
+                            <img src="../../assets/test-imgs-article/widget.png" alt="" width="375" height="350">
+                        </div>
+                    </form>
+                </div>
+
+                <div>
+                    <p id="comment-error"></p>
+                </div>
+
+                <div id="comments">
+                    <div>
+                        <h3>Article comments</h3>
+                    </div>
+                    <div id="comments-box">
+
+                    </div>
+                </div>
+
+                <div id="share-post">
+
+                    <hr>
+
+                    <p class="centered-text">Share this post</p>
+
+                    <div id="icons-div">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank"
+                            title="Share on Facebook" class="icons">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+
+                        <a href="https://twitter.com/intent/tweet?url=example.org" target="_blank"
+                            title="Share on Twitter" class="icons">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/sharing/share-offsite/?url=example.org" target="_blank"
+                            title="Share on LinkedIn" class="icons">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <!--FOR READABILITY ONLY, ORIGINAL FOOTER WILL BE ADDED-->
+            <em>© 2022 NEWSTOPIA, ALL RIGHTS RESERVED</em>
+        </footer>
+    </div>
+
+    <script type="module" src="./article.js"></script>
 </body>
 
 </html>

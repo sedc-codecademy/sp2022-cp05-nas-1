@@ -16,6 +16,10 @@
    font-family: 'Nunito', sans-serif;
 }
 
+/* html {
+   scroll-behavior: smooth;
+ } just a suggestion*/
+
 /* EXAMPLE */
 /* h1 {
    font-size: var(--font-xl);
