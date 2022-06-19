@@ -4,7 +4,9 @@ footerTemplate.innerHTML = `
     <style>
         footer{
             padding: 20px 0px;
-            background-color:${getComputedStyle(document.querySelector(':root')).getPropertyValue('--secondary-color')};
+            width:100vw;
+            margin-bottom:auto;
+            background-color:var(--secondary-color);
             display:flex;
             flex-direction:row;
             align-items: center;

@@ -22,6 +22,7 @@ navbarTemplate.innerHTML = `
             position: sticky;
             top: 0;
             left: 0;
+            z-index:100;
         }
          
         nav {
@@ -302,6 +303,7 @@ navbarTemplate.innerHTML = `
         }
         
     </style>
+
     <header>
         <nav id="navbar">
             <div class="hamburger">
@@ -352,6 +354,7 @@ class Navbar extends HTMLElement {
          hamburger.classList.remove('hamburger-active');
       }
    }
+
    toggleSearchBar() {
       this.showSearchbar = !this.showSearchbar;
       const searchbar = this.shadowRoot.querySelector('#searchbar');
@@ -363,6 +366,7 @@ class Navbar extends HTMLElement {
          searchbar.style.display = 'none';
       }
    }
+
    toggleUserOprions() {
       this.showUserOptions = !this.showUserOptions;
       const userOptions = this.shadowRoot.querySelector('#user-options');
@@ -375,6 +379,7 @@ class Navbar extends HTMLElement {
          userOptions.style.transform = 'translateX(100%)';
       }
    }
+
    connectedCallback() {
       this.shadowRoot.querySelector('.hamburger').addEventListener('click', () => this.toggleDisplayCategories());
       this.shadowRoot.querySelector('#open-searchbar').addEventListener('click', () => this.toggleSearchBar());
