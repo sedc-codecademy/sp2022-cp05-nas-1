@@ -7,7 +7,7 @@ let counterDown = 0;
 
 function changeThumbsStyle(el, value){
 
-    (value) ? el.style.color = "green" : el.style.color = "red";
+    el.style.color = value?"green" : "red";
 
     el.style.fontSize = "65px";
     el.style.cursor = "default";
