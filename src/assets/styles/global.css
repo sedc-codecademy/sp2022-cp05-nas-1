@@ -25,3 +25,6 @@
 /* h2 {
    font-size: var(--font-xl);
 } */
+.hide {
+   display: none;
+}

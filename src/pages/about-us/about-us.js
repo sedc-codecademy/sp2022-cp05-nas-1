@@ -31,72 +31,8 @@ meetTeam.addEventListener("click",() => {
    })
 
    contact.addEventListener("click",() => {
-   wraper.innerHTML=
-      `<div class="container">
-   <!--first part-->
-   <div class="form">
-     <div class="contact-info">
-       <h3 class="title">Let's get in touch</h3>
-       <p class="text"> Do not hesitate to contact us </p>
-
-       <div class="info">
-         <div class="information">
-           <img src="../../assets/images/location.png" class="icon" alt="" />
-           <p>11th October St. 33a, Skopje 1000 MK</p>
-         </div>
-         <div class="information">
-           <img src="../../assets/images/email.png" class="icon" alt="" />
-           <p>sedcteam@hotmail.com</p>
-         </div>
-         <div class="information">
-           <img src="../../assets/images/mobile.png" class="icon" alt="" />
-           <p>088-234-789</p>
-         </div>
-       </div>
-
-       <div class="social-media">
-         <p>Connect with us </p>
-         <div class="social-icons">
-           <a href="#">
-             <i class="fab fa-facebook-f"></i>
-           </a>
-           <a href="#">
-             <i class="fab fa-twitter"></i>
-           </a>
-           <a href="#">
-             <i class="fab fa-instagram"></i>
-           </a>
-           <a href="#">
-             <i class="fab fa-linkedin-in"></i>
-           </a>
-         </div>
-       </div>
-     </div>
-<!--second part-->
-     <div class="contact-form">  <form action="about-us.html" autocomplete="off">
-         <h3 class="title">Contact us</h3>
-         <div class="input-container">
-           <input type="text" name="name" class="input" placeholder="Username"/>
-           <label for="" ></label>
-         </div>
-         <div class="input-container">
-           <input type="email" name="email" class="input" placeholder="Email" />
-           <label for=""></label>
-         </div>
-         <div class="input-container">
-           <input type="tel" name="phone" class="input" placeholder="Phone"/>
-           <label for=""></label>
-         </div>
-         <div class="input-container textarea">
-           <textarea name="message" class="input" placeholder="Message"></textarea>
-           <label for=""></label>
-         </div>
-         <input type="submit" value="Send" class="btn" />
-       </form>
-     </div>
-   </div>
- </div>`
-
+  
+      
    })
 
  about.addEventListener("click",() => {

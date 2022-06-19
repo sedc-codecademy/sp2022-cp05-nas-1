@@ -1,19 +1,5 @@
-* {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-   
-}
 
 /*----- ABOUT US CSSS------ */
-
-:root {
-    --primary-color: #2196f3;
-    --secondary-color: #90caf9;
-
-    /* --font-xl: 64px; */
-}
-
 .content-container h2 {
     color: var(--secondary-color);
     padding: 20px;
