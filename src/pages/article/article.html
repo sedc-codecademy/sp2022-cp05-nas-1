@@ -15,16 +15,8 @@
 <body>
     <div class="main-div">
 
-        <header>
-            <!--ONLY FOR READABILITY, ORIGINAL HEADER WILL BE ADDED-->
-            <nav>
-                <img src="../../assets/test-imgs-article/logo.png" alt="logo" width="100" height="90">
-                <a href="../home/home.html">Home</a>
-                <input type="search" name="searchBar" id="">
-                <button>Login</button>
-                <button>Register</button>
-            </nav>
-        </header>
+        <c-navbar></c-navbar>
+
 
         <div id="sub-header">
             <div id="article-img-div">
@@ -290,13 +282,14 @@
 
         </main>
 
-        <footer>
-            <!--FOR READABILITY ONLY, ORIGINAL FOOTER WILL BE ADDED-->
-            <em>© 2022 NEWSTOPIA, ALL RIGHTS RESERVED</em>
-        </footer>
+        <c-footer></c-footer>
+
     </div>
 
+    <script src="../../components/navbar.js"></script>
+    <script src="../../components/footer.js"></script>
     <script type="module" src="./article.js"></script>
+
 </body>
 
 </html>
