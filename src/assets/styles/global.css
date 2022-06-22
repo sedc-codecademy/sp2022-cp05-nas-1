@@ -3,8 +3,6 @@
 :root {
    --primary-color: #2196f3;
    --secondary-color: #90caf9;
-
-   /* --font-xl: 64px; */
 }
 
 *,
@@ -19,13 +17,3 @@ body {
    overflow-x: hidden;
    min-height: 100vh;
 }
-
-/* EXAMPLE */
-/* h1 {
-   font-size: var(--font-xl);
-   color: var(--primary-color);
-} */
-
-/* h2 {
-   font-size: var(--font-xl);
-} */
