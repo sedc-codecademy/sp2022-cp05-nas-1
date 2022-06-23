@@ -1,0 +1,100 @@
+.navigation {
+    position: fixed;
+    flex: 1 1 100%;
+}
+
+.categories {
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.categories p {
+    border-bottom: 1.5px solid skyblue;
+    padding: 5px;
+}
+
+.categories a {
+    text-decoration-line: none;
+    color: black;
+}
+
+.archive-and-feedback a {
+    text-decoration-line: none;
+    color: black;
+}
+
+.archive-and-feedback p {
+    padding-top: 1px;
+}
+
+@media only screen and (max-width: 850px) {
+
+    #categories-title {
+        font-size: small;
+    }
+    .categories p {
+        font-size: small;
+        border-bottom: none;
+        padding: 5px;
+    }
+
+    .archive-and-feedback a {
+        font-size: small;
+        text-decoration-line: none;
+        color: black;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    #categories-title {
+        display: none;
+    }
+
+    .navigation a {
+        position: absolute;
+        left: -80px;
+        transition: 0.3s;
+        width: 100px;
+        text-decoration: none;
+        font-size: 12.5px;
+        border-radius: 0 5px 5px 0;
+        background-color: skyblue;
+    }
+
+    .navigation a:hover {
+        left: 0;
+    }
+
+    #politics {
+        top: 40px;
+    }
+
+    #business {
+        top: 60px;
+    }
+
+    #science {
+        top: 80px;
+    }     
+
+    #tech {
+        top: 100px;
+    }
+
+    #gaming {
+        top: 120px;
+    }
+
+    #showbiz {
+        top: 140px;
+    }
+
+    #sport {
+        top: 160px;
+    }
+}

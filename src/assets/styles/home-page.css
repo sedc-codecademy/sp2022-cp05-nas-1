@@ -14,27 +14,6 @@ main {
     flex: 1 1 70%;
     margin: 10px 5px;
     padding: 10px 15px;
-    position: relative;
-}
-
-.sidebars {
-    display: flex;
-    background-color: var(--aside-colors);
-    flex-flow: column nowrap;
-}
-
-#left-sidebar {
-    flex: 1 1 10%;
-    justify-content: space-between;
-    padding: 40px;
-}
-
-#right-sidebar {
-    flex: 1 1 20%;
-}
-
-#left-sidebar a {
-    margin: 30px;
 }
 
 .news {
@@ -59,23 +38,3 @@ main {
     margin-left: auto;
     margin-right: auto;
 }
-
-#adds img{
-    display: flex;
-    flex-flow: column nowrap;
-    width: 80%;
-    padding: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* #left-sidebar{
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-} */

@@ -14,25 +14,15 @@
 
     <c-navbar></c-navbar>
 
-    <div class="home-content">
-        <!-- left sidebar -->
-        <aside id="left-sidebar" class="sidebars">
-            <!-- navigation -->
-            <nav>
-                <a href="">Technology</a>
-                <a href="">Games</a>
-                <a href="">Sport</a>
-                <a href="">Celebrities</a>
-                <a href="">Business</a>
-                <a href="">Science</a>
-                <!-- <ul id="articles"></ul> -->
-            </nav>
-        </aside>
+    <div class="main-div">
 
-        <!-- main content -->
+        <div class="left">
+            <c-l-sidebar></c-l-sidebar>
+        </div>
+
         <main>
             <h1>Latest news</h1>
-            <!-- main article -->
+
             <div id="main-article">
                 <img src="../../assets/images/breakingNews.jpg" alt="random-image">
                 <div>
@@ -46,7 +36,6 @@
                 </div>
             </div>
 
-            <!-- other articles -->
             <div id="articles">
                 <div class="news">
                     <img src="../../assets/images/sport.webp" alt="random-image2">
@@ -95,31 +84,59 @@
                         </p>
                     </div>
                 </div>
+
+                <div class="news">
+                    <img src="../../assets/images/sport.webp" alt="random-image2">
+                    <div class="content">
+                        <h3> <a href=""> Article title </a> </h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, fugit tempora? Velit ipsam
+                            beatae
+                            optio quaerat omnis pariatur laboriosam, ex delectus eius eveniet provident illo eos.
+                            Aliquam,
+                            voluptatum ad. Soluta iusto cumque architecto explicabo error minus blanditiis delectus
+                            libero mollitia
+                            placeat ipsam quisquam itaque, similique excepturi ut! Maxime, voluptatum libero.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="news">
+                    <img src="../../assets/images/sport.webp" alt="random-image2">
+                    <div class="content">
+                        <h3> <a href=""> Article title </a> </h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, fugit tempora? Velit ipsam
+                            beatae
+                            optio quaerat omnis pariatur laboriosam, ex delectus eius eveniet provident illo eos.
+                            Aliquam,
+                            voluptatum ad. Soluta iusto cumque architecto explicabo error minus blanditiis delectus
+                            libero mollitia
+                            placeat ipsam quisquam itaque, similique excepturi ut! Maxime, voluptatum libero.
+                        </p>
+                    </div>
+                </div>
             </div>
-
-            <div class="ads">
-
-            </div>
-
         </main>
 
-        <!-- footer -->
-        <!-- right sidebar -->
-        <aside id="right-sidebar" class="sidebars">
-            <!-- weather widget -->
-            <div id="weather"></div>
+        <div class="right">
+            <div id="container-sidebar">
 
-            <!-- adds -->
-            <div id="adds">
-                <img src="../../assets/images/adds.webp" alt="ads">
-                <img src="../../assets/images/adds.webp" alt="ads">
+                <div id="weather-home" class="weather"></div>
+
+                <c-ads-sidebar></c-ads-sidebar>
+
             </div>
-        </aside>
+        </div>
+
     </div>
     <c-footer></c-footer>
 
     <script src="../../components/navbar/navbar.js"></script>
+    <script src="../../components/left-sidebar/left-sidebar.js"></script>
+    <script src="../../components/ads-sidebar/ads-sidebar.js"></script>
     <script src=" ../../components/footer/footer.js"> </script>
+    <script type="module" src="../../components/weather-widget/script/weather.js"></script>
     <script src="home.js"></script>
 </body>
 

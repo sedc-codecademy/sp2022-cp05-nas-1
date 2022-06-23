@@ -13,24 +13,45 @@
    box-sizing: border-box;
    font-family: 'Nunito', sans-serif;
 }
+
 body {
    overflow-x: hidden;
    min-height: 100vh;
 }
 
-/* html {
-   scroll-behavior: smooth;
- } just a suggestion*/
+.main-div {
+   display: flex;
+}
 
-/* EXAMPLE */
-/* h1 {
-   font-size: var(--font-xl);
-   color: var(--primary-color);
-} */
+.left {
+   display: flex;
+   flex-flow: column nowrap;
+   flex: 1 1 10%;
+   justify-content: space-between;
+   width: 10%;
+}
 
-/* h2 {
-   font-size: var(--font-xl);
-} */
+.right {
+   display: flex;
+   flex: 1 1 20%;
+   flex-flow: column nowrap;
+}
+
+.weather {
+   background-color: skyblue; 
+   color: white;
+   position: sticky;
+   height: 13%;   
+   padding: 2.5px;
+   border-radius: 20px;
+   width: 80%;
+   margin: 15px auto;
+}
+
+#container-sidebar {
+   position: fixed;
+}
+
 .hide {
    display: none;
 }

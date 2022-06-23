@@ -1,0 +1,7 @@
+#adds img{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 85%;
+    padding: 2.5px;
+    margin: 1.5px auto;
+}

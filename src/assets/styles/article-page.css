@@ -1,101 +1,36 @@
-html {
-  scroll-behavior: smooth;
-}
-
-header {
+.main {
   display: flex;
-  flex: 1 1 100%;
-  background-color:cornflowerblue;
-  height: 7.5rem;
+  flex-flow: column nowrap;
+  flex: 1 1 70%;
+  padding: 75px;
 }
 
-main {
+#article-img-div {
   display: flex;
-  padding: 50px;
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 75%;
-}
-
-footer {
-  background-color:lightskyblue;
-  height: 7.5rem;
-}
-
-aside {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  margin-top: 50px;
-  flex: 1 1 25%;
-}
-
-form {
-  display: flex;
-}
-
-.main-div {
-    display: flex;
-    flex-flow: column wrap;
-}
-
-#sub-header {
-  display: flex;
-  flex-flow: column wrap;
-  flex: 1 1 100%;
-}
-
-#article-info{
-  margin: 50px 10px 10px 50px;
 }
 
 #article-img {
   width: 100%;
-  height: 25rem;
 }
 
-#article-title {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#article-info-mobile {
-  display: none;
-}
-
-#article-txt {
+#source-info {
   display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  padding: 20px;
+  font-size: small;
+  flex: 1 1 100%;
+  justify-content: space-around;
+  margin: 20px;
 }
 
-#src-logo {
-  position: absolute;
-  top: 65%;
-  left: 13%;
-  transform: translate(-50%, -50%);
+#source-info h1 {
+  padding-top: 25px;
 }
 
 #src-logo-img {
   clip-path: circle();
 }
 
-#left-ad {
-  display: flex;
-  justify-content: left; 
-}
-
-#left-ad-img {
-  width: 20rem;
-  height: 60rem;
-  margin: 5px;
-  padding: 25px;
+#article-txt {
+  padding: 50px;
 }
 
 #bottom-ad {
@@ -111,11 +46,17 @@ form {
 }
 
 #feedback {
-  padding: 10px;
+  padding: 20px;
 }
 
 #thumbs-div {
   display: flex;
+}
+
+.thumbs {
+  font-size: large;
+  margin-right: 55px;
+  margin-left: 20px;
 }
 
 #up {
@@ -127,59 +68,19 @@ form {
 }
 
 #add-comments {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
+  padding: 20px;
 }
 
 #submit-btn {
-  /* margin-left: 66rem; THIS COMMENTED VALUE REFERS TO THE COMMENTED
-  COMMENT FORM WHICH COVERS THE ENTIRE WIDTH OF THE DIV*/
   margin-left: 29.5rem;
   margin-top: 0.5rem;
   font-size: medium;
-  background: cadetblue; 
+  background: cadetblue;
   cursor: pointer;
 }
 
 #submit-btn:hover {
   opacity: 0.75;
-}
-
-#widget {
-  display: flex;
-  margin: auto;
-  padding: 10px;
-}
-
-#comment-error {
-  color: red;
-}
-
-#comments {
-  display: none;
-  padding: 10px;
-}
-
-#share-post {
-  font-size: larger;
-  padding: 10px;
-}
-
-#icons-div {
-  display: flex;
-  justify-content:center;
-  margin-top: 20px;
-}
-
-.centered-text {
-  text-align: center;
-}
-
-.thumbs {
-  font-size: large;
-  margin-right: 55px;
-  margin-left: 20px;
 }
 
 .form-contents {
@@ -190,12 +91,65 @@ form {
 }
 
 .form-contents:focus {
-	outline: none;
+  outline: none;
   border: 2px solid lightskyblue;
+}
+
+#comment-error {
+  color: red;
+}
+
+#comments {
+  display: none;
+  padding: 20px;
+}
+
+#share-post {
+  font-size: larger;
+  padding: 20px;
+}
+
+#icons-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .icons {
   margin-left: 30px;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.fa-brands:hover {
+  opacity: 0.9;
+}
+
+.fa-facebook::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f09a";
+}
+
+.fa-linkedin-in::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f0e1";
+}
+
+.fa-twitter::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f099";
+}
+
+.fa-thumbs-up::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f164";
+}
+
+.fa-thumbs-down::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f165";
 }
 
 .fa-brands {
@@ -211,7 +165,7 @@ form {
 }
 
 .fa-twitter {
-  color: #55ACEE ;
+  color: #55ACEE;
 }
 
 .fa-linkedin-in {
@@ -232,52 +186,28 @@ form {
   opacity: 0.9;
 }
 
-.fa-brands:hover {
-  opacity: 0.9;
-}
-
-.fa-facebook::before {
-  font-family: "Font Awesome 5 Brands"; content: "\f09a";
-} 
-
- .fa-linkedin-in::before {
-  font-family: "Font Awesome 5 Brands"; content: "\f0e1";
-}
-
-.fa-twitter::before {
-  font-family: "Font Awesome 5 Brands"; content: "\f099";
-}
-
 .fa-thumbs-up::before {
-  font-family: "Font Awesome 5 Free"; content: "\f164";
+  font-family: "Font Awesome 5 Free";
+  content: "\f164";
 }
 
 .fa-thumbs-down::before {
-  font-family: "Font Awesome 5 Free"; content: "\f165";
+  font-family: "Font Awesome 5 Free";
+  content: "\f165";
 }
 
 @media only screen and (max-width: 600px) {
-  header {
-    background-color:cornflowerblue;
-    width: 100%;
-    height: 1%;
-  }
-
-  section {
-    width: 100%;
-  }
-
   .mobile-hidden {
     display: none;
   }
 
-   aside {
+  #containter-sidebar {
     display: none;
   }
 
   #src-logo {
     display: none;
-  } 
+  }
 
   #article-img {
     width: 100%;
@@ -293,7 +223,11 @@ form {
     justify-content: center;
   }
 
-  #article-info-mobile{
+  #article-info {
+    display: none;
+  }
+
+  #article-info-mobile {
     display: flex;
     flex-direction: column;
   }
@@ -307,18 +241,12 @@ form {
 
   #bottom-ad {
     justify-content: center;
-    /* For now we will leave it at the bottom and will disscuss it with the team 
-    on what will be the best way to position it in the middle of the text */
   }
 
   #bottom-ad-img {
     width: 90%;
     height: 5rem;
     padding-bottom: 7.5px;
-  }
-
-  #widget {
-    display: none;
   }
 
   .form-contents {
@@ -337,9 +265,3 @@ form {
 
   }
 }
-
-/* ПРАШАЊЕ ДО СТЕФАН - СО ОГЛЕД НА ТОА ДЕКА ПОСТОЈАНО ЌЕ СЕ ПРЕЗЕМАА РАЗЛИЧНИ ВЕСТИ ЗНАЧИ СО РАЗЛИЧНИ СЛИКЕ,
-А ИДЕЈАТА Е НАСЛОВОТ ДА БИДЕ НАД СЛИКАТА, ШТО АКО НЕКАД СЕ ПОГОДИ ДА СЛИКАТА БИДЕ ИСТА ИЛИ СЛИЧНА БОЈА СО БОЈАТА НА НАСЛОВОТ???*/ 
-
-/*Submit button and thumbs up/down background color can and probably should be changed,
-as well every other color is subject to change with an agreement from the team; Colors now are mostly added for diversification of content*/

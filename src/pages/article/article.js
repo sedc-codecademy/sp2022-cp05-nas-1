@@ -4,9 +4,10 @@ import { changeThumbsStyle, upvoteFunc, downvoteFunc } from "./script/feedbackTr
 const commentsErrorMsg = document.getElementById("comment-error");
 const thumbsUp = document.querySelector(".fa-thumbs-up");
 const thumbsDown = document.querySelector(".fa-thumbs-down");
+const weather = document.getElementById("weather");
 const thumbsUpCount = document.getElementById("up");
 const thumbsDownCount = document.getElementById("down");
-const formContents = document.querySelectorAll(".form-contents");
+const inputs = document.querySelectorAll(".inputs");
 const submitBtn = document.getElementById("submit-btn");
 
 thumbsUp.addEventListener("click", 
@@ -35,6 +36,5 @@ thumbsDown.addEventListener("click",
 // });
 
 submitBtn.addEventListener("click", () => {
-    addComents(formContents, commentsErrorMsg);
+    addComents(inputs, commentsErrorMsg);
 });
-
