@@ -1,4 +1,12 @@
-const team=document.getElementById("team");
+const team = document.getElementById("team");
+const sections = Array.from(document.getElementsByClassName("section"));
+const links = document.getElementById("choice").children;
+
+Array.from(links).forEach((link, index) =>{
+    link.addEventListener("click", ()=> {
+        sections.forEach((section, sectionIndex) =>  section.classList.toggle("hide", sectionIndex!==index));
+    });
+})
 
 let names=["Johhny Bravo","Jack Sparrow","Samurai Jack","Ace Ventura","Kevin McCallister","Mary Poppins","Indiana Jones","James Bond","Dorothy Gale","Forrest Gump","Bonnie Parker"]
    for(i=0;i<names.length;i++){
