@@ -110,7 +110,7 @@
     line-height: 50px;
  }
  
- #wraper{
+ .section{
     text-align:center;
     max-width: 1200px;
     margin:auto;
@@ -193,7 +193,7 @@
 
   /*----- CONTACT US------ */
 
-  .container {
+  .section {
     text-align: center;
     position: relative;
     width: 100%;
