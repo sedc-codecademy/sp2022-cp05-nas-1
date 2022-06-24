@@ -12,15 +12,16 @@ class Navbar extends HTMLElement {
       const hamburger = this.shadowRoot.querySelector('.hamburger');
       if (this.displayCategories) {
          hamburger.classList.add('hamburger-active');
+         document.querySelector('c-l-sidebar').shadowRoot.querySelector('.navigation').classList.add('active');
       } else {
          hamburger.classList.remove('hamburger-active');
+         document.querySelector('c-l-sidebar').shadowRoot.querySelector('.navigation').classList.remove('active');
       }
    }
 
    toggleSearchBar() {
       this.showSearchbar = !this.showSearchbar;
       const searchbar = this.shadowRoot.querySelector('#searchbar');
-
       if (this.showSearchbar) {
          searchbar.style.display = 'flex';
          this.shadowRoot.querySelector('#search-input').focus();
