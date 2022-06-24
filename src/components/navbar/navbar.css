@@ -101,7 +101,7 @@ input[type="search"] {
 }
 
 #user-options {
-   position: absolute;
+   position: fixed;
    padding-top: 50px;
    right: 0;
    top: 70px;

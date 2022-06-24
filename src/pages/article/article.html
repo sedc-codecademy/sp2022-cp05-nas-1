@@ -15,9 +15,10 @@
     <c-navbar></c-navbar>
 
     <div class="main-div">
-        <!-- <div class="left"> -->
+        <aside id="category-sidebar">
             <c-l-sidebar></c-l-sidebar>
-        <!-- </div> -->
+        </aside>
+
 
         <div class="main">
             <div id="article-img-div">
@@ -179,19 +180,16 @@
             </div>
         </div>
 
-        <div class="right">
+        <aside class="right">
             <div id="container-sidebar">
                 <div id="weather-article" class="weather"></div>
 
                 <c-ads-sidebar></c-ads-sidebar>
             </div>
-        </div>
-    </div>
-
+        </aside>
     </div>
 
     <c-footer></c-footer>
-
 
     <script src="../../components/navbar/navbar.js"></script>
     <script src="../../components/left-sidebar/left-sidebar.js"></script>

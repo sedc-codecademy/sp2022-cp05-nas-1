@@ -10,23 +10,16 @@ class Navbar extends HTMLElement {
    toggleDisplayCategories() {
       this.displayCategories = !this.displayCategories;
       const hamburger = this.shadowRoot.querySelector('.hamburger');
-      if (this.displayCategories) {
-         hamburger.classList.add('hamburger-active');
-         document.querySelector('c-l-sidebar').shadowRoot.querySelector('.navigation').classList.add('active');
-      } else {
-         hamburger.classList.remove('hamburger-active');
-         document.querySelector('c-l-sidebar').shadowRoot.querySelector('.navigation').classList.remove('active');
-      }
+      document.querySelector('#category-sidebar').classList.toggle('active');
+      hamburger.classList.toggle('hamburger-active');
    }
 
    toggleSearchBar() {
       this.showSearchbar = !this.showSearchbar;
       const searchbar = this.shadowRoot.querySelector('#searchbar');
+      searchbar.style.display = this.showSearchbar ? 'flex' : 'none';
       if (this.showSearchbar) {
-         searchbar.style.display = 'flex';
          this.shadowRoot.querySelector('#search-input').focus();
-      } else {
-         searchbar.style.display = 'none';
       }
    }
 
@@ -34,13 +27,8 @@ class Navbar extends HTMLElement {
       this.showUserOptions = !this.showUserOptions;
       const userOptions = this.shadowRoot.querySelector('#user-options');
       const toggleBtn = this.shadowRoot.querySelector('#toggle-user-options i ');
-      if (this.showUserOptions) {
-         toggleBtn.style.backgroundColor = '#f7473e';
-         userOptions.style.transform = 'translateX(0)';
-      } else {
-         toggleBtn.style.backgroundColor = '#fff';
-         userOptions.style.transform = 'translateX(100%)';
-      }
+      userOptions.style.transform = this.showUserOptions ? 'translateX(0)' : 'translateX(100%)';
+      toggleBtn.style.backgroundColor = this.showUserOptions ? '#f7473e' : '#fff';
    }
 
    async connectedCallback() {
