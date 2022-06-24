@@ -37,7 +37,7 @@ function changeCities() {
     (index === citiesArr.length - 1) ? index = 0 : index++;
 };
 
-function timerFunc(el) {
+function timerFunc() {
     timer = setInterval(changeCities, 10000);
 };
 

@@ -28,7 +28,7 @@ function getWeeklyData(tempData) {
     let dayNext = 0;
 
     dayValueToday === daysInMonth(currentMonth) ? dayTomorrow = 1 : dayTomorrow = dayValueToday + 1;
-    dayTomorrow === daysInMonth(currentMonth) ? dayAfterTomorrow = 1 : dayAfterTomorrow = dayAfterTomorrow = dayTomorrow + 1;
+    dayTomorrow === daysInMonth(currentMonth) ? dayAfterTomorrow = 1 : dayAfterTomorrow = dayTomorrow + 1;
     dayAfterTomorrow === daysInMonth(currentMonth) ? dayNext = 1 : dayNext = dayAfterTomorrow + 1;
 
     let dayTomorrowData = [];

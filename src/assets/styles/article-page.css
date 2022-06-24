@@ -1,9 +1,12 @@
-.main {
+/* .main {
   display: flex;
   flex-flow: column nowrap;
   flex: 1 1 70%;
-  padding: 75px;
-}
+  padding-top: 75px;
+  padding-left: 175px;
+  padding-right: 10px;
+  padding-bottom: 75px;
+} */
 
 #article-img-div {
   display: flex;

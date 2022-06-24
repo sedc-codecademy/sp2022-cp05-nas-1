@@ -6,17 +6,22 @@
     box-sizing: inherit;
 }
 
-.home-content {
+/* .home-content {
     display: flex;
-}
+} */
 
-main {
+/* main {
+    display: flex;
+    flex-flow: column nowrap;
     flex: 1 1 70%;
-    margin: 10px 5px;
-    padding: 10px 15px;
-}
+    padding-top: 75px;
+    padding-left: 175px;
+    padding-right: 1px;
+    padding-bottom: 75px;
+} */
 
 .news {
+    display: flex;
     margin: 10px 5px;
     position: relative;
     justify-content: center;
