@@ -43,5 +43,5 @@ function timerFunc() {
 
 window.addEventListener("load", () => {
     getWeatherData("Skopje");
-    // timerFunc();
+    timerFunc();
 });
