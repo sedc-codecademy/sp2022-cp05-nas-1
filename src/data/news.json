@@ -1,1 +1,89 @@
-[{}]
+{
+    "stories": [{
+    "id": "1",
+    "title": "Biden signs bipartisan gun safety package into law",
+    "description": "President Joe Biden on Saturday signed into law the gun safety package passed by Congress this week.",
+    "content": "<p>President Joe Biden on Saturday signed into law the gun safety package passed by Congress this week.</p> <p>\"Time is of the essence,\" Biden said as he delivered remarks in the Roosevelt Room alongside first lady Jill Biden. \"Lives will be saved.\"</p> <p>The Bipartisan Safer Communities Act broke a nearly 30-year stalemate on Capitol Hill, becoming the first major piece of federal gun reform to clear both chambers since the Brady bill.</p> <p>\"At a time when it seems impossible to get anything done in Washington, we are doing something consequential,\" Biden said.</p> <p>A bipartisan group of senators began crafting the legislation in the aftermath of a tragic mass shooting at Robb Elementary School in Uvalde, Texas, that left 19 young children and two teachers dead.</p> <p>In heartbreaking testimony, lawmakers heard directly from a fourth grader trapped inside her classroom as the rampage unfolded. She testified that she smeared herself with her classmate's blood and played dead to survive as the shooter terrorized the school for more than an hour.</p> <p>The House passed the Senate-backed legislation on Friday -- exactly one month after the Uvalde massacre.</p> <p>Following the historic vote, House Speaker Nancy Pelosi held a bill enrollment ceremony where she said Congress was \"honoring a promise in honor of all those who have lost loved ones to gun violence.\"</p> <p>The law includes $750 million to help states implement \"red flag\" laws to remove firearms from people deemed to be a danger to themselves or others, as well as other violence prevention programs. It also provides funding for a variety of programs aimed at shoring up the nation's mental health apparatus and securing schools.</p> <p>It will enhance background checks for gun buyers under the age of 21 by giving authorities up to 10 business days to review the juvenile and mental health records of young gun purchasers, and makes it unlawful for someone to purchase a gun for someone who would fail a background check.</p> <p>Another key provision is closing the so-called \"boyfriend loophole\" so individuals in \"serious\" \"dating relationships\" who are convicted of domestic abuse will be prevented from purchasing a gun.</p> <p>But the law doesn't go as far as Democrats -- and Biden -- wanted, excluding measures such as universal background checks and a ban on assault weapons and high-capacity magazines.</p> <p>The House has passed several bills with stricter gun regulations, but none have been taken up in the Senate.</p> <p>\"I know there's much more work to do, and I'm never going to give up,\" Biden said on Saturday. \"But this is a monumental day.\"</p> <p>The signing of the gun safety bill comes just days after a major Supreme Court decision expanding gun rights.</p> <p>The court's conservative majority struck down a 100-year-old New York law that restricted the concealed carry of handguns in public to only those with a \"proper cause.\" Justice Clarence Thomas wrote in the opinion that the Second and Fourteenth Amendments protect an individual's right to carry a handgun for self-defense outside the home.</p> <p>The high court on Friday also delivered a ruling overturning Roe v. Wade, the landmark decision legalizing abortion access nationwide for the past 50 years.</p> <p>When asked about the Supreme Court on Saturday, Biden said he thought the court has \"made some terrible decisions.\"</p>", 
+    "url": "https://abcnews.go.com/US/biden-signs-bipartisan-gun-safety-package-law/story?id=85692952",
+    "source": "ABC News",
+    "source_url": "https://abcnews.go.com",
+    "source_logo": "https://logovtor.com/wp-content/uploads/2020/04/abc-news-logo-vector.png",
+    "image": "https://s.abcnews.com/images/Politics/biden-gun-safety-signing-ap-jef-220625_1656162146760_hpMain_16x9_992.jpg",
+    "category": "Politics",
+    "country": "USA",
+    "published_at": "June 25, 2022, 3:01 PM"
+    },
+    {
+    "id": "2",
+    "title": "NASA Hopes to Launch a Very Special Microwave-Sized Satellite on Monday",
+    "description": "A tiny satellite is poised to set the stage for something far grander: a full-blown lunar space station. NASA's CAPSTONE satellite is scheduled to launch on Monday and then travel to a unique lunar orbit in a pathfinder mission for the Artemis program, which is seeking to return humans to the Moon later this decade.",
+    "content": "<p>A tiny satellite is poised to set the stage for something far grander: a full-blown lunar space station. NASA's CAPSTONE satellite is scheduled to launch on Monday and then travel to a unique lunar orbit in a pathfinder mission for the Artemis program, which is seeking to return humans to the Moon later this decade.</p> <p>CAPSTONE is hitching a ride on board Rocket Lab's Electron rocket, which will take off from the private company's Launch Complex 1 in Mahia, New Zealand. Rocket Lab made headlines in May by using a helicopter to catch a falling booster rocket. The CAPSTONE launch is scheduled for 6 a.m. ET on June 27 with live coverage starting an hour earlier. You can catch the action at the agency's website or app.</p> <p>Approximately one week into the CAPSTONE mission, the probe's journey will be made available through NASA's Eyes on the Solar System interactive real-time 3D data visualization.</p> <p>The Cislunar Autonomous Positioning System Technology Operations and Navigation Experiment (CAPSTONE) mission will send a microwave-sized satellite to a near rectilinear halo orbit (NRHO) around the Moon. The satellite will be the first to cruise its way around this unique lunar orbit, testing it out for the planned Lunar Gateway, a small space station that is meant to allow for a sustained human presence on the Moon.</p> <p>NRHO is special in that it's where the pull of gravity from the Moon and Earth interact; this orbit will theoretically keep spacecraft in a “gravitational sweet spot” in a near-stable orbit around the Moon, according to NASA. NRHO is therefore ideal in that it will require less fuel than conventional orbits and it will allow the proposed lunar space station to maintain a constant line of communication with Earth. But before NASA builds out its Gateway in this highly elliptical orbit, the space agency will use CAPSTONE—owned and operated by Colorado-based Advanced Space—to test its orbital models.</p> <p>Six days after launching from Earth, the Electron rocket’s upper stage will release the CAPSTONE satellite on its journey to the Moon. The 55-pound (25-kilogram) cubesat will then perform the rest of its four-month trip solo. Once at the Moon, CAPSTONE will test the orbital dynamics of its orbit for about six months. The satellite will also be used to test spacecraft-to-spacecraft navigation technology and one-way ranging capabilities that could eventually reduce the need for future spacecraft to communicate with mission controllers on Earth and wait to have signals relayed from other spacecraft.</p> </p> <p>NASA is methodically putting together the pieces for the agency's planned return to the Moon. The fourth and most recent wet dress rehearsal of the space agency's Space Launch System (SLS) went well, paving the way for a possible launch in late August.</p>", 
+    "url": "https://gizmodo.com/nasa-capstone-artemis-lunar-gateway-1849104950",
+    "source": "Gizmodo",
+    "source_url": "https://gizmodo.com",
+    "source_logo": "https://www.thewrap.com/wp-content/uploads/2021/02/Gizmodo-logo.jpg",
+    "image": "https://i.kinja-img.com/gawker-media/image/upload/c_fit,f_auto,g_center,pg_1,q_60,w_965/18493ebe530131aac2bbd1ca9287b09e.jpg",
+    "category": "Science",
+    "country": "USA",
+    "published_at": "June 25, 2022, 4:16 PM"
+    },
+    {
+    "id": "3",
+    "title": "NASA Hopes to Launch a Very Special Microwave-Sized Satellite on Monday",
+    "description":"Samsung is getting ready to release its massive 55-inch curved Odyssey Ark monitor in August, according to a report from Korean outlet ETNews (via SamMobile). The monitor, which was announced in January at CES, has reportedly gone through a few certification programs that have to be done before it can go on sale.",
+    "content": "<p>Samsung is getting ready to release its massive 55-inch curved Odyssey Ark monitor in August, according to a report from Korean outlet ETNews (via SamMobile). The monitor, which was announced in January at CES, has reportedly gone through a few certification programs that have to be done before it can go on sale.</p> <p>Details about this monitor are still scant. The company has said that it’ll have a 16:9 4K panel and that the stand will support pivot, tilt, and rotation. It also announced that it would come out in the second half of 2022 (which the reported August window falls squarely in). But let's be honest, when you show up with a monitor that promises to physically tower over you while you're using it, people will pay attention even if you don't announce the price or refresh rate.</p> <p>Many of us here at The Verge are very excited for this monitor — when it came time to hand out awards for CES 2022, we gave it Best in Show. But as with many CES announcements, as the months wear on, it can be hard to remember anything from the flood of gadgets and tech; did Samsung really announce an extremely curved, extremely large monitor that can stretch over and around you, or was that just a fever dream? Rumors that it could actually be coming out relatively soon prove that it was, in fact, actually announced and reminds us that we are looking forward to it.</p> <p>One thing that adds a bit of credence to the report is that Samsung has successfully released other monitors that it announced around CES this year. The decidedly less ambitious (but very cute) M8 monitor has already started hitting store shelves, as has a smaller (read: reasonably sized) curved gaming monitor, the Odyssey Neo G8. While that's obviously not proof that the Ark is up next, it is good to see that Samsung has a track record of shipping its CES monitors this year.</p>",
+    "url": "https://www.theverge.com/2022/6/24/23182030/samsung-55-inch-odyssey-ark-monitor-august-launch-rumors-ces",
+    "source": "The Verge",
+    "source_url": "https://www.theverge.com",
+    "source_logo": "https://seekvectorlogo.com/wp-content/uploads/2018/02/the-verge-vector-logo.png",
+    "image": "https://cdn.vox-cdn.com/thumbor/FvfENDqF2iSYzAF2St6HNJf07kw=/0x0:2775x1850/920x613/filters:focal(1559x763:2003x1207):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/71013806/Odyssey_Ark_side.0.jpg",
+    "category": "Tech",
+    "country": "USA",
+    "published_at": "June 24, 2022, 3:59 PM"
+    },
+    {
+    "id": "4",
+    "title": "Stunning Jupiter storm photographs seen in citizen scientist project",
+    "description":"A new project empowers citizens to identify the composition of Jupiter's storms. Scientists have long sought to understand the 'vortices' forming in the clouds of these storms. Jupiter is more than 467 million miles from Earth and its atmosphere is composed of hydrogen and helium",
+    "content": "<p>Jupiter is famous for its massive, eye-catching storms.</p> <p>Now, citizens will be able to help scientists uncover the mysteries of the gigantic planet's storms.</p> <p>The project is hosted on Zooniverse and utilizes data from NASA's Juno spacecraft, which launched in 2011 arrived at the planet in 2016.</p> <p>The effort is meant to study the 'different types of clouds that form on Jupiter, in order to better understand how the atmosphere of the largest planet in our solar system works,' Ramanakumar Sankar, lead of the project and a postdoctoral researcher at the University of Minnesota, explained.</p> <p>Researchers will focus on the vortices that form in the clouds of Jupiter, as well as their origins, which have long puzzled scientists, Sankar said.</p> <p>'There is very little we know about why the clouds in vortices have so many colors — is it due to the atmospheric composition? Or are the clouds forming at different altitudes, where the pressure and temperature affect the crystalline structure, resulting a different color?'</p> <p>Jupiter is located more than 467 million miles from Earth and its atmosphere is composed of hydrogen and helium.</p> <p>Scientists hope to better understand these areas by creating a catalog of the vortices and 'match them with the underlying physics/chemistry of the location that they form in,' Sankar wrote in a <a href='https://cse.umn.edu/physics/news/school-leads-citizen-science-effort-study-jupiters-atmosphere'>blog post</a>.</p> <p>'If one person is having trouble categorizing an image, maybe others will, too,' Sankar said. 'That might indicate that we have found something new or unique that we can more closely examine.'</p> <p>Earlier this month, NASA released a clip of Juno flying just 2,050 miles above the gas giant.</p> <p>It was traveling at about 131,000 miles per hour relative to the planet, according to NASA.</p>",
+    "url": "https://www.dailymail.co.uk/sciencetech/article-10949863/Stunning-Jupiter-storm-photographs-analyzed-citizens-new-scientific-project.html",
+    "source": "Daily Mail",
+    "source_url": "https://www.dailymail.co.uk",
+    "source_logo": "https://play-lh.googleusercontent.com/5sbk5YKQdIxkbBlBPsafP0nYMNg4kMeeanRaZaUPDUVL8B5xhX8FgSYaWjCP-2t3KKM",
+    "image": "https://i.dailymail.co.uk/1s/2022/06/24/16/59478887-10949863-image-a-8_1656083744201.jpg",
+    "category": "Science",
+    "country": "UK",
+    "published_at": "19:15 BST, 24 June 2022"
+    },
+    {
+    "id": "5",
+    "title": "Nadal missing old sparring partner Federer on Wimbledon return",
+    "description":"Rafa Nadal returns to Wimbledon for the first time in three years but it will feel a little odd for the Spaniard who, for the first time at the All England Club, will not have sparring partner Roger Federer for company.",
+    "content": "<p>Rafa Nadal returns to Wimbledon for the first time in three years but it will feel a little odd for the Spaniard who, for the first time at the All England Club, will not have sparring partner Roger Federer for company.</p> <p>Their epic rivalry includes three successive Wimbledon finals from 2006 -- the first two won by Federer and the last by Nadal in unforgettable fashion in 2008.</p> <p>Federer played in the juniors at Wimbledon in 1998 and has been back every year since, winning a record eight titles and establishing himself as the king of the lawns.</p> <p>But the 40-year-old will be absent this year as the 36-year-old Nadal seeks to continue his quest for the calendar year Grand Slam, having won the Australian Open and French Open to take his haul of majors to a record 22.</p> <p>Federer's absence because of a knee injury that has sidelined him for a year will leave Wimbledon a little empty.</p> <p>Nadal acknowledges that without the Swiss raising the bar, his own achievements might not have been possible.</p> <p>\"I mean, we shared lot of important things together,\" second seed Nadal told reporters on Saturday. \"It's difficult in some ways to think of tennis in the last 15, 20 years without thinking about the rivalry that we have.</p> <p>\"I think in some way we push each other. I always wanted to think that my motivation never comes to me because of others, that it's a personal motivation.</p> <p>\"But, of course, to have somebody like him, like a rival, that he's amazingly good, helps you to let you know the things that you have to do better.\"</p> <p>Federer has hinted at making a comeback after Wimbledon with an eye on the U.S. Open, which could allow Nadal to complete his collection against the Swiss great.</p> <p>\"We've been playing in every big stadium, but not in New York, that's the only thing that bothers me a little bit, that we never played in New York,\" Nadal said.</p> <p>Nadal's appearance at Wimbledon was thrown into doubt over a foot injury that required him to have a numbing injection at the French Open just to get through his matches.</p> <p>A small surgical procedure since has allowed him to play without terrible pain, but the Spaniard said that he does not know whether the injury will flare up again.</p> <p>\"I can't tell you if I'm going to be in this positive moment for one week, for two days, or for three months,\" he said.</p> <p>Of course, the treatment that I did didn't fix my injury, not improving my injury at all, but it can take out a little bit of the pain. That's the main goal.</p> <p>\"For the last two weeks, I didn't have one terrible day where I can't move at all. Of course, some days are better; some days are a little bit worse.\"</p> <p>Nadal opens his quest for a third Wimbledon title against Argentine debutant Francisco Cerundolo.</p>",
+    "url": "https://www.reuters.com/lifestyle/sports/nadal-missing-old-sparring-partner-federer-wimbledon-return-2022-06-25/",
+    "source": "Reuters",
+    "source_url": "https://www.reuters.com",
+    "source_logo": "https://yt3.ggpht.com/ytc/AKedOLS2SZUR3w8r974zTHsQ9c-b8ob7n6X9cutfzr_wVmw=s900-c-k-c0x00ffffff-no-rj",
+    "image": "https://www.reuters.com/resizer/5QbbUSzE1MRB4PorhfrgHMW-QkU=/1200x0/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/GJZKPCZN7FI5VIC6F4CR4YUKWY.jpg",
+    "category": "Sport",
+    "country": "UK",
+    "published_at": "June 25, 2022, 6:59 PM GMT+2"
+    },
+    {
+    "id": "",
+    "title": "",
+    "description":"",
+    "content": "",
+    "url": "",
+    "source": "",
+    "source_url": "",
+    "source_logo": "",
+    "image": "",
+    "category": "",
+    "country": "",
+    "published_at": ""
+    }
+
+    ]
+    
+}
