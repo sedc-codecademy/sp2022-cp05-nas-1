@@ -8,7 +8,7 @@
     <title>Main Article</title>
     <link rel="stylesheet" href="../../assets/styles/global.css">
     <link rel="stylesheet" href="../../assets/styles/article-page.css">
-    <script src="https://kit.fontawesome.com/c621a2360d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -21,29 +21,13 @@
 
 
         <main class="main">
-            <div id="article-img-div">
-                <img src="../../assets/test-imgs-article/articleImg.png" alt="" id="article-img">
-            </div>
-
-
-            <div id="source-info">
-                <div id="article-info">
-                    <p id="article-date"> PUBLISHED</p>
-                    <p>23.04.2022</p>
-                    <p id="article-src">SOURCE</p>
-                    <p><a href="https://time.mk/" target="_blank">www.time.mk</a></p>
-                </div>
-                <div id="article-title-div">
-                    <h1 id="article-title" class="centered-text">Article Title Example</h1>
-                    <div id="article-info-mobile" class="centered-text hide">
-                        <small id="article-date-mobile"> PUBLISHED 23.04.2022</small>
-                        <small id="article-src-mobile">SOURCE <a href="https://time.mk/"
-                                target="_blank">www.time.mk</a></small>
-                    </div>
-                </div>
-                <div id="src-logo">
-                    <img src="../../assets/test-imgs-article/srcLogo.png" alt="" id="src-logo-img" width="75"
-                        height="75">
+            <img src="https://styles.redditmedia.com/t5_2qi4j/styles/mobileBannerImage_9ygo88a995k41.jpg" alt=""
+                id="article-img">
+            <div id="article-info">
+                <h1 id="article-title">Starlink now available in Macedonia</h1>
+                <div id="article-details">
+                    <p id="article-date">Published : <b>23.04.2022 </b> </p>
+                    <p id="article-src">Source : <a href="https://time.mk/" target="_blank">www.time.mk</a></p>
                 </div>
             </div>
 
@@ -98,82 +82,74 @@
                 </p>
             </div>
 
-            <div id="bottom-ad">
-                <img src="../../assets/test-imgs-article/bottomAd.png" alt="" id="bottom-ad-img">
-            </div>
+            <img src="https://blog.hubspot.com/hubfs/How%20to%20Explain%20Banner%20Ads%20to%20Anyone-5.png" alt=""
+                id="ad-banner">
 
             <div id="feedback">
-                <hr>
-
-                <h4>How do you feel about this article?</h4>
-
-                <div id="thumbs-div">
-                    <div>
-                        <i class="fa-solid fa-thumbs-up" title="Like"></i>
-                        <p id="up" class="thumbs"></p>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-thumbs-down" title="Dislike"></i>
-                        <p id="down" class="thumbs"></p>
+                <div id="rating">
+                    <h4>How do you feel about this article?</h4>
+                    <div id="rating-controllers">
+                        <div class="votes">
+                            <i id="up" class="fa fa-thumbs-up fa-3x thumbs" title="Like"></i>
+                            <span id="up-votes"></span>
+                        </div>
+                        <div class="votes">
+                            <i id="down" class="fa fa-thumbs-down fa-3x thumbs" title="Dislike"></i>
+                            <span id="down-votes"></span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="add-comments">
-                <hr>
 
-                <form action="" method="dialog">
-                    <div>
-                        <h3>Have some thoughts about this article? Share them with us below!</h3> <br>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" class="form-contents inputs">
-                        <label for="name">Last Name:</label>
-                        <input type="text" id="last-name" class="form-contents inputs">
-                        <br> <br>
-                        <label for="email">E-mail:</label>
-                        <input type="email" id="email" class="form-contents inputs"> <br>
-                        <small><em>Your email adress won't be publsihed</em></small>
-                        <br> <br>
-                        <p>Leave a comment:</p>
-                        <textarea name="comment" id="comment" cols="70" rows="7" maxlength="700"
-                            class="form-contents inputs"></textarea> <br>
-                        <button id="submit-btn" class="form-contents">Submit</button>
+                <h3>Have some thoughts about this article? Share them with us below!</h3>
+                <p id="comment-error"></p>
+                <form id="comment-form" action="" method="dialog">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" class="input">
+                        </div>
+                        <div class="input-group">
+                            <label for="name">Last Name:</label>
+                            <input type="text" id="last-name" class="input">
+                        </div>
                     </div>
+                    <div class="input-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" class="input">
+                        <small><em>Your email adress won't be publsihed</em></small>
+                    </div>
+                    <p>Leave a comment:</p>
+                    <textarea name="comment" id="comment" cols="70" rows="7" maxlength="700" class="input"></textarea>
+                    <button id="submit-comment" type="submit">Submit</button>
                 </form>
             </div>
-
-            <div>
-                <p id="comment-error"></p>
-            </div>
-
             <div id="comments">
                 <div>
-                    <h3>Article comments</h3>
+                    <h3>Comments :</h3>
                 </div>
-                <div id="comments-box">
+                <div id="comments-container">
 
                 </div>
             </div>
 
             <div id="share-post">
 
-                <hr>
+                <p>Share this post</p>
 
-                <p class="centered-text">Share this post</p>
-
-                <div id="icons-div">
+                <div id="icons">
                     <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank"
                         title="Share on Facebook" class="icons">
-                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa fa-facebook fa-3x"></i>
                     </a>
 
                     <a href="https://twitter.com/intent/tweet?url=example.org" target="_blank" title="Share on Twitter"
                         class="icons">
-                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa fa-twitter fa-3x"></i>
                     </a>
 
                     <a href="https://www.linkedin.com/sharing/share-offsite/?url=example.org" target="_blank"
                         title="Share on LinkedIn" class="icons">
-                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa fa-linkedin fa-3x"></i>
                     </a>
 
                 </div>
@@ -186,6 +162,7 @@
                 <c-ads-sidebar></c-ads-sidebar>
             </div>
         </aside>
+
     </div>
 
     <c-footer></c-footer>

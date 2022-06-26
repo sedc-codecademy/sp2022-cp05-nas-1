@@ -17,14 +17,14 @@ html {
    box-sizing: border-box;
 }
 
-.hide {
-   display: none;
-}
 body {
    overflow-x: hidden;
    min-height: 100vh;
 }
 
+button {
+   cursor: pointer;
+}
 .container {
    width: 100vw;
    display: flex;
