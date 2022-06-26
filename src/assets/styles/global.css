@@ -25,7 +25,7 @@ body {
    min-height: 100vh;
 }
 
-.main-div {
+.container {
    width: 100vw;
    display: flex;
    position: relative;
@@ -39,7 +39,7 @@ body {
    flex: 60% 4 0;
 }
 
-.main-div aside {
+.container aside {
    flex: 15% 1 1;
    background-color: var(--background-lightGrey);
 }
