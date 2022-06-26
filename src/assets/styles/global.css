@@ -6,13 +6,15 @@
    --background-lightGrey: #fafafa;
 }
 
+html {
+   font-family: 'Nunito', sans-serif;
+}
 *,
 *::after,
 *::before {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: 'Nunito', sans-serif;
 }
 
 .hide {
@@ -23,7 +25,7 @@ body {
    min-height: 100vh;
 }
 
-.main-div {
+.container {
    width: 100vw;
    display: flex;
    position: relative;
@@ -37,7 +39,7 @@ body {
    flex: 60% 4 0;
 }
 
-.main-div aside {
+.container aside {
    flex: 15% 1 1;
    background-color: var(--background-lightGrey);
 }
