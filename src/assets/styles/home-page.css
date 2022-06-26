@@ -1,15 +1,6 @@
-/* .news {
-   display: flex;
-   position: relative;
-   padding-bottom: 20px;
-   padding-top: 20px;
-} */
-
 #articles section {
    display: flex;
-   /* position: relative; */
    padding-bottom: 20px;
-   /* padding-top: 20px; */
 }
 
 #articles img {
@@ -19,24 +10,14 @@
 }
 
 #articles div {
-   /* display: flex; */
    font-size: 15px;
 }
 
-/* .news img {
-   width: 275px;
-   height: 175px;
-   padding-right: 25px;
-} */
-
-
-
-#main-article img {
-   /* width: 90%; */
+/* #main-article img {
    display: block;
    margin-left: auto;
    margin-right: auto;
-}
+} */
 
 #articles {
    display: flex;
@@ -58,35 +39,13 @@ button a {
    bottom: 1000;
 }
 
-/* .content {
-   font-size: 15px;
-} */
-
 .pagination {
    display: inline-block;
    align-self: center;
    margin-top: 25px;
    padding: 10px;
- } 
+} 
 
- /* .pagination a {
-   color: black;
-   float: left;
-   padding: 8px 16px;
-   text-decoration: none;
-   cursor: pointer;
- }
- 
- .pagination a.active {
-   background-color: var(--secondary-color);
-   color: white;
-   border-radius: 7.5px;
- }
- 
- .pagination a:hover:not(.active) {
-   background-color: #ddd;
-   border-radius: 5px;
- } */
  
  .pagination p {
    color: black;
@@ -94,18 +53,18 @@ button a {
    padding: 8px 16px;
    text-decoration: none;
    cursor: pointer;
- }
+}
  
  .pagination p.active {
    background-color: var(--secondary-color);
    color: white;
    border-radius: 5px;
- }
+}
  
  .pagination p:hover {
    background-color: #ddd;
    border-radius: 5px;
- }
+}
 
 @media screen and (max-width: 992px){
    #articles section {
