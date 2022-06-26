@@ -17,9 +17,6 @@
   padding: 25px;
   text-align: center;
   display: block;
-
-
-
 }
 
 #choice a {
@@ -101,7 +98,6 @@
 
 /*----- MEET OUR TEAM CSS------ */
 
-
 .header {
   padding-top: 30px;
   color: #444;
@@ -141,14 +137,6 @@ img {
   width: 100%;
   height: auto;
 }
-
-/* .team img{
-    width:200px;
-    height:200px;
-    background-color: #444;;
-    border-radius: 50%;
-  } */
-
 
 .name {
   padding: 12px;
@@ -204,7 +192,6 @@ img {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  padding: 2rem;
   background-color: #fafafa;
   overflow: hidden;
   display: flex;
@@ -361,6 +348,7 @@ textarea.input {
 
 @media (max-width: 850px) {
 
+  
   .form {
     grid-template-columns: 1fr;
   }
@@ -388,6 +376,8 @@ textarea.input {
 }
 
 @media (max-width: 480px) {
+
+ 
   .container {
     padding: 1.5rem;
   }
