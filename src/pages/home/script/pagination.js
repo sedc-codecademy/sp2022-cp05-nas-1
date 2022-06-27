@@ -17,7 +17,7 @@ function populateHomepage(data, page, pageSize, target){
             <section class="news">
                     <img src="${results.image}" alt="random-image2">
                     <div class="content">
-                        <h3 class="article-title"> ${results.title} </h3>
+                        <h3 class="article-title">${results.title}</h3>
                         <p>${results.description}</p>
                         <a href="#" class="btn-link">Read more</a>
                     </div>

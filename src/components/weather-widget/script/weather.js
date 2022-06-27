@@ -58,7 +58,6 @@ const myAPIKey = `2c02fbaa40e80adfed940892d3d56de0`;
 function getWeatherData(cityName){
    let weatherApi = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=metric&APPID=${myAPIKey}`;
    let promise = fetch(weatherApi);
-
    promise
       .then(function(response){
          return response.json();
