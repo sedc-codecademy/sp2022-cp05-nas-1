@@ -14,15 +14,15 @@
 
     <c-navbar></c-navbar>
 
-    <div class="container">
 
+
+    <div class="container">
         <aside id="category-sidebar">
             <c-l-sidebar></c-l-sidebar>
         </aside>
 
         <main class="main">
-            <h1>Latest news</h1>
-
+            <h2>Latest news</h2>
             <div id="main-article">
                 <img src="../../assets/images/breakingNews.jpg" alt="random-image">
                 <div>
@@ -37,95 +37,21 @@
                 </div>
             </div>
 
-            <div id="articles">
-                <div class="news">
-                    <img src="../../assets/images/sport.webp" alt="random-image2">
-                    <div class="content">
-                        <h3 class="article-title"> Article title </h3>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, fugit tempora? Velit ipsam
-                            beatae
-                            optio quaerat omnis pariatur laboriosam, ex delectus eius eveniet provident illo eos.
-                            Aliquam,
-                            voluptatum ad. Soluta iusto cumque architecto explicabo error minus blanditiis delectus
-                            libero mollitia
-                            placeat ipsam quisquam itaque, similique excepturi ut! Maxime, voluptatum libero.
-                        </p>
-                        <a href="#" class="btn-link">Read more</a>
-                    </div>
-                </div>
+            <div id="articles"></div>
 
-                <div class="news">
-                    <img src="../../assets/images/sport.webp" alt="random-image2">
-                    <div class="content">
-                        <h3 class="article-title"> Article title</h3>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, fugit tempora? Velit ipsam
-                            beatae
-                            optio quaerat omnis pariatur laboriosam, ex delectus eius eveniet provident illo eos.
-                            Aliquam,
-                            voluptatum ad. Soluta iusto cumque architecto explicabo error minus blanditiis delectus
-                            libero mollitia
-                            placeat ipsam quisquam itaque, similique excepturi ut! Maxime, voluptatum libero.
-                        </p>
-                        <a href="#" class="btn-link">Read more</a>
-
-                    </div>
-                </div>
-
-                <div class="news">
-                    <img src="../../assets/images/sport.webp" alt="random-image2">
-                    <div class="content">
-                        <h3 class="article-title"> Article title </h3>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, fugit tempora? Velit ipsam
-                            beatae
-                            optio quaerat omnis pariatur laboriosam, ex delectus eius eveniet provident illo eos.
-                            Aliquam,
-                            voluptatum ad. Soluta iusto cumque architecto explicabo error minus blanditiis delectus
-                            libero mollitia
-                            placeat ipsam quisquam itaque, similique excepturi ut! Maxime, voluptatum libero.
-                        </p>
-                        <a href="#" class="btn-link">Read more</a>
-
-                    </div>
-                </div>
-
-                <div class="news">
-                    <img src="../../assets/images/sport.webp" alt="random-image2">
-                    <div class="content">
-                        <h3 class="article-title"> Article title </h3>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, fugit tempora? Velit ipsam
-                            beatae
-                            optio quaerat omnis pariatur laboriosam, ex delectus eius eveniet provident illo eos.
-                            Aliquam,
-                            voluptatum ad. Soluta iusto cumque architecto explicabo error minus blanditiis delectus
-                            libero mollitia
-                            placeat ipsam quisquam itaque, similique excepturi ut! Maxime, voluptatum libero.
-                        </p>
-                        <a href="#" class="btn-link">Read more</a>
-
-                    </div>
-                </div>
-
-                <div class="news">
-                    <img src="../../assets/images/sport.webp" alt="random-image2">
-                    <div class="content">
-                        <h3 class="article-title"> Article title </h3>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, fugit tempora? Velit ipsam
-                            beatae
-                            optio quaerat omnis pariatur laboriosam, ex delectus eius eveniet provident illo eos.
-                            Aliquam,
-                            voluptatum ad. Soluta iusto cumque architecto explicabo error minus blanditiis delectus
-                            libero mollitia
-                            placeat ipsam quisquam itaque, similique excepturi ut! Maxime, voluptatum libero.
-                        </p>
-                        <a href="#" class="btn-link">Read more</a>
-
-                    </div>
-                </div>
+            <div class="pagination">
+                <button id="btn-previous">&laquo;</button>
+                <button class="active pagination-numbers">1</button>
+                <button class="pagination-numbers">2</button>
+                <button class="pagination-numbers">3</button>
+                <button class="pagination-numbers">4</button>
+                <button class="pagination-numbers">5</button>
+                <button class="pagination-numbers">6</button>
+                <button class="pagination-numbers">7</button>
+                <button class="pagination-numbers">8</button>
+                <button class="pagination-numbers">9</button>
+                <button class="pagination-numbers">10</button>
+                <button id="btn-next">&raquo;</button>
             </div>
         </main>
 
@@ -135,7 +61,6 @@
                 <c-ads-sidebar></c-ads-sidebar>
             </div>
         </aside>
-
     </div>
     <c-footer></c-footer>
 
@@ -144,7 +69,7 @@
     <script src="../../components/ads-sidebar/ads-sidebar.js"></script>
     <script src=" ../../components/footer/footer.js"> </script>
     <script type="module" src="../../components/weather-widget/script/weather.js"></script>
-    <script src="home.js"></script>
+    <script type="module" src="home.js"></script>
 </body>
 
 </html>
