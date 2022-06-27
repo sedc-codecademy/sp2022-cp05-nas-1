@@ -11,7 +11,7 @@
             "source_url": "https://abcnews.go.com",
             "source_logo": "https://logovtor.com/wp-content/uploads/2020/04/abc-news-logo-vector.png",
             "image": "https://s.abcnews.com/images/Politics/biden-gun-safety-signing-ap-jef-220625_1656162146760_hpMain_16x9_992.jpg",
-            "category": "Politics",
+            "category": ["Politics"],
             "country": "USA",
             "published_at": "June 25, 2022, 3:01 PM"
         },
@@ -25,7 +25,7 @@
             "source_url": "https://gizmodo.com",
             "source_logo": "https://www.thewrap.com/wp-content/uploads/2021/02/Gizmodo-logo.jpg",
             "image": "https://i.kinja-img.com/gawker-media/image/upload/c_fit,f_auto,g_center,pg_1,q_60,w_965/18493ebe530131aac2bbd1ca9287b09e.jpg",
-            "category": "Science",
+            "category": ["Science", "Tech"],
             "country": "USA",
             "published_at": "June 25, 2022, 4:16 PM"
         },
@@ -39,7 +39,7 @@
             "source_url": "https://www.theverge.com",
             "source_logo": "https://seekvectorlogo.com/wp-content/uploads/2018/02/the-verge-vector-logo.png",
             "image": "https://cdn.vox-cdn.com/thumbor/FvfENDqF2iSYzAF2St6HNJf07kw=/0x0:2775x1850/920x613/filters:focal(1559x763:2003x1207):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/71013806/Odyssey_Ark_side.0.jpg",
-            "category": "Tech",
+            "category": ["Tech", "Business"],
             "country": "USA",
             "published_at": "June 24, 2022, 3:59 PM"
         },
@@ -53,7 +53,7 @@
             "source_url": "https://www.dailymail.co.uk",
             "source_logo": "https://play-lh.googleusercontent.com/5sbk5YKQdIxkbBlBPsafP0nYMNg4kMeeanRaZaUPDUVL8B5xhX8FgSYaWjCP-2t3KKM",
             "image": "https://i.dailymail.co.uk/1s/2022/06/24/16/59478887-10949863-image-a-8_1656083744201.jpg",
-            "category": "Science",
+            "category": ["Science", "Tech"],
             "country": "UK",
             "published_at": "19:15 BST, 24 June 2022"
         },
@@ -67,7 +67,7 @@
             "source_url": "https://www.reuters.com",
             "source_logo": "https://yt3.ggpht.com/ytc/AKedOLS2SZUR3w8r974zTHsQ9c-b8ob7n6X9cutfzr_wVmw=s900-c-k-c0x00ffffff-no-rj",
             "image": "https://www.reuters.com/resizer/5QbbUSzE1MRB4PorhfrgHMW-QkU=/1200x0/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/GJZKPCZN7FI5VIC6F4CR4YUKWY.jpg",
-            "category": "Sport",
+            "category": ["Sport"],
             "country": "UK",
             "published_at": "June 25, 2022, 6:59 PM GMT+2"
         },
@@ -81,7 +81,7 @@
             "source_url": "https://www.indiewire.com",
             "source_logo": "https://unitingartists.org/wp-content/uploads/2020/04/Indiewire.png",
             "image": "https://www.cinemascomics.com/wp-content/uploads/2022/05/natalie-portman-diosa-del-trueno-ucm-thor-love-and-thunder.jpg",
-            "category": "Showbiz",
+            "category":["Showbiz"],
             "country": "USA",
             "published_at": "June 25, 2022, 2:00 PM"
         },
@@ -95,7 +95,7 @@
             "source_url": "https://www.forbes.com",
             "source_logo": "https://237jzd2nbeeb3ocdpdcjau97-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/Forbes-logo.png",
             "image": "https://npr.brightspotcdn.com/dims4/default/3bb30d4/2147483647/strip/true/crop/1870x1152+89+0/resize/880x542!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F01%2F25%2Fgettyimages-594190689_wide-f8f1aff223a29a977b6e402e5925adfabf12d1f5.jpg",
-            "category": "Business",
+            "category": ["Business", "Politics"],
             "country": "USA",
             "published_at": "June 29, 2022, 2:00 PM"
         },
@@ -109,7 +109,7 @@
             "source_url": "https://www.euronews.com",
             "source_logo": "https://vectorlogoseek.com/wp-content/uploads/2019/09/euronews-vector-logo.png",
             "image": "https://static.euronews.com/articles/stories/06/77/62/42/773x435_cmsv2_37267be4-3a45-50ce-a9aa-c6acb29d75bd-6776242.jpg",
-            "category": "Sport",
+            "category": ["Sport"],
             "country": "SPAIN",
             "published_at": "June 30, 2022, 2:00 PM"
         },
@@ -123,7 +123,7 @@
             "source_url": "https://metro.co.uk",
             "source_logo": "https://static-s.aa-cdn.net/img/ios/463429891/c5492fa506422af1a0e4ded0f6fc45e0?v=1",
             "image": "https://metro.co.uk/wp-content/uploads/2022/06/comp-1656195933.png?quality=90&strip=all&zoom=1&resize=644%2C362",
-            "category": "Sport",
+            "category": ["Sport"],
             "country": "UK",
             "published_at": "June 27, 2022, 2:00 PM"
         },
@@ -137,7 +137,7 @@
             "source_url": "https://www.bbc.com",
             "source_logo": "https://ichef.bbci.co.uk/images/ic/1920xn/p09xtmrp.jpg",
             "image": "https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/125D1/production/_125571257_gettyimages-1402127802.jpg",
-            "category": "Sport",
+            "category": ["Sport", "Politics"],
             "country": "UK",
             "published_at": "June 29, 2022, 2:00 PM"
         },
@@ -151,7 +151,7 @@
             "source_url": "https://www.forbes.com",
             "source_logo": "https://237jzd2nbeeb3ocdpdcjau97-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/Forbes-logo.png",
             "image": "https://i.cbc.ca/1.6502260.1656267130!/fileImage/httpImage/image.jpg_gen/derivatives/original_780/1241541811.jpg",
-            "category": "Politics",
+            "category": ["Politics"],
             "country": "USA",
             "published_at": "June 29, 2022, 2:00 PM"
         },
@@ -165,7 +165,7 @@
             "source_url": "https://www.bbc.com",
             "source_logo": "https://ichef.bbci.co.uk/images/ic/1920xn/p09xtmrp.jpg",
             "image": "https://ichef.bbci.co.uk/news/976/cpsprodpb/2582/production/_125620690_gettyimages-1239234785.jpg",
-            "category": "Politics",
+            "category": ["Politics", "Business"],
             "country": "USA",
             "published_at": "June 30, 2022, 2:00 PM"
         },
@@ -179,7 +179,7 @@
             "source_url": "https://www.usnews.com",
             "source_logo": "https://seekvectorlogo.net/wp-content/uploads/2018/10/us-news-world-report-vector-logo.png",
             "image": "https://www.usnews.com/object/image/00000181-83c4-ddd9-a3a1-9fc6fe640000/media%3A098cd57f7b7042fdb6aed82de55877d7NASA_Moon_Rocket_67075.jpg?update-time=1655773008000&size=responsive970",
-            "category": "Science",
+            "category": ["Science", "Tech"],
             "country": "USA",
             "published_at": "June 29, 2022, 2:00 PM"
         },
@@ -193,7 +193,7 @@
             "source_url": "https://www.usnews.com",
             "source_logo": "https://seekvectorlogo.net/wp-content/uploads/2018/10/us-news-world-report-vector-logo.png",
             "image": "https://www.usnews.com/object/image/00000181-4a87-dc51-afef-4b9786a50000/media%3Acceace942fae4dbe95d23afdcc147d3bNASA-UFOs_02717.jpg?update-time=1654812605000&size=responsive970",
-            "category": "Science",
+            "category": ["Science", "Tech"],
             "country": "USA",
             "published_at": "June 29, 2022, 2:00 PM"
         },
@@ -207,10 +207,107 @@
             "source_url": "https://metro.co.uk/",
             "source_logo": "https://static-s.aa-cdn.net/img/ios/463429891/c5492fa506422af1a0e4ded0f6fc45e0?v=1",
             "image": "https://metro.co.uk/wp-content/uploads/2022/06/GettyImages-71013903-dfaf.webp?quality=90&strip=all&zoom=1&resize=644%2C486",
-            "category": "Showbiz",
+            "category": ["Showbiz"],
+            "country": "USA",
+            "published_at": "June 29, 2022, 2:00 PM"
+        },
+        {
+            "id": "16",
+            "title": "Russia says it's killed 80 Polish fighters in warning to Nato member",
+            "description": "Almost 100 Polish fighters have been killed in the fight for Ukraine's separatist states, Russia claims.",
+            "content":"<p>While the war in Ukraine continues to rage on in the country's eastern region, tensions between the Kremlin and Europe are getting worse. </p> <p>Most recently, Moscow's defence ministry said its troops had destroyed \"up to 80 Polish fighters, 20 armoured combat vehicles and eight Grad multiple rocket launchers in precision strikes on the Megatex zinc factory in Konstantinovka\". </p> <p>This is in the Donetsk region in eastern Ukraine, which Vladimir Putin is trying to seize full control over. </p> <p>In the Russian city of Smolensk, Kremlin officials have removed the Polish flag from the Katyn memorial - erected in memory of 25,000 Poles massacred by the Soviet Union's police in 1940. </p> <p> Most of the victims were army officers thought be to be anti-communist, who were killed on the orders of Joseph Stalin in a forest near the city.</p> <p>The Soviet Union tried to deny responsibility and blame the Nazis for the mass killing but they eventually admitted the atrocity in 1990. </p> <p> Speaking about the flag's removal, Smolensk's mayor Andrei Borisov said: There cannot be Polish flags on Russian monuments. Even less so after the frankly anti-Russian comments by Polish political leaders.</p> <p> The culture ministry of the Russian Federation made the right decision by removing the Polish flag. Katyn is a Russian memorial.</p> <p>Poland has supported Ukraine since Putin sent his soldiers across the border in February. </p> <p> It has supplied weapons and has taken in the largest number of Ukrainian refugees of any European country - some 1.1 million.</p> <p>As a Nato member, a military strike on Poland would mean all other members, including Britain, would leap to its defence. </p> <p> The Kremlin has also recently threatened Lithuania for blocking EU-sanctioned goods from reaching the Russian exclave of Kaliningrad.</p> <p> Kaliningrad has land borders with Lithuania and Poland and is isolated from the rest of Russia.</p> <p>Goods normally reach the territory by rail via Belarus and Lithuania - there are no transport routes through Poland. </p> <p> Russia is still able to supply Kaliningrad by sea, without falling foul of EU sanctions but has demanded Lithuania lift its ban, warning that if transport links are not restored in full \"Russia reserves the right to take action in defence of its national interests\".</p> <p>Lithuania is also a Nato member state, so any attack on it would be seen as an attack on the alliance. </p>",
+            "url": "https://metro.co.uk/2022/06/25/russia-says-its-killed-80-polish-fighters-in-warning-to-nato-member-16892191/",
+            "source": "METRO",
+            "source_url": "https://metro.co.uk",
+            "source_logo": "https://static-s.aa-cdn.net/img/ios/463429891/c5492fa506422af1a0e4ded0f6fc45e0?v=1",
+            "image": "https://metro.co.uk/wp-content/uploads/2022/06/SEI_111303822-1.jpg?quality=90&strip=all&zoom=1&resize=540%2C359",
+            "category": ["Politics"],
+            "country": "UK",
+            "published_at": "June 29, 2022, 2:00 PM"
+        },
+        {
+            "id": "17",
+            "title": "United Airlines pilots to get raises of more than 14%, 8 weeks of maternity leave in new contract",
+            "description": "The union representing United Airlines pilots has approved a tentative deal that would give the aviators pay raises of more than 14%, making it the first major U.S. carrier to reach a deal since the start of the Covid-19 pandemic and setting the bar for the rest of the industry.",
+            "content":"<p>The agreement comes as the airline and others grapple with a shortage of pilots, which some carriers say have forced them to trim flight schedules. The contract faces a vote by rank-and-file pilots that will conclude in mid-July.</p> <p>Under the agreement approved Friday, pilots would get more than 14.5% in pay increases within 18 months, according to the Air Line Pilots Association, which represents about 14,000 United pilots. </p> <p> Pilot pay at United as of 2020 ranged from about $73,000 a year for an early-career first officer on the carrier’s smallest aircraft to more than $337,000 for a wide-body captain, according to Kit Darby, a pilot pay consultant and retired United captain. However, pay can vary widely depending on how often pilots fly.</p> <p>The two-year agreement also includes eight weeks of paid maternity leave, a first for the carrier’s pilots. United said women comprise about 7% of its pilot ranks. </p> <p> The agreement sets the tone for negotiations with other large U.S. carriers, including Delta Air Lines, American Airlines and Southwest Airlines, as unions seek quality-of-life improvements after two years of the pandemic. Some pilots say airlines have created grueling schedules to capitalize on a rebound in travel that has left them fatigued, and some have recently picketed to protest conditions.</p> <p>In a video message to pilots last week, American Airlines CEO Robert Isom said the company would consider other carriers’ agreements, including United’s, and update its pay proposals once the details are known. </p> <p> \"Our team will be paid well and be paid competitively. You are not going to fall behind network peers,\" Isom said in the video seen by CNBC.</p> <p>Flight attendants and other work groups at major carriers are also in contract talks. </p> <p> Airlines' staffing struggles grew worse in the pandemic. Although U.S. airlines received $54 billion in taxpayer payroll aid that prohibited layoffs, airlines urged many pilots to take early retirement and leaves of absence, which created a hiring and training backlog.</p> <p>The shortage of pilots is particularly acute at regional carriers, which often fly to smaller cities. Two of American Airlines’ regional carriers Envoy and Piedmont last week said they would temporarily increase pilot pay by more than 50% to help attract and retain staff as competition for aviators heats up across the industry. </p>",
+            "url": "https://www.cnbc.com/2022/06/24/united-airlines-pilots-to-get-raises-of-more-than-14percent-in-new-contract.html",
+            "source": "CNBC",
+            "source_url": "https://www.cnbc.com",
+            "source_logo": "https://www.nicepng.com/png/full/224-2240332_cnbc-logo-png-cnbc-logo-png-white.png",
+            "image": "https://image.cnbcfm.com/api/v1/image/107044253-1656078907410-107044253-1649445007265-gettyimages-1350840625-08896118.jpg?v=1656078974&w=740&h=416&ffmt=webp",
+            "category": ["Business"],
+            "country": "USA",
+            "published_at": "June 29, 2022, 2:00 PM"
+        },
+        {
+            "id": "18",
+            "title": "Study Shows Link between Vitamin D Deficiency and Brain Health",
+            "description": "New research led by University of South Australia scientists supports a causal effect of vitamin D deficiency on brain health, notably for the risk of dementia, but not on stroke risk.",
+            "content":"<p>\"Vitamin D is a hormone precursor that is increasingly recognized for widespread effects, including on brain health,\" said senior author Professor Elina Hyppönen, a researcher with the Australian Centre for Precision Health at the University of South Australia and the South Australian Health and Medical Research Institute, and her colleagues. </p> <p>\"Low 25-hydroxyvitamin D — an indicator of vitamin D status — concentrations are common, and the prevalence of severe vitamin D deficiency ranges from 5% to 50%, depending on location and population characteristics.\" </p> <p> \"There are various mechanisms by which active vitamin D may affect the brain, including the regulation of neurotrophic growth factors, influences on inflammation, and thrombosis.\"</p> <p>\"With a growing interest in identifying modifiable risk factors for dementia and stroke, vitamin D has become an attractive candidate, as supplementation, diet, and sunlight exposure can maintain adequate serum concentrations.\" </p> <p> In a large-scale prospective study, the authors used information from 33,523 participants of the UK Biobank to examine the association between 25-hydroxyvitamin D concentrations with a range of brain neuroimaging features.</p> <p> Extending the analyses to 427,690 participants, they also examined the associations with the risks of dementia and stroke using the nonlinear Mendelian randomisation (MR) approach.</p> <p>Vitamin D deficiency was associated with an increased risk of dementia and stroke, with the strongest associations for those with 25-hydroxyvitamin D concentrations less than 25 nmol/L. </p> <p> Nonlinear MR analyses confirmed the threshold effect of 25-hydroxyvitamin D on dementia, with the risk predicted to be 54% higher for participants at 25 nmol/L compared with 50 nmol/L.</p> <p>However, 25-hydroxyvitamin D was not associated with neuroimaging outcomes or the risk of stroke in the MR analyses. </p> <p>\"Our findings are important for the prevention of dementia and appreciating the need to abolish vitamin D deficiency,\" Professor Hyppönen said. </p> <p>\"Indeed, in this UK population we observed that up to 17% of dementia cases might have been avoided by boosting vitamin D levels to be within a normal range (50 nmol/L).\" </p> <p>\"Larger MR studies are needed to confirm causality for the proposed associations between 25-hydroxyvitamin D concentrations and brain morphometry,\" the researchers said. </p> <p>\"Our MR results suggest no clear association with stroke, whereas a causal relation with dementia risk provides an important opportunity for prevention.\" </p>",
+            "url": "http://www.sci-news.com/medicine/vitamin-d-deficiency-brain-health-link-10904.html",
+            "source": "SCI NEWS",
+            "source_url": "http://www.sci-news.com",
+            "source_logo": "https://www.aaas.org/sites/default/files/styles/large/public/s3fs-public/content_files/promo_science-news_square.jpg?itok=XNbAEnah",
+            "image": "http://cdn.sci-news.com/images/2022/06/image_10904-Vitamin-D.jpg",
+            "category": ["Science"],
+            "country": "USA",
+            "published_at": "June 29, 2022, 2:00 PM"
+        },
+        {
+            "id": "19",
+            "title": "Xiaomi 12T Specifications Leak Tips Snapdragon 8+ Gen 1 SoC, Up to 12GB RAM; Spotted on US FCC: Report",
+            "description": "Xiaomi 12T specifications have been leaked by a tipster. As per the alleged specifications, the Xiaomi smartphone will sport a 120Hz refresh rate display, a Snapdragon 8+ Gen 1 SoC paired with at least two configurations under the hood, 120W fast charging, optical image stabilisation (OIS) in the camera, and MIUI 13 OS skin. The Xiaomi 12T has allegedly been spotted on the US Federal Communications Commission (FCC) website as well. The listing shows a handset with Wi-Fi 802.11ax, 5G, and Bluetooth connectivity options.",
+            "content":"<p> The Xiaomi 12T specifications-related development comes from tipster Mukul Sharma, who claims that the Xiaomi 12T (tentative name) is under development and it could sport an AMOLED display with 120Hz refresh rate. The Xiaomi phone in question is said to come with a Qualcomm Snapdragon 8+ Gen 1 SoC paired with 8GB of RAM. The 8GB of RAM could be coupled with 128GB and 256GB storage options. Sharma goes on to claim that there could be a 12GB RAM variant as well.</p> <p> Without giving details about the camera, Sharma says that the alleged Xiaomi 12T will come with OIS. He says the smartphone will also have 120W fast charging support, run Android 12-based MIUI 13 skin, and feature NFC as one connectivity option</p> <p>Other connectivity options of the rumoured Xiaomi 12T have been tipped by the alleged FCC listing of the smartphone. A Xiaomi handset with 22071212AG is listed with Wi-Fi 802.11ax, 5G (7 bands), Bluetooth, GPS, and IR blaster connectivity options. Furthermore, it also shows that the smartphone will arrive in two configurations: 8GB RAM + 128GB storage and 8GB RAM + 256GB storage (as suggested by Sharma). </p> <p> The Xiaomi handset with 22071212AG model number was previously spotted on IMEI database and is said to belong to the Xiaomi 12T. The IMEI database also showed another smartphone with model numbers 22071212AC. It is similar to the alleged Xiaomi 12T model number with ‘C' reportedly denoting the China variant. It is claimed to be launched as the Redmi K50 Ultra in China. The ‘G' in Xiaomi 12T model number is said to denote global, suggesting that the phone will be known as Xiaomi 12T in rest of the world.</p> <p> The report mentioned above also listed a few other smartphones with model numbers 22081212G (Xiaomi 12T Pro), 22081212C (Redmi K50S Ultra), and 22081212UG (Xiaomi 12T Pro HyperCharge).</p>",
+            "url": "https://gadgets360.com/mobiles/news/xiaomi-12t-specifications-features-us-fcc-listing-leak-3104309",
+            "source": "GADGETS 360",
+            "source_url": "https://gadgets360.com",
+            "source_logo": "https://cdn.dribbble.com/users/1626710/screenshots/11073839/media/0c6e5911249f8fd8305341c1b5fb3901.png?compress=1&resize=768x576&vertical=top",
+            "image": "https://i.gadgets360cdn.com/large/xiaomi_logo_reuters_large_1656322788837.jpg?downsize=950:*",
+            "category": ["Tech", "Business"],
+            "country": "USA",
+            "published_at": "June 29, 2022, 2:00 PM"
+        },
+        {
+            "id": "20",
+            "title": "Cyberpunk 2077 Now Supports AMD's Latest Upscaling Tech Thanks to This Mod",
+            "description": "A modder creates an add-on for Cyberpunk 2077 that features AMD's image upscaling AI called FidelityFX Super Resolution 2.0, which launched recently.",
+            "content":"<p> Without going into too much detail, which most people reading this are already familiar with anyway, CD Projekt Red has managed to turn things around for Cyberpunk 2077. Given that it's one of the most expensive video games ever made, many felt let down by the product that was launched at the end of 2020. Luckily, things are much better now, though there's still room for improvement, and a new fan-made mod has just been released which makes the open world sci-fi game compatible with AMD's newest upscaling software.</p> <p>As spotted by DSO Gaming, modder PotatoOfDoom has created a mod for Cyberpunk 2077 that attempts to replace Nvidia's DLSS, or Deep Learning Super Sampling, with AMD's FSR, or FidelityFX Super Resolution. Specifically, it features version 2.0, which is the latest iteration of the tech from team red. The description on Nexus Mods says that this is still a \"proof of concept,\" but the developer has said that the results are \"quite impressive.\" Anyone who wishes to download and try the add-on are warned that it's still in development, so there may be some bugs. </p> <p> AMD released FSR 2.0 last month, with Arkane Studio's Deathloop being one of the first games to receive it. It offers a more open-source alternative to Nvidia's DLSS, which was one of the first upscaling technologies to hit the market, with the first iteration releasing in September 2020. While team green's software is becoming more open-source these days, it's mainly associated with the company's own RTX-based graphics cards, which is arguably what makes AMD's FSR somewhat more appealing.</p> <p>For those who aren't aware, image upscaling is pretty much an industry standard in gaming these days, up there with the likes of ray tracing. It essentially works by upscaling game visuals on the fly, redrawing pixels to make them comparable to higher resolutions. The idea behind it is to generate better graphics in games, without putting more strain on the hardware. Even Apple has announced its own upscaling tech, called MetalFX. </p> <p>As for the game itself, CD Projekt Red is currently working on official DLC for Cyberpunk 2077. While the wounds may still be a little fresh for some, many people are prepared to move on from the blunder that was the game's 2020 launch. With a huge patch going live in February, many severe issues were finally fixed. But for some, the damage has already been done and it could take a while for CDPR's reputation to be fully restored. </p>",
+            "url": "https://gamerant.com/cyberpunk-2077-support-amd-upscaling-ai-mod/",
+            "source": "GAMERANT",
+            "source_url": "https://gamerant.com",
+            "source_logo": "https://findlogovector.com/wp-content/uploads/2020/06/game-rant-logo-vector.png",
+            "image": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/06/cyberpunk-2077-johnny-silverhand-panam.jpg?q=50&fit=contain&w=960&h=500&dpr=1.5",
+            "category": ["Gaming", "Tech"],
+            "country": "USA",
+            "published_at": "June 29, 2022, 2:00 PM"
+        },
+        {
+            "id": "21",
+            "title": "Ben Affleck's son, 10, bashes a Lamborghini into BMW after dad lets him take wheel",
+            "description": "Ben Affleck was pictured seemingly comforting his son during an outing with Jennifer Lopez on Sunday, after 10-year-old Samuel appeared to reverse a Lamborghini into a parked BMW at a car dealership in L.A",
+            "content":"<p>Ben Affleck 's 10-year-old son was behind the wheel of a Lamborghini when it bumped into another vehicle over the weekend. </p> <p> Samuel, 10, had joined dad Ben, 49, and his fiancee Jennifer Lopez, 52, for a trip to luxury vehicle dealership 777 Exotics when the incident happened on Sunday.</p> <p>Ben had allowed his son into the driver's seat of a yellow Lamborghini that had the engine running as he browsed the motors on offer at the Los Angeles dealership. </p> <p>While in the motor Samuel put the car in reverse, which resulted in the vehicle making contact with the front of a white BMW situated behind the Lamborghini. </p> <p> In video footage of the incident obtained by TMZ, it appears that the luxury sports car touched the BMW's front wheel and possibly the fender.</p> <p> After reversing into the car, Samuel - who Ben shares with his ex-wife Jennifer Garner - then got out of the Lambo the look at where the car had bumped another vehicle.</p> <p> Speaking with the American publication, a representative for Ben stated that no damage was caused and all involved were okay.</p> <p>Ben and Jennifer - who got engaged for a second time earlier this year - were later pictured comforting Samuel, with the Jenny From the Block singer snapped holding hands with her beau's son as they left the car dealership on Sunday </p> <p> Samuel is one of three children Ben shares with his ex-wife Jennifer Garner, 50, whom he divorced in 2018.</p> <p>\"Our marriage didn't work, and that's difficult. Both of us really believe that it's important for kids to see their parents respect one another and get along, whether they're together or not,\" Ben explained to PEOPLE when discussing co-parenting with his ex-wife earlier this year. </p> <p>The former couple are also parents to daughters Violet, 16, and Seraphina, 13, while Ben's wife-to-be Jennifer shares twins Emme and Max with ex-husband Marc Anthony.</p> <p> Jennifer and Ben rekindled their romance last year, almost 20 years on from their original engagement and high-profile split.</p>  <p>In April, the mum-of-two explained exactly how her beau popped the question for the second time earlier this year and revealed all about the \"nothing fancy at all\" proposal. </p> <p> \"Saturday night while at my favorite place on earth (in the bubble bath), my beautiful love got on one knee and proposed,\" the Hustlers actress gushed in an On The JLo email update.</p> <p> \"I was taken totally off guard and just looked in his eyes smiling and crying at the same time trying hard to get my head around the fact that after 20 years this was happening all over again, I was quite literally speechless and he said, “is that a yes?’” I said YES of course that's a YES.\"</p> <p>She continued to admit after the actor's proposal she was left crying with joy and feeling \" so incredibly happy and whole\". </p> <p> \"It was nothing fancy at all, but it was the most romantic thing I could've ever imagined...just a quiet Saturday night at home, two people promising to always be there for each other,\" she added when recalling the romantic moment.</p> <p> The Love Don't Cost a Thing singer concluded by declared herself and the dad-of-three to be \"two very lucky people\" who have been given a second chance at true love.</p> <p> The happy couple first met back in 2002 on the set of their critically-panned film, Gigli. At the time, Jennifer was still married to her second husband, Cris Judd.</p> <p>The singer went on to file for divorce from Cris in July 2002 and embarked on a very public relationship with Ben, which eventually led to the actor proposing to the star just months later in November 2002. </p>",
+            "url": "https://www.mirror.co.uk/3am/celebrity-news/ben-afflecks-son-10-crashes-27333873",
+            "source": "MIRROR",
+            "source_url": "https://www.mirror.co.uk",
+            "source_logo": "https://logonoid.com/images/daily-mirror-logo.jpg",
+            "image": "https://i2-prod.mirror.co.uk/incoming/article27333997.ece/ALTERNATES/s615b/0_PAY-PREMIUM-EXCLUSIVE-Ben-Affleck-Scopes-Out-Damage-After-Son-Samuel-Crashes-Lambo-Into-SUV.jpg",
+            "category": ["Showbiz"],
+            "country": "UK",
+            "published_at": "June 29, 2022, 2:00 PM"
+        },
+        {
+            "id": "22",
+            "title": "Wales Captain Gareth Bale Confirms MLS Move To Los Angeles FC",
+            "description": "Wales captain Gareth Bale confirmed his move to Major League Soccer's Los Angeles FC on Saturday following his departure from Spanish giants Real Madrid",
+            "content":"<p> Wales captain Gareth Bale confirmed his move to Major League Soccer's Los Angeles FC on Saturday following his departure from Spanish giants Real Madrid. Bale confirmed his plans to join LAFC in a post on Twitter following widespread reports earlier Saturday about the move. \"See you soon, Los Angeles,\" the 32-year-old wrote. An accompanying video showed Bale wearing an LAFC shirt and cap.</p> <p>Earlier the Los Angeles Times said Bale will be eligible to play for LAFC from July 1. </p> <p>ESPN reported that Bale will fly to Los Angeles at the end of next week to sign a deal which runs to the end of this season, with an option for an additional year. </p> <p> Bale was once the world's most expensive player and has spent the last eight seasons with Real Madrid, winning three domestic championships and five Champions League titles.</p> <p> The Welshman has scored 139 league goals in his club career with 39 goals in 106 internationals for Wales.</p> <p> Bale played a pivotal role in helping Wales qualify for this year's World Cup, where they will face the United States, England and Iran in the group stage in Qatar.</p> <p> It marks the first time Wales have qualified for the tournament since the 1958 finals.</p> <p>Bale's signing comes as LAFC bid to build on a strong start to the MLS season. </p> <p> The California club lead the Western Conference standings with 30 points from 15 games.</p> <p> Bale will be the second high-profile international signing the club has made in recent weeks. Former Juventus and Italy international Giorgio Chiellini joined the club earlier this month.</p> <p> News of Bale's decision to head to Major League Soccer comes just days after reports in Britain indicated he was in talks with Cardiff over a possible move.</p> <p>His former club Tottenham and Newcastle were also mooted as possible destinations. </p>",
+            "url": "https://sports.ndtv.com/football/wales-captain-gareth-bale-confirms-mls-move-to-los-angeles-fc-3100997",
+            "source": "SPORTS NDTV",
+            "source_url": "https://sports.ndtv.com",
+            "source_logo": "https://play-lh.googleusercontent.com/vEL54Kd4sgb1YAf4gdBhYPUMvpvISgE03nthK2JijK_tujtlvcxbnyVUKPgdQsz5SQ",
+            "image": "https://c.ndtvimg.com/2021-06/jgqbi7i_gareth-bale-wales-afp_625x300_16_June_21.jpg?im=FeatureCrop,algorithm=dnn,width=806,height=605",
+            "category": ["Sport"],
             "country": "USA",
             "published_at": "June 29, 2022, 2:00 PM"
         }
     ]
 }
-
