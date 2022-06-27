@@ -4,14 +4,14 @@ const pageSize = 4;
 
 function populateHomepage(data, page, pageSize, target){
    pagNums.forEach((el) => {
-      if (parseInt(el.innerText) > Math.ceil(data.stories.length / pageSize)) {
+      if (parseInt(el.innerText) > Math.ceil(data.length / pageSize)) {
          el.classList.add('hide');
       }
    });
 
    target.innerHTML = '';
-   const storiesArr = data.stories.reverse();
-   console.log(storiesArr);
+   const storiesArr = data.reverse();
+
    for (let results of storiesArr.slice(page * pageSize, (page + 1) * pageSize)) {
       target.innerHTML += `
             <section class="news">
@@ -24,7 +24,7 @@ function populateHomepage(data, page, pageSize, target){
             </section>
         `;
    }
-}
+};
 
 function getCurrentPage(){
    const hash = window.location.hash;
@@ -35,25 +35,29 @@ function getCurrentPage(){
 
    const parts = hash.split('/');
    return parseInt(parts[parts.findIndex((p) => p === 'page') + 1]);
-}
+};
 
 function showCurrentPage(data, container){
    const curPage = getCurrentPage();
    populateHomepage(data, curPage, pageSize, container);
-}
+};
 
-function changePage(targetPage){
+function changePage(targetPage, value, filteredData){
+
+   let maxPages = 0;
+
    fetch(stories).then((response) => response.json()).then((data) => {
-      const maxPages = Math.ceil(data.stories.length / pageSize);
-      if (targetPage < 0) {
+      (value)? maxPages = Math.ceil(data.stories.length / pageSize) : maxPages = Math.ceil(filteredData.length / pageSize);
+      
+      if (targetPage < 0){
          targetPage = maxPages - 1;
-      } else if (targetPage >= maxPages) {
+      } else if (targetPage >= maxPages){
          targetPage = 0;
       }
-      document.location = document.location.pathname + `#/page/${targetPage}`;
 
+      document.location = document.location.search + `#/page/${targetPage}`;
       pagNums.forEach((el) => {
-         console.log(getCurrentPage());
+
          if (parseInt(el.innerText) === getCurrentPage() + 1) {
             el.classList.add('active');
          } else {
@@ -61,14 +65,6 @@ function changePage(targetPage){
          }
       });
    });
-}
+};
 
-function nextPage(){
-   changePage(getCurrentPage() + 1);
-}
-
-function previous(){
-   changePage(getCurrentPage() - 1);
-}
-
-export { showCurrentPage, changePage, nextPage, previous };
+export { showCurrentPage, getCurrentPage, changePage};

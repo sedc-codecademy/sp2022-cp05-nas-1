@@ -1,12 +1,11 @@
-import {showCurrentPage, changePage, nextPage, previous} from "../../../src/pages/home/script/pagination.js";
+import {showCurrentPage, getCurrentPage, changePage} from '../../../src/pages/home/script/pagination.js';
+import { navigateCategories } from '../../../src/pages/home/script/navigateCategories.js';
 
-const articles = document.querySelector("#articles");
-const prev = document.querySelector("#btn-previous");
-const next = document.querySelector("#btn-next");
-const pagNums = document.querySelectorAll(".pagination-numbers");
-const stories = "../../data/news.json";
-const pageSize = 4;
-
+const articles = document.querySelector('#articles');
+const prev = document.querySelector('#btn-previous');
+const next = document.querySelector('#btn-next');
+const pagNums = document.querySelectorAll('.pagination-numbers');
+const stories = '../../data/news.json';
 
 function getData(stories) {
 
@@ -16,18 +15,25 @@ function getData(stories) {
         return response.json();
     })
         .then(function(result){
-            showCurrentPage(result, articles);
+            showCurrentPage(result.stories, articles);
+            navigateCategories(result.stories);
         })
         .catch(function (error) {
             console.log(error);
         });
 };
-  
-next.addEventListener( 'click', nextPage );
-prev.addEventListener( 'click', previous );
+
+next.addEventListener('click', () => {
+    changePage(getCurrentPage() + 1, true, null);
+});
+
+prev.addEventListener('click', () => {
+    changePage(getCurrentPage() - 1, true, null);
+});
+
 pagNums.forEach((el) => {
-    el.addEventListener("click", () => {
-        changePage(el.innerText-1);
+    el.addEventListener('click', () => {
+        changePage(el.innerText-1, true, null);
     });
 });
 
@@ -36,6 +42,3 @@ getData(stories);
 window.addEventListener( 'hashchange', () => {
     getData(stories);
 });
-
-
-
