@@ -11,61 +11,55 @@
 </head>
 
 <body>
-
     <c-navbar></c-navbar>
 
     <div class="container">
-
         <aside id="category-sidebar">
             <c-l-sidebar></c-l-sidebar>
         </aside>
 
-        <div class="main">
-            <h2>Latest news</h2>
-
-            <!-- <div id="main-article">
+        <main class="main">
+            <h2 id="title">Latest news</h2>
+            <div id="main-article">
                 <img src="../../assets/images/breakingNews.jpg" alt="random-image">
                 <div>
-                    <h3> <a href=""> Article title </a> </h3>
+                    <h3> Article title </h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis commodi vitae odio officia. Ad
                         dolorem
                         laudantium, dicta saepe totam corporis error? Quae at expedita excepturi architecto labore
                         reprehenderit
                         enim minima facilis commodi, ad corrupti corporis temporibus autem accusamus non tempora.
                     </p>
+                    <a href="#" class="btn-link">Read more</a>
                 </div>
-            </div> -->
+            </div>
 
-            <div id="articles"> </div>
+            <div id="articles"></div>
 
             <div class="pagination">
-              
-                <p id="btn-previous">&laquo;</p>
-                <p class="active pagination-numbers">1</p>
-                <p class="pagination-numbers">2</p>
-                <p class="pagination-numbers">3</p>
-                <p class="pagination-numbers">4</p>
-                <p class="pagination-numbers">5</p>
-                <p class="pagination-numbers">6</p>
-                <p class="pagination-numbers">7</p>
-                <p class="pagination-numbers">8</p>
-                <p class="pagination-numbers">9</p>
-                <p class="pagination-numbers">10</p>
-                <p id="btn-next">&raquo;</p>
-
+                <button id="btn-previous">&laquo;</button>
+                <button id="btn-previous-categories" class="hide">&laquo;</button>
+                <button class="active pagination-numbers">1</button>
+                <button class="pagination-numbers">2</button>
+                <button class="pagination-numbers">3</button>
+                <button class="pagination-numbers">4</button>
+                <button class="pagination-numbers">5</button>
+                <button class="pagination-numbers">6</button>
+                <button class="pagination-numbers">7</button>
+                <button class="pagination-numbers">8</button>
+                <button class="pagination-numbers">9</button>
+                <button class="pagination-numbers">10</button>
+                <button id="btn-next">&raquo;</button>
+                <button id="btn-next-categories" class="hide">&raquo;</button>
             </div>
-        </div>
+        </main>
 
-        <aside class="right">
+        <aside id="ads-sidebar">
             <div id="container-sidebar">
-
-                <div id="weather-home" class="weather"></div>
-
+                <div id="weather" class="weather"></div>
                 <c-ads-sidebar></c-ads-sidebar>
-
             </div>
         </aside>
-
     </div>
     <c-footer></c-footer>
 
