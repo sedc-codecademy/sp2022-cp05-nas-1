@@ -11,7 +11,7 @@ function printWeatherData(data, el) {
 
     el.innerHTML = `
     <div style="display: flex; flex-direction: row;">
-    <img src="http://openweathermap.org/img/w/${data.list[0].weather[0].icon}.png" alt="weatherIcon" style="padding: 5px;" width="100" height="100">
+    <img class="weather-img" src="http://openweathermap.org/img/w/${data.list[0].weather[0].icon}.png" alt="weatherIcon" style="padding: 5px;" width="100" height="100">
 
     <div style="display: inline; margin-left: 5px;"> 
         <p>${getDayName(data.list[0].dt_txt.substring(0, 10), "us-US").substring(0, 3)} ${data.list[0].dt_txt.substring(5,10)}</p>       

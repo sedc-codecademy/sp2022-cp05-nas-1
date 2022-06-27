@@ -101,7 +101,7 @@
 .header {
   padding-top: 30px;
   color: #444;
-  font-size: 20px;
+  font-size: 18px;
   margin: auto;
   line-height: 50px;
 }
@@ -132,11 +132,12 @@
   border-radius: 12px;
 }
 
-
-img {
+img{
   width: 100%;
-  height: auto;
+  
 }
+
+img:not(.weather-img)
 
 .name {
   padding: 12px;
@@ -348,7 +349,7 @@ textarea.input {
 
 @media (max-width: 850px) {
 
-  
+
   .form {
     grid-template-columns: 1fr;
   }
@@ -377,7 +378,7 @@ textarea.input {
 
 @media (max-width: 480px) {
 
- 
+
   .container {
     padding: 1.5rem;
   }
@@ -429,7 +430,7 @@ textarea.input {
 a:visited {
 
   color: white;
-  padding: 14px 25px;
+  padding: 6px 14px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -439,3 +440,50 @@ a:visited {
 a:active {
   background-color: var(--primary-color);
 }
+
+/* responsive */
+
+@media screen and (max-width: 653px){
+  .team{
+    max-width: 40%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  #choice{
+    display:flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding:12px;
+  }
+
+.section{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+  .team{  
+   max-width: 65%;
+   padding:28px;
+  }
+}
+
+
+@media screen and (max-width: 481px){
+  #choice a:link,
+  a:visited {
+    padding: 2px 6px;
+    font-size: 18px;
+
+  }
+}
+@media screen and (max-width: 454px){
+  #choice a:link,
+  a:visited {
+    padding: 1px 3px;
+    font-size: 16px;
+
+  }
+}
+
+
