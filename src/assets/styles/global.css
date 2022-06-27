@@ -17,14 +17,24 @@ html {
    box-sizing: border-box;
 }
 
-.hide {
-   display: none;
-}
 body {
    overflow-x: hidden;
    min-height: 100vh;
 }
 
+body::-webkit-scrollbar {
+   width: 12px;
+}
+body::-webkit-scrollbar-track {
+   background: var(--background-lightGrey);
+}
+body::-webkit-scrollbar-thumb {
+   background-color: var(--primary-color);
+   border-radius: 10px;
+}
+button {
+   cursor: pointer;
+}
 .container {
    width: 100vw;
    display: flex;
