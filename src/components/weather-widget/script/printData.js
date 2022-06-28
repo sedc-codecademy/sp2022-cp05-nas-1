@@ -36,7 +36,7 @@ function printWeatherData(data, el){
                .substring(0, 3)
                .toUpperCase()}<p>        
             <img src="http://openweathermap.org/img/w/${weeklyData.dayTomorrowData[4].weather[0]
-               .icon}.png" alt="weatherIcon" width="50" height="50">
+               .icon}.png" alt="weatherIcon" width="45" height="45">
             <p><em><small>low:</small></em> ${getHiLo(weeklyData.dayTomorrowData).min.main.temp
                .toString()
                .substring(0, 2)}°C</p> 
@@ -50,7 +50,7 @@ function printWeatherData(data, el){
                .substring(0, 3)
                .toUpperCase()}<p>        
             <img src="http://openweathermap.org/img/w/${weeklyData.dayAfterTomorrowData[4].weather[0]
-               .icon}.png" alt="weatherIcon" width="50" height="50">
+               .icon}.png" alt="weatherIcon" width="45" height="45">
             <p><em><small>low:</small></em> ${getHiLo(weeklyData.dayAfterTomorrowData).min.main.temp
                .toString()
                .substring(0, 2)}°C</p> 
@@ -64,7 +64,7 @@ function printWeatherData(data, el){
                .substring(0, 3)
                .toUpperCase()}<p>        
             <img src="http://openweathermap.org/img/w/${weeklyData.dayNextData[4].weather[0]
-               .icon}.png" alt="weatherIcon" width="50" height="50">
+               .icon}.png" alt="weatherIcon" width="45" height="45">
             <p><em><small>low:</small></em> ${getHiLo(weeklyData.dayNextData).min.main.temp
                .toString()
                .substring(0, 2)}°C</p>
