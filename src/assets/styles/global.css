@@ -70,10 +70,6 @@ button {
    margin: 15px auto;
 }
 
-.hide {
-   display: none;
-}
-
 #category-sidebar {
    position: fixed;
    left: 0;
@@ -107,4 +103,8 @@ button {
       left: 0;
       transform: none;
    }
+}
+
+.hide {
+   display: none;
 }
