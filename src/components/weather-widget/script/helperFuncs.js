@@ -7,15 +7,16 @@ function daysInMonth(monthValue) {
     const thirtyDaysArr = [4, 6, 9, 11];
     const thirtyOneDaysArr = [1, 3, 5, 7, 8, 10, 12];
 
-    if (monthValue === 2) {
+    if(monthValue===2){
         return 28;
     } else {
-        thirtyDaysArr.forEach((el) => {
-            if(monthValue===el) return 30;
-        });
-        thirtyOneDaysArr.forEach((el) => {
-            if(monthValue===el) return 31;
-        });
+        for(let i=0; i<thirtyDaysArr.length; i++){
+            if(monthValue===thirtyDaysArr[i]) return 30;
+        };
+
+        for(let i=0; i<thirtyOneDaysArr.length; i++){
+            if(monthValue===thirtyOneDaysArr[i]) return 31;
+        };
     };
 };
 
