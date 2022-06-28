@@ -19,7 +19,7 @@ function getData(stories) {
        return response.json();
    })
        .then(function(result){
-         populateArticlePage(result)
+         populateArticlePage(result);        
        })
        .catch(function (error) {
            console.log(error);
@@ -50,4 +50,3 @@ thumbsDown.addEventListener('click', downvoteFunc, { once: true, capture: true }
 submitBtn.addEventListener('click', () => {
    addComents(inputs, commentsErrorMsg);
 });
-
