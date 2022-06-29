@@ -1,6 +1,7 @@
 import { addComents } from './script/addComents.js';
 import { changeThumbsStyle, upvoteFunc, downvoteFunc } from './script/feedbackTracker.js';
 import { populateArticlePage } from './script/populateArticle.js';
+import { searchFunc } from '../../components/search/searchFunc.js';
 
 const commentsErrorMsg = document.getElementById('comment-error');
 const thumbsUp = document.querySelector('.fa-thumbs-up');
@@ -11,6 +12,7 @@ const inputs = document.querySelectorAll('.input');
 const submitBtn = document.getElementById('submit-comment');
 const stories = '../../data/news.json';
 
+
 function getData(stories) {
 
    let promise = fetch(stories);
@@ -19,7 +21,9 @@ function getData(stories) {
        return response.json();
    })
        .then(function(result){
-         populateArticlePage(result);        
+        populateArticlePage(result);   
+        searchFunc();
+        
        })
        .catch(function (error) {
            console.log(error);
@@ -50,3 +54,4 @@ thumbsDown.addEventListener('click', downvoteFunc, { once: true, capture: true }
 submitBtn.addEventListener('click', () => {
    addComents(inputs, commentsErrorMsg);
 });
+

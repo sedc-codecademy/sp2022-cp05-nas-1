@@ -57,12 +57,7 @@ function changePage(targetPage, value, filteredData){
 
       document.location = document.location.search + `#/page/${targetPage}`;
       pagNums.forEach((el) => {
-
-         if (parseInt(el.innerText) === getCurrentPage() + 1) {
-            el.classList.add('active');
-         } else {
-            el.classList.remove('active');
-         }
+         el.classList.toggle('active', parseInt(el.innerText) === getCurrentPage() + 1)
       });
    });
 };

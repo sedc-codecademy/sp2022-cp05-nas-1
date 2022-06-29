@@ -13,7 +13,7 @@ function populateArticlePage(data){
             articleDate.innerText = el.published_at;
             articleSource.innerText = el.source;
             articleSource.setAttribute('href', el.url);
-            articleText.innerHTML = el.content;
+            articleText.innerText = el.content;
         };
     });
 };

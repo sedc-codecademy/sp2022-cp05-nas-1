@@ -1,5 +1,6 @@
 import {showCurrentPage, getCurrentPage, changePage} from '../../../src/pages/home/script/pagination.js';
 import { navigateCategories } from '../../../src/pages/home/script/navigateCategories.js';
+import { searchFunc } from '../../components/search/searchFunc.js';
 
 const articles = document.querySelector('#articles');
 const prev = document.querySelector('#btn-previous');
@@ -17,6 +18,7 @@ function getData(stories) {
         .then(function(result){
             showCurrentPage(result.stories, articles);
             navigateCategories(result.stories);
+            searchFunc();
         })
         .catch(function (error) {
             console.log(error);

@@ -27,6 +27,7 @@
 
 #article-txt {
    font-size: 18px;
+   white-space: pre-line;
 }
 #article-txt p {
    margin-bottom: 20px;
