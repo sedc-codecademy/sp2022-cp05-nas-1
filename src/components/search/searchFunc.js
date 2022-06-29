@@ -7,7 +7,7 @@ function searchFunc(){
         value = val;
         key = k;
     });  
-
+    
     if(value !== '' && key === 'search'){
         document.querySelector('.main').innerHTML = '<ul>';
 

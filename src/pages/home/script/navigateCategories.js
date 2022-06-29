@@ -2,6 +2,7 @@ import { showCurrentPage, changePage, getCurrentPage } from '../../../../src/pag
 
 const categoreis = ['politics', 'business', 'science', 'tech', 'gaming', 'showbiz', 'sport'];
 const articles = document.querySelector('#articles');
+const mainArticle = document.querySelector('#main-article');
 const title = document.querySelector('#title');
 const prev = document.querySelector('#btn-previous');
 const next = document.querySelector('#btn-next');
@@ -22,7 +23,7 @@ function navigateCategories(data){
 
             data.filter(obj => obj.category.filter(el => el === name).forEach(cat => filteredCategories.push(obj)))
             title.innerText = name;
-            showCurrentPage(filteredCategories.reverse(), articles);
+            showCurrentPage(filteredCategories.reverse(), articles, mainArticle);
 
             nextCategories.addEventListener('click', () => {
                 changePage(getCurrentPage() + 1, false, filteredCategories);
