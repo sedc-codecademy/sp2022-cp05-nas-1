@@ -1,7 +1,9 @@
 import {showCurrentPage, getCurrentPage, changePage} from '../../../src/pages/home/script/pagination.js';
 import { navigateCategories } from '../../../src/pages/home/script/navigateCategories.js';
+import { searchFunc } from '../../components/search/searchFunc.js';
 
 const articles = document.querySelector('#articles');
+const mainArticle = document.querySelector('#main-article');
 const prev = document.querySelector('#btn-previous');
 const next = document.querySelector('#btn-next');
 const pagNums = document.querySelectorAll('.pagination-numbers');
@@ -15,8 +17,9 @@ function getData(stories) {
         return response.json();
     })
         .then(function(result){
-            showCurrentPage(result.stories, articles);
+            showCurrentPage(result.stories, articles, mainArticle);
             navigateCategories(result.stories);
+            searchFunc();
         })
         .catch(function (error) {
             console.log(error);
