@@ -21,7 +21,7 @@ function getData(stories){
          let data = [ ...stories ];
          if (key === 'category') {
             title.innerText = `Showing results for ${value} category`;
-            data = [ ...stories.filter((x) => x.category.includes(value[0].toUpperCase() + value.slice(1))) ];
+            data = [ ...stories.filter((x) => x.category.includes(value)) ];
          } else if (key === 'search') {
             title.innerText = `Your search for: ${value} returned following results`;
             data = [

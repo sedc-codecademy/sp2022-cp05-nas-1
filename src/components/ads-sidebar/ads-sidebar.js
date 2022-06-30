@@ -6,7 +6,8 @@ class AdsSidebar extends HTMLElement {
    async connectedCallback() {
       const adsSidebarTemplate = document.createElement('template');
       const { ads } = await (await fetch('../../data/ads.json')).json();
-      const html = await fetch('../../components/ads-sidebar/ads-sidebar.html').then((stream) => stream.text());
+      const stream = await fetch('../../components/ads-sidebar/ads-sidebar.html');
+      const html = await stream.text();
       adsSidebarTemplate.innerHTML = html;
       this.shadowRoot.appendChild(adsSidebarTemplate.content.cloneNode(true));
       const adsLinks = this.shadowRoot.querySelectorAll('[data-ad-details]');
