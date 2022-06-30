@@ -34,7 +34,7 @@ class Navbar extends HTMLElement {
    search(e) {
       e.preventDefault();
       const searchInput = this.shadowRoot.querySelector('#search-input');
-      window.location.href = `/src/pages/home/home.html?search=${searchInput.value}`
+      window.location.href = `/src/pages/home/home.html?search=${searchInput.value}`;
    }
 
    async connectedCallback() {
@@ -46,7 +46,7 @@ class Navbar extends HTMLElement {
       this.shadowRoot.querySelector('#open-searchbar').addEventListener('click', () => this.toggleSearchBar());
       this.shadowRoot.querySelector('#close-searchbar').addEventListener('click', () => this.toggleSearchBar());
       this.shadowRoot.querySelector('#toggle-user-options').addEventListener('click', () => this.toggleUserOprions());
-      this.shadowRoot.querySelector('#express-form').addEventListener('submit', (e) => this.search((e)));
+      this.shadowRoot.querySelector('#express-form').addEventListener('submit', (e) => this.search(e));
    }
 
    disconnectedCallback() {
