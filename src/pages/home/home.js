@@ -20,16 +20,19 @@ function getData(stories){
       .then(function({ stories }){
          let data = [ ...stories ];
          if (key === 'category') {
-            data = [ ...stories.filter((x) => x.category.filter((c) => c.toLowerCase() == value.toLowerCase())) ];
+            console.log(value[0].toUpperCase() + value.slice(1));
+            data = [ ...stories.filter((x) => x.category.includes(value[0].toUpperCase() + value.slice(1))) ];
+            showCurrentPage(data, articles, null);
          } else if (key === 'search') {
             title.innerText = `Your search for: ${value} returned following results`;
             data = [
                ...(stories.filter((x) => x.title.toLowerCase().includes(value.toLowerCase())) ||
                   x.description.toLowerCase().includes(value.toLowerCase()))
             ];
+            showCurrentPage(data, articles, null);
+         } else {
+            showCurrentPage(data, articles, mainArticle);
          }
-         showCurrentPage(data, articles, mainArticle);
-         navigateCategories(data);
       })
       .catch(function(error){
          console.log(error);
