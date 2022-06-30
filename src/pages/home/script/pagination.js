@@ -31,8 +31,8 @@ function populateHomepage(data, page, pageSize, target, mainArticleTarget){
       if (document.contains(mainArticle)) {
          mainArticle.style.display = 'none';
          slicedArr.push(firstObj);
-      };
-   };
+      }
+   }
 
    for (let results of slicedArr) {
       target.innerHTML += `
@@ -61,8 +61,10 @@ function getCurrentPage(){
 
 function showCurrentPage(data, container, mainArticle){
    const curPage = getCurrentPage();
-   (mainArticle===null)?populateHomepage(data, curPage, 10, container, mainArticle) : populateHomepage(data, curPage, pageSize, container, mainArticle);
-};
+   mainArticle === null
+      ? populateHomepage(data, curPage, 10, container, mainArticle)
+      : populateHomepage(data, curPage, pageSize, container, mainArticle);
+}
 
 function changePage(targetPage, value, filteredData){
    let maxPages = 0;
