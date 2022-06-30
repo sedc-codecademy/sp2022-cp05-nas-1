@@ -20,7 +20,7 @@ function getData(stories){
       .then(function({ stories }){
          let data = [ ...stories ];
          if (key === 'category') {
-            console.log(value[0].toUpperCase() + value.slice(1));
+            title.innerText = `Showing results for ${value} category`;
             data = [ ...stories.filter((x) => x.category.includes(value[0].toUpperCase() + value.slice(1))) ];
             showCurrentPage(data, articles, null);
          } else if (key === 'search') {
