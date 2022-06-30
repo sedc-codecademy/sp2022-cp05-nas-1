@@ -41,7 +41,7 @@ function populateHomepage(data, page, pageSize, target, mainArticleTarget){
                     <div class="content">
                         <h3 class="article-title">${results.title}</h3>
                         <p>${results.description}</p>
-                        <a href="../article/article.html?id=${results.id}/" class="btn-link" target="_blank">Read more</a>
+                        <a href="../article/article.html?id=${results.id}/" class="btn-link">Read more</a>
                     </div>
             </section>
         `;

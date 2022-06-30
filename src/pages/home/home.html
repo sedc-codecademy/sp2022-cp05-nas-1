@@ -51,30 +51,29 @@
 
         <aside id="ads-sidebar">
             <div id="container-sidebar">
-                <div id="weather" class="weather"></div>
+                <weather-widget></weather-widget>
                 <c-ads-sidebar></c-ads-sidebar>
             </div>
         </aside>
         <div id="cookiePopup">
-
             <img src="../../assets/images/global/cookie.png" />
             <p>
-              Our website uses cookies to provide your browsing experience and
-              relevant information. Before continuing to use our website, you agree &
-              accept of our <a href="#">Cookie Policy & Privacy.</a>
+                Our website uses cookies to provide your browsing experience and
+                relevant information. Before continuing to use our website, you agree &
+                accept of our <a href="#">Cookie Policy & Privacy.</a>
             </p>
             <button id="acceptCookie">Accept</button>
-          </div>
+        </div>
     </div>
     <c-footer></c-footer>
 
+    <script type="module" src="../../components/weather-widget/weather-widget.js"></script>
     <script src="../../components/navbar/navbar.js"></script>
     <script src="../../components/left-sidebar/left-sidebar.js"></script>
     <script src="../../components/ads-sidebar/ads-sidebar.js"></script>
     <script src=" ../../components/footer/footer.js"> </script>
-    <script type="module" src="../../components/weather-widget/script/weather.js"></script>
-    <script type="module" src="home.js"></script>
     <script src="../../components/cookies/cookie.js"></script>
+    <script type="module" src="home.js"></script>
 </body>
 
 </html>

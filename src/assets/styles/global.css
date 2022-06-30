@@ -60,16 +60,6 @@ button {
    padding-top: 30px;
 }
 
-.weather {
-   background-color: skyblue;
-   color: white;
-   height: 13%;
-   padding: 2.5px;
-   border-radius: 20px;
-   width: 80%;
-   margin: 15px auto;
-}
-
 #category-sidebar {
    position: fixed;
    left: 0;
@@ -109,12 +99,11 @@ button {
    display: none;
 }
 
-
 #cookiePopup {
    background-color: #ffffff;
-   position:fixed;
-   bottom:20px;
-   right:20px;
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
    max-width: 400px;
    box-shadow: 0 0 20px rgba(5, 0, 31, 0.15);
    text-align: justify;
@@ -122,18 +111,18 @@ button {
    padding: 20px;
    border-radius: 6px;
    transition: all 1s ease-in;
- }
- #cookiePopup img {
+}
+#cookiePopup img {
    display: block;
    width: 50px;
    position: relative;
    margin: auto;
- }
- #cookiePopup p {
+}
+#cookiePopup p {
    text-align: center;
    margin: 20px 0;
- }
- #cookiePopup button {
+}
+#cookiePopup button {
    background-color: var(--primary-color);
    text-decoration: none;
    padding: 10px 20px;
@@ -143,4 +132,4 @@ button {
    border-radius: 5px;
    color: #fff;
    border: 0;
- }
+}
