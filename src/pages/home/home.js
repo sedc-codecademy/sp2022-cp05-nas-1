@@ -22,17 +22,14 @@ function getData(stories){
          if (key === 'category') {
             title.innerText = `Showing results for ${value} category`;
             data = [ ...stories.filter((x) => x.category.includes(value[0].toUpperCase() + value.slice(1))) ];
-            showCurrentPage(data, articles, null);
          } else if (key === 'search') {
             title.innerText = `Your search for: ${value} returned following results`;
             data = [
                ...(stories.filter((x) => x.title.toLowerCase().includes(value.toLowerCase())) ||
                   x.description.toLowerCase().includes(value.toLowerCase()))
             ];
-            showCurrentPage(data, articles, null);
-         } else {
-            showCurrentPage(data, articles, mainArticle);
          }
+         showCurrentPage(data, articles, key === 'category' || key === 'search' ? null : mainArticle);
       })
       .catch(function(error){
          console.log(error);
