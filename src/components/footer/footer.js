@@ -5,7 +5,8 @@ class Footer extends HTMLElement {
    }
    async connectedCallback() {
       const footerTemplate = document.createElement('template');
-      const html = await fetch('../../components/footer/footer.html').then((stream) => stream.text());
+      const stream = await fetch('../../components/footer/footer.html');
+      const html = await stream.text();
       footerTemplate.innerHTML = html;
       this.shadowRoot.appendChild(footerTemplate.content.cloneNode(true));
    }

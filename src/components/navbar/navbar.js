@@ -39,7 +39,8 @@ class Navbar extends HTMLElement {
 
    async connectedCallback() {
       const navbarTemplate = document.createElement('template');
-      const html = await fetch('../../components/navbar/navbar.html').then((stream) => stream.text());
+      const stream = await fetch('../../components/navbar/navbar.html');
+      const html = await stream.text();
       navbarTemplate.innerHTML = html;
       this.shadowRoot.appendChild(navbarTemplate.content.cloneNode(true));
       this.shadowRoot.querySelector('.hamburger').addEventListener('click', () => this.toggleDisplayCategories());
