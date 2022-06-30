@@ -1,6 +1,7 @@
 import { addComents } from './script/addComents.js';
 import { changeThumbsStyle, upvoteFunc, downvoteFunc } from './script/feedbackTracker.js';
 import { populateArticlePage } from './script/populateArticle.js';
+import { searchFunc } from '../../components/search/searchFunc.js';
 
 const commentsErrorMsg = document.getElementById('comment-error');
 const thumbsUp = document.querySelector('.fa-thumbs-up');

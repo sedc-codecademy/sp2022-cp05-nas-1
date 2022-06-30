@@ -3,6 +3,7 @@ const articleTitle = document.querySelector('#article-title');
 const articleDate = document.querySelector('#article-date');
 const articleSource = document.querySelector('#article-src');
 const articleText = document.querySelector('#article-txt');
+const headTitle = document.querySelector('title');
 
 function populateArticlePage(data){
    articleImg.setAttribute('src', data.image);
