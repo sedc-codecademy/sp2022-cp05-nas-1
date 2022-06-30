@@ -19,7 +19,7 @@ function getData(stories) {
         .then(function(result){
             showCurrentPage(result.stories, articles, mainArticle);
             navigateCategories(result.stories);
-            searchFunc();
+            searchFunc(result.stories);
         })
         .catch(function (error) {
             console.log(error);
