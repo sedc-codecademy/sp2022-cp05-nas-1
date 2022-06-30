@@ -64,31 +64,28 @@ function showCurrentPage(data, container, mainArticle){
    mainArticle === null
       ? populateHomepage(data, curPage, 10, container, mainArticle)
       : populateHomepage(data, curPage, pageSize, container, mainArticle);
-}
+};
 
-function changePage(targetPage, value, filteredData){
+function changePage(targetPage, dataLength){
+
    let maxPages = 0;
+   (window.location.search==='')? maxPages = Math.ceil(dataLength / pageSize) : maxPages = Math.ceil(dataLength / 10);
 
-   fetch(stories).then((response) => response.json()).then((data) => {
-      value
-         ? (maxPages = Math.ceil(data.stories.length / pageSize))
-         : (maxPages = Math.ceil(filteredData.length / pageSize));
+   if(targetPage < 0){
+      targetPage = maxPages-1;
+   } else if(targetPage >= maxPages){
+      targetPage = 0;
+   };
 
-      if (targetPage < 0) {
-         targetPage = maxPages - 1;
-      } else if (targetPage >= maxPages) {
-         targetPage = 0;
+   document.location = document.location.search + `#/page/${targetPage}`;
+
+   pagNums.forEach((el) => {
+      if (parseInt(el.innerText) === getCurrentPage() + 1) {
+         el.classList.add('active');
+      } else {
+         el.classList.remove('active');
       }
-
-      document.location = document.location.search + `#/page/${targetPage}`;
-      pagNums.forEach((el) => {
-         if (parseInt(el.innerText) === getCurrentPage() + 1) {
-            el.classList.add('active');
-         } else {
-            el.classList.remove('active');
-         }
-      });
    });
-}
+};
 
 export { showCurrentPage, getCurrentPage, changePage };

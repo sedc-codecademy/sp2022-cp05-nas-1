@@ -8,6 +8,7 @@ const next = document.querySelector('#btn-next');
 const pagNums = document.querySelectorAll('.pagination-numbers');
 const stories = '../../data/news.json';
 const title = document.querySelector('#title');
+let dataLength = 0;
 
 function getData(stories){
    let promise = fetch(stories);
@@ -28,8 +29,9 @@ function getData(stories){
                ...(stories.filter((x) => x.title.toLowerCase().includes(value.toLowerCase())) ||
                   x.description.toLowerCase().includes(value.toLowerCase()))
             ];
-         }
+         };
          showCurrentPage(data, articles, key === 'category' || key === 'search' ? null : mainArticle);
+         dataLength = data.length;
       })
       .catch(function(error){
          console.log(error);
@@ -37,17 +39,17 @@ function getData(stories){
 }
 
 next.addEventListener('click', () => {
-   changePage(getCurrentPage() + 1, true, null);
+    changePage(getCurrentPage() + 1, dataLength);
 });
-
+ 
 prev.addEventListener('click', () => {
-   changePage(getCurrentPage() - 1, true, null);
+    changePage(getCurrentPage() - 1, dataLength);
 });
-
+ 
 pagNums.forEach((el) => {
-   el.addEventListener('click', () => {
-      changePage(el.innerText - 1, true, null);
-   });
+    el.addEventListener('click', () => {
+       changePage(el.innerText - 1, dataLength);
+    });
 });
 
 getData(stories);
