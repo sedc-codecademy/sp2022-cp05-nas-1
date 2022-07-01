@@ -32,7 +32,7 @@ function navigateCategories(data){
          prevCategories.addEventListener('click', () => {
             changePage(getCurrentPage() - 1, false, filteredCategories);
          });
-      }
+     }
    });
 }
 
