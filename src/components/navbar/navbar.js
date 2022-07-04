@@ -31,15 +31,23 @@ class Navbar extends HTMLElement {
       toggleBtn.style.backgroundColor = this.showUserOptions ? '#f7473e' : '#fff';
    }
 
+   search(e) {
+      e.preventDefault();
+      const searchInput = this.shadowRoot.querySelector('#search-input');
+      window.location.href = `/src/pages/home/home.html?search=${searchInput.value}`;
+   }
+
    async connectedCallback() {
       const navbarTemplate = document.createElement('template');
-      const html = await fetch('../../components/navbar/navbar.html').then((stream) => stream.text());
+      const stream = await fetch('../../components/navbar/navbar.html');
+      const html = await stream.text();
       navbarTemplate.innerHTML = html;
       this.shadowRoot.appendChild(navbarTemplate.content.cloneNode(true));
       this.shadowRoot.querySelector('.hamburger').addEventListener('click', () => this.toggleDisplayCategories());
       this.shadowRoot.querySelector('#open-searchbar').addEventListener('click', () => this.toggleSearchBar());
       this.shadowRoot.querySelector('#close-searchbar').addEventListener('click', () => this.toggleSearchBar());
       this.shadowRoot.querySelector('#toggle-user-options').addEventListener('click', () => this.toggleUserOprions());
+      this.shadowRoot.querySelector('#express-form').addEventListener('submit', (e) => this.search(e));
    }
 
    disconnectedCallback() {

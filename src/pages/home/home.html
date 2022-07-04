@@ -20,7 +20,7 @@
 
         <main class="main">
             <h2 id="title">Latest news</h2>
-            <div id="main-article">
+            <div id="main-article" class="hide-for-search">
                 <img id="main-article-img">
                 <div>
                     <h3 id="main-article-title"></h3>
@@ -29,11 +29,10 @@
                 </div>
             </div>
 
-            <div id="articles"></div>
+            <div id="articles" class="hide-for-search"></div>
 
-            <div class="pagination">
+            <div class="pagination hide-for-search">
                 <button id="btn-previous">&laquo;</button>
-                <button id="btn-previous-categories" class="hide">&laquo;</button>
                 <button class="active pagination-numbers">1</button>
                 <button class="pagination-numbers">2</button>
                 <button class="pagination-numbers">3</button>
@@ -45,36 +44,34 @@
                 <button class="pagination-numbers">9</button>
                 <button class="pagination-numbers">10</button>
                 <button id="btn-next">&raquo;</button>
-                <button id="btn-next-categories" class="hide">&raquo;</button>
             </div>
         </main>
 
         <aside id="ads-sidebar">
             <div id="container-sidebar">
-                <div id="weather" class="weather"></div>
+                <weather-widget></weather-widget>
                 <c-ads-sidebar></c-ads-sidebar>
             </div>
         </aside>
         <div id="cookiePopup">
-
             <img src="../../assets/images/global/cookie.png" />
             <p>
-              Our website uses cookies to provide your browsing experience and
-              relevant information. Before continuing to use our website, you agree &
-              accept of our <a href="#">Cookie Policy & Privacy.</a>
+                Our website uses cookies to provide your browsing experience and
+                relevant information. Before continuing to use our website, you agree &
+                accept of our <a href="#">Cookie Policy & Privacy.</a>
             </p>
             <button id="acceptCookie">Accept</button>
-          </div>
+        </div>
     </div>
     <c-footer></c-footer>
 
+    <script type="module" src="../../components/weather-widget/weather-widget.js"></script>
     <script src="../../components/navbar/navbar.js"></script>
     <script src="../../components/left-sidebar/left-sidebar.js"></script>
     <script src="../../components/ads-sidebar/ads-sidebar.js"></script>
     <script src=" ../../components/footer/footer.js"> </script>
-    <script type="module" src="../../components/weather-widget/script/weather.js"></script>
-    <script type="module" src="home.js"></script>
     <script src="../../components/cookies/cookie.js"></script>
+    <script type="module" src="home.js"></script>
 </body>
 
 </html>
