@@ -100,7 +100,7 @@ const teamMembers = [
 
 teamMembers.forEach((el) => {
    team.innerHTML += `<div class="team" width="100" height="200">             
-               <img class="member-image" src=${el.Img} alt="" width="200" height="250"/>
+               <img class="member-image" src=${el.Img} alt="" width="200" height="auto"/>
                 <h3 class="name">${el.Name}</h3>
                 <div class="design">${el.Role}</div>
                 <div class="desc">${el.Desc}</div>

@@ -73,7 +73,7 @@
 .member-image {
    width: 100%;
    max-width: 300px;
-   min-width: 200px;
+   margin: auto;
    height: 200;
    border-radius: 50px;
 }
