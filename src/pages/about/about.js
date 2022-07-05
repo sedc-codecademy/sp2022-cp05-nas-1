@@ -1,9 +1,11 @@
 const team = document.getElementById('team');
 const sections = Array.from(document.getElementsByClassName('section'));
 const links = document.querySelectorAll('[data-link]');
+const pageTitle = document.querySelector('.greet');
 
 [ ...links ].forEach((link, index) => {
-   link.addEventListener('click', () => {
+   link.addEventListener('click', (e) => {
+      pageTitle.innerText = e.target.getAttribute('data-title-nesto');
       sections.forEach((section, sectionIndex) => section.classList.toggle('hide', sectionIndex !== index));
    });
 });
@@ -98,13 +100,13 @@ const teamMembers = [
 
 teamMembers.forEach((el) => {
    team.innerHTML += `<div class="team" width="100" height="200">             
-               <img src=${el.Img} alt="" width="200" height="250"/>
-                <div class="name">${el.Name}</div>
+               <img class="member-image" src=${el.Img} alt="" width="200" height="250"/>
+                <h3 class="name">${el.Name}</h3>
                 <div class="design">${el.Role}</div>
                 <div class="desc">${el.Desc}</div>
                 <div class="social">
-                  <a href="#"><i class="fa fa-linkedin"></i></a>
-                   <a href="#"><i class="fa fa-github"></i></a>
+                  <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+                   <a href="#"><i class="fa fa-github fa-2x"></i></a>
              </div>
           </div>`;
 });
