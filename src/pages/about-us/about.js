@@ -76,7 +76,7 @@ const teamMembers = [
    {
       Name: 'Marko Koneski',
       Role: 'Student',
-      Img: './img/',
+      Img: '../../assets/images/team/marko.jpg',
       Desc:
          '25 year old Web Development student from Skopje. He has graduated at the Faculty of Mechanical Engineering. Marko is currently employed at BtoBet as a trader. He really likes gaming, playing ping pong and going to the gym.'
    },
