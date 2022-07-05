@@ -39,7 +39,7 @@ const teamMembers = [
          'A creative and enthusiastic Web Development student who is passionate about Arts & Design. Martina enjoys writing, coding, reading mystery novels, going on walks in nature. Latino dance is one of her favorite recreations. However, her main goal at the moment is to become an amazing developer.'
    },
    {
-      Name: 'Bojan Trpcevski',
+      Name: 'Bojan Trpchevski',
       Role: 'Student',
       Img: '../../assets/images/team/bojan.jpg',
       Desc:
