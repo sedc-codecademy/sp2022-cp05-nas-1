@@ -69,7 +69,9 @@ function showCurrentPage(data, container, mainArticle){
 function changePage(targetPage, dataLength){
 
    let maxPages = 0;
-   (window.location.search==='')? maxPages = Math.ceil(dataLength / pageSize) : maxPages = Math.ceil(dataLength / 10);
+   (window.location.search==='' && window.location.pathname==='/src/pages/home/home.html')? 
+      maxPages = Math.ceil(dataLength / pageSize) 
+      : maxPages = Math.ceil(dataLength / 10);
 
    if(targetPage < 0){
       targetPage = maxPages-1;
@@ -80,11 +82,7 @@ function changePage(targetPage, dataLength){
    document.location = document.location.search + `#/page/${targetPage}`;
 
    pagNums.forEach((el) => {
-      if (parseInt(el.innerText) === getCurrentPage() + 1) {
-         el.classList.add('active');
-      } else {
-         el.classList.remove('active');
-      }
+      el.classList.toggle('active', (parseInt(el.innerText) === getCurrentPage() + 1));
    });
 };
 
