@@ -30,6 +30,7 @@ function populateHomepage(data, page, pageSize, target, mainArticleTarget){
    } else {
       if (document.contains(mainArticle)) {
          mainArticle.style.display = 'none';
+         slicedArr.push(firstObj);
       }
    }
 
@@ -40,7 +41,7 @@ function populateHomepage(data, page, pageSize, target, mainArticleTarget){
                     <div class="content">
                         <h3 class="article-title">${results.title}</h3>
                         <p>${results.description}</p>
-                        <a href="../article/article.html?id=${results.id}/" class="btn-link" target="_blank">Read more</a>
+                        <a href="../article/article.html?id=${results.id}/" class="btn-link">Read more</a>
                     </div>
             </section>
         `;
@@ -60,32 +61,29 @@ function getCurrentPage(){
 
 function showCurrentPage(data, container, mainArticle){
    const curPage = getCurrentPage();
-   populateHomepage(data, curPage, pageSize, container);
-}
+   mainArticle === null
+      ? populateHomepage(data, curPage, 10, container, mainArticle)
+      : populateHomepage(data, curPage, pageSize, container, mainArticle);
+};
 
-function changePage(targetPage, value, filteredData){
+function changePage(targetPage, dataLength){
+
    let maxPages = 0;
+   (window.location.search==='' && window.location.pathname==='/src/pages/home/home.html')? 
+      maxPages = Math.ceil(dataLength / pageSize) 
+      : maxPages = Math.ceil(dataLength / 10);
 
-   fetch(stories).then((response) => response.json()).then((data) => {
-      value
-         ? (maxPages = Math.ceil(data.stories.length / pageSize))
-         : (maxPages = Math.ceil(filteredData.length / pageSize));
+   if(targetPage < 0){
+      targetPage = maxPages-1;
+   } else if(targetPage >= maxPages){
+      targetPage = 0;
+   };
 
-      if (targetPage < 0) {
-         targetPage = maxPages - 1;
-      } else if (targetPage >= maxPages) {
-         targetPage = 0;
-      }
+   document.location = document.location.search + `#/page/${targetPage}`;
 
-      document.location = document.location.search + `#/page/${targetPage}`;
-      pagNums.forEach((el) => {
-         if (parseInt(el.innerText) === getCurrentPage() + 1) {
-            el.classList.add('active');
-         } else {
-            el.classList.remove('active');
-         }
-      });
+   pagNums.forEach((el) => {
+      el.classList.toggle('active', (parseInt(el.innerText) === getCurrentPage() + 1));
    });
-}
+};
 
 export { showCurrentPage, getCurrentPage, changePage };

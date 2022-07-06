@@ -19,7 +19,6 @@
             <c-l-sidebar></c-l-sidebar>
         </aside>
 
-
         <main class="main">
 
             <img alt="" id="article-img">
@@ -67,7 +66,7 @@
                     <div class="input-group">
                         <label for="email">E-mail:</label>
                         <input type="email" id="email" class="input">
-                        <small><em>Your email adress won't be publsihed</em></small>
+                        <small><em>Your email adress won't be published</em></small>
                     </div>
                     <p>Leave a comment:</p>
                     <textarea name="comment" id="comment" cols="70" rows="7" maxlength="700" class="input"></textarea>
@@ -88,18 +87,18 @@
                 <p>Share this post</p>
 
                 <div id="icons">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank"
-                        title="Share on Facebook" class="icons">
+                    <a target="_blank" 
+                        title="Share on Facebook" class="icons" id="fb-share">
                         <i class="fa fa-facebook fa-3x"></i>
                     </a>
 
-                    <a href="https://twitter.com/intent/tweet?url=example.org" target="_blank" title="Share on Twitter"
-                        class="icons">
+                    <a target="_blank" title="Share on Twitter"
+                        class="icons" id="twitter-share">
                         <i class="fa fa-twitter fa-3x"></i>
                     </a>
 
-                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=example.org" target="_blank"
-                        title="Share on LinkedIn" class="icons">
+                    <a target="_blank"
+                        title="Share on LinkedIn" class="icons" id="li-share">
                         <i class="fa fa-linkedin fa-3x"></i>
                     </a>
 
@@ -109,7 +108,7 @@
 
         <aside id="ads-sidebar">
             <div id="container-sidebar">
-                <div id="weather" class="weather"></div>
+                <weather-widget></weather-widget>
                 <c-ads-sidebar></c-ads-sidebar>
             </div>
         </aside>
@@ -118,12 +117,12 @@
 
     <c-footer></c-footer>
 
+    <script type="module" src="../../components/weather-widget/weather-widget.js"></script>
     <script src="../../components/navbar/navbar.js"></script>
     <script src="../../components/left-sidebar/left-sidebar.js"></script>
     <script src="../../components/ads-sidebar/ads-sidebar.js"></script>
     <script src="../../components/footer/footer.js"></script>
     <!-- <script src="../../components/search/searchFunc.js"></script> -->
-    <script type="module" src="../../components/weather-widget/script/weather.js"></script>
     <script type="module" src="./article.js"></script>
 </body>
 
