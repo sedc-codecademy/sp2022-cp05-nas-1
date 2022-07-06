@@ -43,6 +43,7 @@ nav {
 
 #navbar img {
    width: 160px;
+   padding-left: 15px;
 }
 
 .hamburger .line {
@@ -184,6 +185,10 @@ input[type="search"] {
    }
    .hamburger {
       display: none;
+   }
+
+   #navbar img{
+      width: 260px;
    }
 
    #searchbar {
