@@ -1,5 +1,4 @@
 import { showCurrentPage, getCurrentPage, changePage } from '../../../src/pages/home/script/pagination.js';
-import { navigateCategories } from '../../../src/pages/home/script/navigateCategories.js';
 
 const articles = document.querySelector('#articles');
 const mainArticle = document.querySelector('#main-article');
@@ -11,15 +10,13 @@ const stories = '../../data/news.json';
 const title = document.querySelector('#title');
 let dataLength = 0;
 
-function getData(stories){
-   let promise = fetch(stories);
+async function getData(storiesObj){
+   let promise = await fetch(storiesObj);
    const queryString = window.location.search;
    const [ key, value ] = queryString.replace('?', '').replace('/', '').split('=');
-   promise
-      .then(function(response){
-         return response.json();
-      })
-      .then(function({ stories }){
+   const { stories } = await promise.json();
+   
+      
          let allStories = [ ...stories ];
          let data = allStories.slice(allStories.length - 50);
          if (key === 'category') {
@@ -40,10 +37,7 @@ function getData(stories){
          }
          showCurrentPage(data, articles, key === 'category' || key === 'search' ? null : mainArticle);
          dataLength = data.length;
-      })
-      .catch(function(error){
-         console.log(error);
-      });
+   
 }
 
 next.addEventListener('click', () => {
