@@ -71,9 +71,9 @@
 }
 
 .member-image {
-   width: 100%;
+   width: 85%;
    max-width: 300px;
-   min-width: 200px;
+   margin: auto;
    height: 200;
    border-radius: 50px;
 }
@@ -94,7 +94,7 @@
 }
 
 .desc {
-   font-size: 19px;
+   font-size: 17px;
    font-weight: 300;
    color: #4e4e4e;
 }
@@ -133,7 +133,7 @@
 
 .contact-info {
    width: 100%;
-   padding: 10px;
+   padding: 2.3rem 25px 30px 25px;
    position: relative;
 }
 
@@ -144,6 +144,7 @@
    align-items: center;
    font-size: 18px;
    gap: 15px;
+   padding-top: 15px;
 }
 
 .contact-form {
@@ -233,7 +234,7 @@ textarea.input {
 }
 
 .social-media {
-   margin-top: 20px;
+   margin-top: 50px;
 }
 
 .social-media p {
