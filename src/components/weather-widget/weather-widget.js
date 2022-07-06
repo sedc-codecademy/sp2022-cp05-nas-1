@@ -8,22 +8,22 @@ class WeatherWidget extends HTMLElement {
       this.attachShadow({ mode: 'open' });
    }
 
-   async getUserLocation() {
+   getUserLocation() {
       if (navigator.geolocation) {
          if (!window.sessionStorage.getItem('location')) {
             navigator.geolocation.getCurrentPosition(({ coords }) => {
                sessionStorage.setItem('location', JSON.stringify({ lat: coords.latitude, lon: coords.longitude }));
+               window.location.reload();
             });
          }
       }
    }
 
    async getCityName() {
-      await this.getUserLocation();
       const { lat, lon } = JSON.parse(window.sessionStorage.getItem('location'));
       const ednpoint = `${this.baseUrl}/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=${this.API_KEY}`;
       if (!JSON.parse(sessionStorage.getItem('location')).cityName) {
-         console.log('api call');
+         console.log('api call for city name');
          const res = await fetch(ednpoint);
          const [ data ] = await res.json();
          sessionStorage.setItem('location', JSON.stringify({ lat, lon, cityName: data.name }));
@@ -32,7 +32,7 @@ class WeatherWidget extends HTMLElement {
 
    async getWeatherData(units = 'metric') {
       if (!sessionStorage.getItem('weatherData')) {
-         console.log('api call');
+         console.log('api call for weather data');
          const { cityName } = JSON.parse(sessionStorage.getItem('location'));
          const ednpoint = `${this.baseUrl}/data/2.5/forecast?q=${cityName}&units=${units}&&APPID=${this.API_KEY}`;
          const res = await fetch(ednpoint);
@@ -53,11 +53,9 @@ class WeatherWidget extends HTMLElement {
       weatherTemplate.innerHTML = html;
       this.shadowRoot.appendChild(weatherTemplate.content.cloneNode(true));
       this.getUserLocation();
-      setTimeout(async () => {
-         await this.getCityName();
-         await this.getWeatherData();
-         this.displayWeatherData();
-      }, 100);
+      await this.getCityName();
+      await this.getWeatherData();
+      this.displayWeatherData();
    }
 }
 
