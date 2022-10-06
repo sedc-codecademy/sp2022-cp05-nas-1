@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-
 import { Header, Nav } from './Navbar.styles';
-import Hamburger from '../Hamburger/Hamburger';
-import SearchBar from '../SearchBar/SearchBar';
-import Togglers from '../Togglers/Togglers';
-import Logo from '../Logo/Logo';
-import UserOptions from '../UserOptions/UserOptions';
+import Hamburger from './Hamburger/Hamburger';
+import SearchBar from './SearchBar/SearchBar';
+import Togglers from './Togglers/Togglers';
+import Logo from './Logo/Logo';
+import UserOptions from './UserOptions/UserOptions';
 
 function Navbar({ toggleDisplayCategories }) {
 	const [displaySearchBar, setDisplaySearchBar] = useState(false);
@@ -30,7 +29,7 @@ function Navbar({ toggleDisplayCategories }) {
 					toggleDisplayUserOptions={toggleDisplayUserOptions}
 					displayUserOptions={displayUserOptions}
 				/>
-				<UserOptions displayUserOptions={displayUserOptions} />
+				<UserOptions displayUserOptions={displayUserOptions} setdisplayUserOptions={setdisplayUserOptions} />
 			</Nav>
 		</Header>
 	);

@@ -48,15 +48,14 @@ export const Button = styled.button`
 	background-color: ${({ color }) => (color === 'primary' ? '#fff' : '#f7473e')};
 	color: ${({ color }) => (color === 'primary' ? 'var(--primary-color)' : '#fff')};
 
-	::after {
+	&:after {
 		position: absolute;
 		top: -21px;
 		left: 10px;
 		color: #fafafa;
 		font-size: 16px;
 		font-weight: 200;
-		content: ${({ option }) =>
-			option === 'login' ? 'Already have an account?' : 'option' === 'signup' ? 'Welcome new Users!' : ''};
+		content: '${({ smallText }) => smallText}';
 	}
 
 	i {

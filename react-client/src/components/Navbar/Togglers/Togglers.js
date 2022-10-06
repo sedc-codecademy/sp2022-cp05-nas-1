@@ -1,15 +1,16 @@
 import React from 'react';
-import Icon from '../Icon/Icon';
 import { Container } from './Togglers.styles';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagnifyingGlass, faUsers } from '@fortawesome/free-solid-svg-icons';
 
 function Togglers({ toggleDisplaySearchBar, toggleDisplayUserOptions, displayUserOptions }) {
 	return (
 		<Container>
 			<button id='toggle-user-options' onClick={toggleDisplayUserOptions}>
-				<Icon icon={'users'} iconColor={displayUserOptions ? 'red' : 'white'} />
+				<FontAwesomeIcon icon={faUsers} size='2x' color={displayUserOptions ? '#f7473e' : 'white'} />
 			</button>
 			<button id='open-searchbar' onClick={toggleDisplaySearchBar}>
-				<Icon icon={'search'} iconColor='white' />
+				<FontAwesomeIcon icon={faMagnifyingGlass} size='2x' color='white' />
 			</button>
 		</Container>
 	);

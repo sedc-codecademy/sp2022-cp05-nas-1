@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.footer`
-	padding: 40px 0px;
+	height: 100px;
 	width: 100vw;
 	margin-bottom: auto;
 	background-color: var(--secondary-color);
@@ -9,7 +9,6 @@ export const Container = styled.footer`
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
-
 	.nav-list {
 		list-style: none;
 	}

@@ -14,8 +14,8 @@ export const Container = styled.div`
 		mask-size: 25px;
 	}
 
-	form button {
-		width: 50px;
+	button {
+		width: 20%;
 		mask-size: 25px;
 	}
 
@@ -52,11 +52,13 @@ export const Form = styled.form`
 export const Input = styled.input`
 	height: 100%;
 	flex-grow: 1;
-	text-indent: 30px;
+	width: 60%;
+	text-indent: 10px;
 	font-size: 24px;
 	-webkit-appearance: textfield;
 	@media screen and (min-width: 992px) {
 		border-radius: 50px;
+		text-indent: 30px;
 		border: none;
 		height: 50px;
 		:focus {

@@ -13,7 +13,7 @@ import {
 	ParameterValue,
 	Datetime
 } from './WeatherWidget.styles';
-import Clock from '../Clock/Clock';
+import Clock from './Clock/Clock';
 import { getCurrentWeaherData } from '../../api/WeatherAPI';
 
 function WeaherWidget() {
