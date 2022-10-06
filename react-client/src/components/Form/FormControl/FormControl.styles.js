@@ -7,7 +7,11 @@ export const Container = styled.div`
 	justify-content: center;
 	gap: 2px;
 	label {
+		margin-left: 20px;
 		font-size: 18px;
+		svg {
+			margin-right: 10px;
+		}
 	}
 
 	input {

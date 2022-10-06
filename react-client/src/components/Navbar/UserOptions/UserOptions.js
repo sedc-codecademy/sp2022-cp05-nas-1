@@ -20,7 +20,7 @@ function UserOptions({ displayUserOptions, setdisplayUserOptions }) {
 	if (auth.token && auth.isAdmin) {
 		return (
 			<Container id='user-options' displayUserOptions={displayUserOptions}>
-				<Button as={Link} to='/' color='primary' smallText={'admin panel'} onClick={handleClick}>
+				<Button as={Link} to='/adminpanel/details' color='primary' smallText={'admin panel'} onClick={handleClick}>
 					Panel
 					<FontAwesomeIcon icon={faTable}></FontAwesomeIcon>
 				</Button>
@@ -37,7 +37,7 @@ function UserOptions({ displayUserOptions, setdisplayUserOptions }) {
 			<Container id='user-options' displayUserOptions={displayUserOptions}>
 				<Button
 					as={Link}
-					to='/'
+					to='/user/details'
 					color='primary'
 					smallText={`Signed in as : ${auth.username}`}
 					onClick={handleClick}

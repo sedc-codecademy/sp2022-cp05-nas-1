@@ -6,7 +6,7 @@ import Togglers from './Togglers/Togglers';
 import Logo from './Logo/Logo';
 import UserOptions from './UserOptions/UserOptions';
 
-function Navbar({ toggleDisplayCategories }) {
+function Navbar({ toggleDisplaySidebar }) {
 	const [displaySearchBar, setDisplaySearchBar] = useState(false);
 	const [displayUserOptions, setdisplayUserOptions] = useState(false);
 
@@ -21,7 +21,7 @@ function Navbar({ toggleDisplayCategories }) {
 	return (
 		<Header>
 			<Nav id='navbar'>
-				<Hamburger toggleDisplayCategories={toggleDisplayCategories} />
+				<Hamburger toggleDisplaySidebar={toggleDisplaySidebar} />
 				<Logo />
 				<SearchBar displaySearchBar={displaySearchBar} toggleDisplaySearchBar={toggleDisplaySearchBar} />
 				<Togglers

@@ -10,7 +10,7 @@ function Categories({ displayCategories }) {
 			<h2>Categories</h2>
 			<ListItems>
 				{categories.map((x) => (
-					<Category category={x} />
+					<Category key={x} category={x} />
 				))}
 			</ListItems>
 			<Links>

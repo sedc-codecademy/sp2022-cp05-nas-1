@@ -48,7 +48,7 @@ function WeaherWidget() {
 						<CityName className='city'>{data.name}</CityName>
 						<WeatherDescription className='weather-description'>{data.weather[0].description}</WeatherDescription>
 					</div>
-					<WeatherIcon alt='weather' src={`http://openweathermap.org/img/w//${data.weather[0].icon}.png`} />
+					<WeatherIcon alt='weather' src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`} />
 				</TopContainer>
 				<BottomContainer>
 					<Temperature className='temperature'>{Math.round(data.main.temp)}°C</Temperature>

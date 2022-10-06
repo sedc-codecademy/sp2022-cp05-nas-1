@@ -15,7 +15,7 @@ export const Container = styled.div`
 		flex: 100% 4 0;
 	}
 	aside {
-		flex: 15% 1 1;
+		flex: 20% 1 1;
 	}
 
 	@media screen and (min-width: 992px) {

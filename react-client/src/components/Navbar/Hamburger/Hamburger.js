@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Container } from './Hamburger.styles';
-function Hamburger({ toggleDisplayCategories }) {
+function Hamburger({ toggleDisplaySidebar }) {
 	const [toggle, setToggle] = useState(false);
 	const handleClick = () => {
 		setToggle((prev) => !prev);
-		toggleDisplayCategories();
+		toggleDisplaySidebar();
 	};
 
 	return (
