@@ -11,7 +11,7 @@ function UserDetails() {
 					First name :<span> {auth.firstName}</span>
 				</p>
 				<p>
-					Last name : <span>{auth.firstName}</span>
+					Last name : <span>{auth.lastName}</span>
 				</p>
 				<p>
 					Username:<span> {auth.username}</span>
