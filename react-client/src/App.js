@@ -18,6 +18,9 @@ import UpdateUser from './pages/UserLayout/UpdateUser/UpdateUser';
 import ChangePassword from './pages/UserLayout/ChangePassword/ChangePassword';
 import RequireAuth from './components/RequireAuth/RequireAuth';
 import RegisterAdmin from './pages/UserLayout/RegisterAdmin/RegisterAdmin';
+import CategoriesPanel from './pages/UserLayout/CategoriesPanel/CategoriesPanel';
+import RssFeedPanel from './pages/UserLayout/RssFeedPanel/RssFeedPanel';
+import UsersPanel from './pages/UserLayout/UsersPanel/UsersPanel';
 function App() {
 	const { auth, setAuth } = useAuth();
 	const [displaySidebar, setDisplaySidebar] = useState(false);
@@ -49,19 +52,28 @@ function App() {
 				</Route>
 				{/* USER ROUTES */}
 				<Route path='/user' element={<RequireAuth allowedRole='user' />}>
-					<Route path='/user' element={<UserLayout displaySidebar={displaySidebar} />}>
-						<Route path='/user/details' element={<UserDetails />}></Route>
-						<Route path='/user/changeInformation' element={<UpdateUser />}></Route>
-						<Route path='/user/changePassword' element={<ChangePassword />}></Route>
+					<Route
+						path='/user'
+						element={<UserLayout displaySidebar={displaySidebar} setDisplaySidebar={setDisplaySidebar} />}
+					>
+						<Route path='/user/details' element={<UserDetails />} />
+						<Route path='/user/changeInformation' element={<UpdateUser />} />
+						<Route path='/user/changePassword' element={<ChangePassword />} />
 					</Route>
 				</Route>
 				{/* ADMIN ROUTES */}
 				<Route path='/adminpanel' element={<RequireAuth allowedRole='admin' />}>
-					<Route path='/adminpanel' element={<UserLayout displaySidebar={displaySidebar} />}>
-						<Route path='/adminpanel/details' element={<UserDetails />}></Route>
-						<Route path='/adminpanel/changeInformation' element={<UpdateUser />}></Route>
-						<Route path='/adminpanel/changePassword' element={<ChangePassword />}></Route>
-						<Route path='/adminpanel/registeradmin' element={<RegisterAdmin />}></Route>
+					<Route
+						path='/adminpanel'
+						element={<UserLayout displaySidebar={displaySidebar} setDisplaySidebar={setDisplaySidebar} />}
+					>
+						<Route path='/adminpanel/details' element={<UserDetails />} />
+						<Route path='/adminpanel/changeInformation' element={<UpdateUser />} />
+						<Route path='/adminpanel/changePassword' element={<ChangePassword />} />
+						<Route path='/adminpanel/registeradmin' element={<RegisterAdmin />} />
+						<Route path='/adminpanel/categories' element={<CategoriesPanel />} />
+						<Route path='/adminpanel/rssfeeds' element={<RssFeedPanel />} />
+						<Route path='/adminpanel/users' element={<UsersPanel />} />
 					</Route>
 				</Route>
 				{/* LOGIN / REGISTER ROUTES */}
