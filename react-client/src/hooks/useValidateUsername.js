@@ -12,7 +12,6 @@ const useValidateUsername = (username) => {
 	useEffect(() => {
 		const result = USERNAME_REGEX.test(username);
 		setValidUsername(result);
-		console.log('changed');
 	}, [username]);
 
 	return { usernameFocus, validUsername, toggleUsernameFocus };

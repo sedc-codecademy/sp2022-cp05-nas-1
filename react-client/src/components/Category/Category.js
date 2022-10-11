@@ -5,7 +5,7 @@ import { Container } from './Category.styles';
 function Category({ category, categoryId }) {
 	return (
 		<Container>
-			<Link to={`news/${category}/1`}>{category}</Link>
+			<Link to={`news/${category}/page/1`}>{category}</Link>
 		</Container>
 	);
 }

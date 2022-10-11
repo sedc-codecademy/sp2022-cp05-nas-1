@@ -2,13 +2,15 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 	display: flex;
+	width: 100%;
 	aside {
 		flex: 20% 1 1;
 	}
 	main {
 		margin-top: 20px;
 		padding: 20px;
-		width: 100%;
+		width: 80%;
+		flex-grow: 1;
 		text-align: center;
 		display: flex;
 		flex-direction: column;
@@ -16,6 +18,6 @@ export const Container = styled.div`
 	}
 
 	@media screen and (min-width: 992px) {
-		width: 80%;
+		width: 100%;
 	}
 `;

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import useCategories from '../../../hooks/useCategories';
-import { PanelElement, PanelForm, FormOptions } from '../Panel.styles';
+import { PanelElement, PanelForm, FormOptions, Details } from '../Panel.styles';
 
-function RssFeedItem({ rssFeed, editFeed, deleteFeed }) {
+function RssFeedItem({ rssFeed, editFeed, deleteFeed, toggleFeedActive }) {
 	const { categories } = useCategories();
 	const [isEdditing, setIsEdditing] = useState(false);
 	const [updateRssDetails, setUpdateRssDetils] = useState({
@@ -19,10 +19,15 @@ function RssFeedItem({ rssFeed, editFeed, deleteFeed }) {
 		setIsEdditing((prev) => !prev);
 	};
 	const handleEdit = (e) => {
-		editFeed(e, updateRssDetails, rssFeed.id);
+		const category = categories.find((x) => x.id === parseInt(updateRssDetails.categoryId));
+		editFeed(e, updateRssDetails, rssFeed.id, category);
 	};
 	const handleDelete = () => {
 		deleteFeed(rssFeed.id);
+	};
+
+	const handleToggle = () => {
+		toggleFeedActive(rssFeed.id);
 	};
 	return (
 		<>
@@ -84,10 +89,15 @@ function RssFeedItem({ rssFeed, editFeed, deleteFeed }) {
 				</PanelElement>
 			) : (
 				<PanelElement>
-					<h2>
-						{rssFeed.name} status: {rssFeed.isActive ? 'active' : 'disabled'}
-					</h2>
+					<Details>
+						<h2>{rssFeed.name}</h2>
+						<h4>Feed url : {rssFeed.feedUrl}</h4>
+						<h4>status: {rssFeed.isActive ? 'active' : 'disabled'}</h4>
+					</Details>
 					<div>
+						<button className={rssFeed.isActive ? 'red' : 'green'} onClick={handleToggle}>
+							{rssFeed.isActive ? 'disable' : 'enable'}
+						</button>
 						<button className='blue' onClick={toggleIsEdditing}>
 							Edit
 						</button>
