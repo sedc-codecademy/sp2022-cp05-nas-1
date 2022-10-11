@@ -23,7 +23,12 @@ html {
    padding: 0;
    /* box-sizing:border-box; */
 }
-
+#root{
+   width:100vw;
+}
+main{
+   min-height:100vh;
+}
 a{
    text-decoration:none;
 }

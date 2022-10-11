@@ -1,11 +1,10 @@
 import React from 'react';
+import { Container } from './NotFound.styles';
 import { Link } from 'react-router-dom';
-import { Container } from './Unauthorized.styles';
-
-function Unauthorized() {
+function NotFound() {
 	return (
 		<Container>
-			<h1>You are not authorized to perform this action.</h1>
+			<h1>The page you are trying to reach does not exist.</h1>
 			<h2>
 				Back to <Link to='/'>Home</Link>
 			</h2>
@@ -13,4 +12,4 @@ function Unauthorized() {
 	);
 }
 
-export default Unauthorized;
+export default NotFound;

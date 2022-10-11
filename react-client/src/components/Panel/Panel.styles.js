@@ -17,14 +17,16 @@ export const PanelElement = styled.div`
 	:nth-child(even) {
 		background-color: #afafaf;
 	}
-
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
 	padding: 15px 20px;
 
-	@media screen {
+	@media screen and (min-width: 992px) {
+		flex-direction: row;
 	}
+
 	div {
 		display: flex;
 		gap: 10px;
@@ -45,6 +47,7 @@ export const PanelElement = styled.div`
 			background-color: var(--color-green);
 		}
 		input {
+			width: 250px;
 			height: 30px;
 			text-indent: 5px;
 		}
@@ -59,15 +62,31 @@ export const PanelForm = styled.form`
 	align-items: center;
 	justify-content: space-between;
 	flex-direction: column;
-
+	gap: 20px;
+	width: 100%;
 	@media screen and (min-width: 992px) {
 		flex-direction: row;
 	}
-	gap: 20px;
-	width: 100%;
 `;
 export const FormOptions = styled.div`
 	display: flex;
 	flex-direction: column;
+	flex-grow: 1;
+	width: 100%;
 	gap: 10px;
+	> div {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		input,
+		select {
+			flex-grow: 1;
+		}
+	}
+`;
+
+export const Details = styled.div`
+	display: flex;
+	flex-direction: column;
 `;

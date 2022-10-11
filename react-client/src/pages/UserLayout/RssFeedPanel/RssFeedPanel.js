@@ -14,14 +14,16 @@ function RssFeedPanel() {
 		feedUrl: '',
 		categoryId: categories[0].id
 	});
-	const { rssFeeds, loading, successMessage, errorMessage, editFeed, deleteFeed, createFeed } = useRssOptions();
+	const { rssFeeds, loading, successMessage, errorMessage, editFeed, deleteFeed, createFeed, toggleFeedActive } =
+		useRssOptions();
 
 	const handleChange = (e) => {
 		setNewRssDetails((prev) => ({ ...prev, [e.target.name]: e.target.value }));
 	};
 
 	const handleCreate = (e) => {
-		createFeed(e, newRssDetails);
+		const category = categories.find((x) => x.id === parseInt(newRssDetails.categoryId));
+		createFeed(e, newRssDetails, category);
 		setNewRssDetails({
 			name: '',
 			feedUrl: '',
@@ -96,7 +98,15 @@ function RssFeedPanel() {
 					</PanelForm>
 				</PanelElement>
 				{rssFeeds?.length &&
-					rssFeeds.map((x) => <RssFeedItem key={x.id} rssFeed={x} editFeed={editFeed} deleteFeed={deleteFeed} />)}
+					rssFeeds.map((x) => (
+						<RssFeedItem
+							key={x.id}
+							rssFeed={x}
+							editFeed={editFeed}
+							deleteFeed={deleteFeed}
+							toggleFeedActive={toggleFeedActive}
+						/>
+					))}
 			</Panel>
 		</>
 	);

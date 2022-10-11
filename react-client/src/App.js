@@ -21,8 +21,11 @@ import RegisterAdmin from './pages/UserLayout/RegisterAdmin/RegisterAdmin';
 import CategoriesPanel from './pages/UserLayout/CategoriesPanel/CategoriesPanel';
 import RssFeedPanel from './pages/UserLayout/RssFeedPanel/RssFeedPanel';
 import UsersPanel from './pages/UserLayout/UsersPanel/UsersPanel';
+import NotFound from './pages/NotFound/NotFound';
+import Articles from './pages/Articles/Articles';
+import Article from './pages/Article/Article';
 function App() {
-	const { auth, setAuth } = useAuth();
+	const { setAuth } = useAuth();
 	const [displaySidebar, setDisplaySidebar] = useState(false);
 	const toggleDisplaySidebar = () => {
 		setDisplaySidebar((prev) => !prev);
@@ -47,15 +50,17 @@ function App() {
 			<GlobalStyle />
 			<Routes>
 				<Route path='/' element={<Layout displayCategories={displaySidebar} />}>
-					<Route path='/' element={<Home />} />
+					<Route path='/' element={<Navigate to={'/news/page/1'} />} />
+					<Route path='/news/page/:pageNumber' element={<Articles />} />
+					<Route path='/news/:categoryName/page/:pageNumber' element={<Articles />} />
+					<Route path='/news/search/:searchQuery/page/:pageNumber' element={<Articles />} />
+					<Route path='/news/article/:articleId' element={<Article />}></Route>
 					<Route path='/unauthorized' element={<Unauthorized />} />
+					<Route path='/*' element={<NotFound />}></Route>
 				</Route>
 				{/* USER ROUTES */}
 				<Route path='/user' element={<RequireAuth allowedRole='user' />}>
-					<Route
-						path='/user'
-						element={<UserLayout displaySidebar={displaySidebar} setDisplaySidebar={setDisplaySidebar} />}
-					>
+					<Route path='/user' element={<UserLayout displaySidebar={displaySidebar} />}>
 						<Route path='/user/details' element={<UserDetails />} />
 						<Route path='/user/changeInformation' element={<UpdateUser />} />
 						<Route path='/user/changePassword' element={<ChangePassword />} />
@@ -63,10 +68,7 @@ function App() {
 				</Route>
 				{/* ADMIN ROUTES */}
 				<Route path='/adminpanel' element={<RequireAuth allowedRole='admin' />}>
-					<Route
-						path='/adminpanel'
-						element={<UserLayout displaySidebar={displaySidebar} setDisplaySidebar={setDisplaySidebar} />}
-					>
+					<Route path='/adminpanel' element={<UserLayout displaySidebar={displaySidebar} />}>
 						<Route path='/adminpanel/details' element={<UserDetails />} />
 						<Route path='/adminpanel/changeInformation' element={<UpdateUser />} />
 						<Route path='/adminpanel/changePassword' element={<ChangePassword />} />

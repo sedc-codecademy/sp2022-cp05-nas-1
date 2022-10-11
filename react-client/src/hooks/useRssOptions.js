@@ -4,7 +4,6 @@ import useTokenInterceptor from './useTokenInterceptor';
 import useAuth from './useAuth';
 
 export const useRssOptions = () => {
-	const { categories } = useCategories();
 	const { auth, setAuth } = useAuth();
 	const [rssFeeds, setRssFeeds] = useState([]);
 	const [loading, setLoading] = useState(false);
@@ -40,7 +39,7 @@ export const useRssOptions = () => {
 		getFeeds();
 	}, [setRssFeeds, tokenInterceptor, auth]);
 
-	const createFeed = async (e, feedDetails) => {
+	const createFeed = async (e, feedDetails, category) => {
 		e.preventDefault();
 		try {
 			setLoading(true);
@@ -50,18 +49,15 @@ export const useRssOptions = () => {
 				JSON.stringify({ name: feedDetails.name, feedUrl: feedDetails.feedUrl, categoryId: feedDetails.categoryId })
 			);
 			const newId = await res.data;
-			console.log(feedDetails);
 			const newRss = {
 				id: newId,
 				feedUrl: feedDetails.feedUrl,
 				name: feedDetails.name,
 				isActive: true,
-				category: { ...categories.filter((x) => x.id === feedDetails.categoryId)[0] }
+				category
 			};
-			console.log(newRss);
-			console.log(rssFeeds);
 			setRssFeeds((prev) => [...prev, newRss]);
-			setSuccessMessage('Category created successfully.');
+			setSuccessMessage('Rss Feed created successfully.');
 			setLoading(false);
 			setTimeout(() => {
 				setSuccessMessage('');
@@ -80,7 +76,7 @@ export const useRssOptions = () => {
 			}, 3000);
 		}
 	};
-	const editFeed = async (e, feedDetails, id) => {
+	const editFeed = async (e, feedDetails, id, category) => {
 		e.preventDefault();
 		try {
 			setLoading(true);
@@ -93,11 +89,11 @@ export const useRssOptions = () => {
 				name: feedDetails.name,
 				feedUrl: feedDetails.feedUrl,
 				isActive: true,
-				category: { ...categories.filter((x) => x.id === feedDetails.categoryId)[0] }
+				category
 			};
 			setRssFeeds((prev) => prev.map((x) => (x.id !== id ? x : { ...x, ...newRss })));
 			setLoading(false);
-			setSuccessMessage('Category updated successfully');
+			setSuccessMessage('Rss Feed updated successfully');
 			setTimeout(() => {
 				setSuccessMessage('');
 			}, 3000);
@@ -122,6 +118,7 @@ export const useRssOptions = () => {
 			await tokenInterceptor.delete(endpoint);
 			setLoading(false);
 			setRssFeeds((prev) => prev.filter((x) => x.id !== id));
+			setSuccessMessage('Rss Feed deleted successfully.');
 			setTimeout(() => {
 				setSuccessMessage('');
 			}, 3000);
@@ -139,7 +136,34 @@ export const useRssOptions = () => {
 			}, 3000);
 		}
 	};
-	return { rssFeeds, loading, successMessage, errorMessage, editFeed, deleteFeed, createFeed };
+
+	const toggleFeedActive = async (id) => {
+		try {
+			setLoading(true);
+			const endpoint = `rssfeed/toggle/id/${id}`;
+			const res = await tokenInterceptor.put(endpoint);
+			const data = res.data;
+			setRssFeeds((prev) => prev.map((x) => (x.id !== id ? x : { ...x, isActive: !x.isActive })));
+			setSuccessMessage(data);
+			setLoading(false);
+			setTimeout(() => {
+				setSuccessMessage('');
+			}, 3000);
+		} catch (err) {
+			setLoading(false);
+			if (!err?.response?.status) {
+				setErrorMessage('No server responce.');
+			} else if (!err.response.data) {
+				setErrorMessage('Something went wrong.');
+			} else {
+				setErrorMessage(err.response.data);
+			}
+			setTimeout(() => {
+				setErrorMessage('');
+			}, 3000);
+		}
+	};
+	return { rssFeeds, loading, successMessage, errorMessage, editFeed, deleteFeed, createFeed, toggleFeedActive };
 };
 
 export default useRssOptions;

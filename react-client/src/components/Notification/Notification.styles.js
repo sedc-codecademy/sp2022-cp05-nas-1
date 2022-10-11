@@ -9,8 +9,8 @@ export const Wrapper = styled.div`
 			? 'var(--color-green)'
 			: 'grey'}; //<- TODO :change default color
 	color: #fff;
-	width: 30%;
-	padding: 10px 0;
+	width: fit-content;
+	padding: 10px 30px;
 	border: 3px solid black;
 	border-radius: 25px;
 	right: 50px;
