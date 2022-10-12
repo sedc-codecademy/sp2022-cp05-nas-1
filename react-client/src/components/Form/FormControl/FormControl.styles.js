@@ -26,4 +26,18 @@ export const Container = styled.div`
 			border: none;
 		}
 	}
+	textarea {
+		width: 100%;
+		height: 200px;
+		resize: none;
+		border-radius: 5px;
+		text-indent: 10px;
+		font-family: 'Nunito', sans-serif;
+		padding: 10px 0;
+		border: 1px solid var(--secondary-color);
+		:focus {
+			outline: 2px solid var(--primary-color);
+			border: none;
+		}
+	}
 `;
