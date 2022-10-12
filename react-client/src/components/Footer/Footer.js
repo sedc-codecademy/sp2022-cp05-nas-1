@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Container } from './Footer.styles';
 
 function Footer() {
@@ -10,15 +11,13 @@ function Footer() {
 			<div className='footer-nav-links'>
 				<ul className='nav-list'>
 					<li className='list-item'>
-						<a href='../../pages/other/privacy.html'>Privacy Policy</a>
+						<Link to='/privacy'>Privacy Policy</Link>
 					</li>
 					<li className='list-item'>
-						<a href='../../pages/other/cookies.html'>Cookies</a>
+						<Link to='/cookies'>Cookies</Link>
 					</li>
 					<li className='list-item'>
-						<a href='../../pages/about/about.html' target='_blank'>
-							About
-						</a>
+						<Link to='/about'>About</Link>
 					</li>
 				</ul>
 			</div>

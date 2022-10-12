@@ -11,7 +11,6 @@ export const Container = styled.div`
 		padding: 30px 20px;
 		display: flex;
 		flex-flow: column nowrap;
-		width: 100%;
 		flex: 100% 4 0;
 	}
 	aside {

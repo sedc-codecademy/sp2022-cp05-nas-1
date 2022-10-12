@@ -15,7 +15,6 @@ function Categories({ displayCategories }) {
 				))}
 			</ListItems>
 			<Links>
-				<Link to='/archive'>Archive</Link>
 				<Link to='/feedback'>Leave feedback</Link>
 			</Links>
 		</Container>
