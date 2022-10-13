@@ -11,10 +11,11 @@ export const Container = styled.aside`
 	a {
 		width: 90%;
 	}
-	a img {
+	img {
 		width: 100%;
 		max-height: 25%;
 	}
+
 	@media screen and (min-width: 992px) {
 		height: 100vh;
 		position: sticky;
