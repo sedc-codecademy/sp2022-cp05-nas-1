@@ -31,6 +31,7 @@ import AboutLayout from './pages/About/AboutLayout/AboutLayout';
 import Newstopia from './pages/About/Newstopia/Newstopia';
 import Team from './pages/About/Team/Team';
 import Contact from './pages/About/Contact/Contact';
+import AdsPanel from './pages/UserLayout/AdsPanel/AdsPanel';
 function App() {
 	const { pathname } = useLocation();
 	const { setAuth } = useAuth();
@@ -98,6 +99,7 @@ function App() {
 						<Route path='/adminpanel/registeradmin' element={<RegisterAdmin />} />
 						<Route path='/adminpanel/categories' element={<CategoriesPanel />} />
 						<Route path='/adminpanel/rssfeeds' element={<RssFeedPanel />} />
+						<Route path='/adminpanel/ads' element={<AdsPanel />} />
 						<Route path='/adminpanel/users' element={<UsersPanel />} />
 					</Route>
 				</Route>

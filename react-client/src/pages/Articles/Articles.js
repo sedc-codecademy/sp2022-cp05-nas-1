@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import AdBanner from '../../components/AdBanner/AdBanner';
 import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner';
 import Notification from '../../components/Notification/Notification';
 import useCategories from '../../hooks/useCategories';
 import useFetchArticles from '../../hooks/useFetchArticles';
 import ArticleCard from './ArticleCard/ArticleCard';
+import { ArticlesContainer } from './Articles.styles';
 
 import Hero from './Hero/Hero';
 import PaginationNavigation from './PaginationNavigation/PaginationNavigation';
@@ -50,9 +52,14 @@ function Articles() {
 			{errorMessage && <Notification type='error' message={errorMessage} />}
 			{response.articles.map((x, i) => {
 				if (i === 0 && parseInt(pageNumber) === 1) {
-					return <Hero articleData={x} />;
+					return <Hero articleData={x} key={x.id} />;
 				}
-				return <ArticleCard articleData={x} />;
+				return (
+					<ArticlesContainer key={x.id}>
+						<ArticleCard articleData={x} />
+						{i % 2 === 0 && <AdBanner />}
+					</ArticlesContainer>
+				);
 			})}
 
 			<PaginationNavigation

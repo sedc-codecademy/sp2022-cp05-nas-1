@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import { Container, ArticleImage, ArticleDetails, ArticleTitle, ArticleDescription } from './ArticleCard.styles';
 function ArticleCard({ articleData }) {
 	return (
-		<Container class='news'>
+		<Container>
 			<ArticleImage src={articleData.imageUrl} alt={articleData.title} />
-			<ArticleDetails class='content'>
-				<ArticleTitle class='article-title'>{articleData.title}</ArticleTitle>
+			<ArticleDetails>
+				<ArticleTitle>{articleData.title}</ArticleTitle>
 				<ArticleDescription>{articleData.description}</ArticleDescription>
 				<Link to={`/news/article/${articleData.id}`}>Read more</Link>
 			</ArticleDetails>

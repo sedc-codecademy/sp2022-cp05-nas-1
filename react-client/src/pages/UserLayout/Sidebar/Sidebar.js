@@ -27,6 +27,9 @@ function Sidebar({ displaySidebar }) {
 					<NavLink to='/adminpanel/rssfeeds' activeClassName='active'>
 						RSS feeds panel
 					</NavLink>
+					<NavLink to='/adminpanel/ads' activeClassName='active'>
+						Ads
+					</NavLink>
 					<NavLink to='/adminpanel/users' activeClassName='active'>
 						Users panel
 					</NavLink>
