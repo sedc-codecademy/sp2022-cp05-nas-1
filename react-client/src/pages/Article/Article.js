@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner';
 import useFetchArticle from '../../hooks/useFetchArticle';
 import { ArticleImage, ArticleInfo, ArticleTitle, ArticleDetails, ArticleDescription } from './Article.styles';
-
+import AdBanner from '../../components/AdBanner/AdBanner';
 function Article() {
 	const { articleId } = useParams();
 	const [article, setArticle] = useState({});
@@ -23,6 +23,7 @@ function Article() {
 	if (loading) {
 		return <LoadingSpinner></LoadingSpinner>;
 	}
+
 	return (
 		<>
 			<ArticleImage src={article.imageUrl} alt={article.title} />
@@ -30,7 +31,7 @@ function Article() {
 				<ArticleTitle>{article.title}</ArticleTitle>
 				<ArticleDetails>
 					<p>
-						Source :{' '}
+						Source :
 						<a
 							href={article.sourceUrl}
 							className='original-source'
@@ -44,7 +45,7 @@ function Article() {
 						Published : <b id='article-date'>{dateFormat}</b>
 					</p>
 					<p>
-						Original article :{' '}
+						Original article :
 						<a href={article.originalArticleUrl} target='_blank' className='original-source'>
 							Read full article
 						</a>
@@ -55,6 +56,7 @@ function Article() {
 					<p>{article.description}</p>
 				</ArticleDescription>
 			</ArticleInfo>
+			<AdBanner />
 		</>
 	);
 }

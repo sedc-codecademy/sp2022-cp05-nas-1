@@ -52,10 +52,10 @@ function Articles() {
 			{errorMessage && <Notification type='error' message={errorMessage} />}
 			{response.articles.map((x, i) => {
 				if (i === 0 && parseInt(pageNumber) === 1) {
-					return <Hero articleData={x} />;
+					return <Hero articleData={x} key={x.id} />;
 				}
 				return (
-					<ArticlesContainer>
+					<ArticlesContainer key={x.id}>
 						<ArticleCard articleData={x} />
 						{i % 2 === 0 && <AdBanner />}
 					</ArticlesContainer>

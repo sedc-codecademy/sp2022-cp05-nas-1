@@ -1,24 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import useTokenInterceptor from './useTokenInterceptor';
+import { axiosInterceptor } from '../api/axios.setup';
 import useAuth from './useAuth';
+import useTokenInterceptor from './useTokenInterceptor';
 
-export const useRssOptions = () => {
+const useAdsOptions = () => {
 	const { auth } = useAuth();
-	const [rssFeeds, setRssFeeds] = useState([]);
+	const [ads, setAds] = useState([]);
 	const [loading, setLoading] = useState(false);
 	const [errorMessage, setErrorMessage] = useState('');
 	const [successMessage, setSuccessMessage] = useState('');
 	const tokenInterceptor = useTokenInterceptor();
 
 	useEffect(() => {
-		const getFeeds = async () => {
+		const getAds = async () => {
 			try {
 				if (auth.isAdmin) {
 					setLoading(true);
-					const endpoint = 'rssfeed/getall';
+					const endpoint = 'ad/getads';
 					const res = await tokenInterceptor.get(endpoint);
-					const data = res.data;
-					setRssFeeds(data);
+					const data = await res.data;
+					setAds(data);
 					setLoading(false);
 				}
 			} catch (err) {
@@ -35,89 +36,27 @@ export const useRssOptions = () => {
 				}, 3000);
 			}
 		};
-		getFeeds();
-	}, [setRssFeeds, tokenInterceptor, auth]);
+		getAds();
+	}, [auth.isAdmin, tokenInterceptor]);
 
-	const createFeed = async (e, feedDetails, category) => {
+	const createAd = async (e, adDetails) => {
 		e.preventDefault();
 		try {
 			setLoading(true);
-			const endpoint = 'rssfeed/create';
-			const res = await tokenInterceptor.post(
-				endpoint,
-				JSON.stringify({ name: feedDetails.name, feedUrl: feedDetails.feedUrl, categoryId: feedDetails.categoryId })
-			);
-			const newId = await res.data;
-			const newRss = {
-				id: newId,
-				feedUrl: feedDetails.feedUrl,
-				name: feedDetails.name,
-				isActive: true,
-				category
+			const endpoint = 'ad/createad';
+			const res = await tokenInterceptor.post(endpoint, adDetails);
+			const data = await res.data;
+			const newAd = {
+				id: data,
+				adName: adDetails.adName,
+				imageUrl: adDetails.imageUrl,
+				bannerImageUrl: adDetails.bannerImageUrl,
+				redirectUrl: adDetails.redirectUrl,
+				isAdActive: true
 			};
-			setRssFeeds((prev) => [...prev, newRss]);
-			setSuccessMessage('Rss Feed created successfully.');
+			setSuccessMessage('Ad created successfully.');
+			setAds((prev) => [newAd, ...prev]);
 			setLoading(false);
-			setTimeout(() => {
-				setSuccessMessage('');
-			}, 3000);
-		} catch (err) {
-			setLoading(false);
-			if (!err?.response?.status) {
-				setErrorMessage('No server responce.');
-			} else if (!err.response.data) {
-				setErrorMessage('Something went wrong.');
-			} else {
-				setErrorMessage(err.response.data);
-			}
-			setTimeout(() => {
-				setErrorMessage('');
-			}, 3000);
-		}
-	};
-	const editFeed = async (e, feedDetails, id, category) => {
-		e.preventDefault();
-		try {
-			setLoading(true);
-			const endpoint = `rssfeed/update/id/${id}`;
-			await tokenInterceptor.put(
-				endpoint,
-				JSON.stringify({ name: feedDetails.name, feedUrl: feedDetails.feedUrl, categoryId: feedDetails.categoryId })
-			);
-			const newRss = {
-				name: feedDetails.name,
-				feedUrl: feedDetails.feedUrl,
-				isActive: true,
-				category
-			};
-			setRssFeeds((prev) => prev.map((x) => (x.id !== id ? x : { ...x, ...newRss })));
-			setLoading(false);
-			setSuccessMessage('Rss Feed updated successfully');
-			setTimeout(() => {
-				setSuccessMessage('');
-			}, 3000);
-		} catch (err) {
-			setLoading(false);
-			if (!err?.response?.status) {
-				setErrorMessage('No server responce.');
-			} else if (!err.response.data) {
-				setErrorMessage('Something went wrong.');
-			} else {
-				setErrorMessage(err.response.data);
-			}
-			setTimeout(() => {
-				setErrorMessage('');
-			}, 3000);
-		}
-	};
-	const deleteFeed = async (id) => {
-		try {
-			setLoading(true);
-			const endpoint = `rssfeed/delete/id/${id}`;
-			await tokenInterceptor.delete(endpoint);
-			setLoading(false);
-			setRssFeeds((prev) => prev.filter((x) => x.id !== id));
-			setSuccessMessage('Rss Feed deleted successfully.');
 			setTimeout(() => {
 				setSuccessMessage('');
 			}, 3000);
@@ -136,13 +75,39 @@ export const useRssOptions = () => {
 		}
 	};
 
-	const toggleFeedActive = async (id) => {
+	const deleteAd = async (id) => {
 		try {
 			setLoading(true);
-			const endpoint = `rssfeed/toggle/id/${id}`;
-			const res = await tokenInterceptor.put(endpoint);
-			const data = res.data;
-			setRssFeeds((prev) => prev.map((x) => (x.id !== id ? x : { ...x, isActive: !x.isActive })));
+			const endpoint = `Ad/DeleteAd/${id}`;
+			await axiosInterceptor.delete(endpoint);
+			setSuccessMessage('Ad deleted successfully.');
+			setAds((prev) => prev.filter((x) => x.id !== id));
+			setLoading(false);
+			setTimeout(() => {
+				setSuccessMessage('');
+			}, 3000);
+		} catch (err) {
+			setLoading(false);
+			if (!err?.response?.status) {
+				setErrorMessage('No server responce.');
+			} else if (!err.response.data) {
+				setErrorMessage('Something went wrong.');
+			} else {
+				setErrorMessage(err.response.data);
+			}
+			setTimeout(() => {
+				setErrorMessage('');
+			}, 3000);
+		}
+	};
+
+	const toggleAd = async (id) => {
+		try {
+			setLoading(true);
+			const endpoint = `Ad/Toggle/id/${id}`;
+			const res = await axiosInterceptor.put(endpoint);
+			const data = await res.data;
+			setAds((prev) => prev.map((x) => (x.id !== id ? x : { ...x, isAdActive: !x.isAdActive })));
 			setSuccessMessage(data);
 			setLoading(false);
 			setTimeout(() => {
@@ -162,7 +127,46 @@ export const useRssOptions = () => {
 			}, 3000);
 		}
 	};
-	return { rssFeeds, loading, successMessage, errorMessage, editFeed, deleteFeed, createFeed, toggleFeedActive };
+
+	const editAd = async (e, adDetails, id) => {
+		e.preventDefault();
+		try {
+			setLoading(true);
+			const endpoint = `Ad/UpdateAd/id/${id}`;
+			await axiosInterceptor.put(endpoint, adDetails);
+			setAds((prev) =>
+				prev.map((x) =>
+					x.id !== id
+						? x
+						: {
+								...x,
+								adName: adDetails.adName,
+								imageUrl: adDetails.imageUrl,
+								bannerImageUrl: adDetails.bannerImageUrl,
+								redirectUrl: adDetails.redirectUrl
+						  }
+				)
+			);
+			setLoading(false);
+			setTimeout(() => {
+				setSuccessMessage('');
+			}, 3000);
+		} catch (err) {
+			setLoading(false);
+			if (!err?.response?.status) {
+				setErrorMessage('No server responce.');
+			} else if (!err.response.data) {
+				setErrorMessage('Something went wrong.');
+			} else {
+				setErrorMessage(err.response.data);
+			}
+			setTimeout(() => {
+				setErrorMessage('');
+			}, 3000);
+		}
+	};
+
+	return { ads, loading, errorMessage, successMessage, createAd, deleteAd, toggleAd, editAd };
 };
 
-export default useRssOptions;
+export default useAdsOptions;
