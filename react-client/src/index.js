@@ -6,6 +6,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { AuthProvider } from './context/AuthProvider';
 import { CategoriesProvider } from './context/CategoriesProvider';
+import { AdsProvider } from './context/AdsProvider';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,9 +14,11 @@ root.render(
 		<BrowserRouter>
 			<AuthProvider>
 				<CategoriesProvider>
-					<Routes>
-						<Route path='/*' element={<App />}></Route>
-					</Routes>
+					<AdsProvider>
+						<Routes>
+							<Route path='/*' element={<App />}></Route>
+						</Routes>
+					</AdsProvider>
 				</CategoriesProvider>
 			</AuthProvider>
 		</BrowserRouter>
