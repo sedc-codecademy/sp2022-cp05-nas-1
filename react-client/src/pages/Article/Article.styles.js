@@ -45,3 +45,13 @@ export const ArticleDescription = styled.div`
 		border-bottom: 1px solid #d0d0d0;
 	}
 `;
+
+export const Message = styled.h3`
+	button {
+		border: none;
+		padding: 5px 10px;
+		background-color: var(--color-red);
+		color: #fff;
+		border-radius: 5px;
+	}
+`;
