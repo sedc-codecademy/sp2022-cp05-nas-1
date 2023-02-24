@@ -1,5 +1,7 @@
 
 # News Aggregator Site
+## WebSite URL 💻
+https://leafy-sundae-7d3362.netlify.app/
 
   ## About the project📝
 News aggregator is built around RSS feeds which collects article and data from known and well-renewed mediums. The idea is that users can read a short recap of the article where a link is provided from the source of the original article, which the user will be able to visit .The site provides space for displaying and selling ads, while there is also a social side where everyone can share their thoughts and comments about the articles.
